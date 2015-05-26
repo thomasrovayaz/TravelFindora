@@ -2,3 +2,4 @@
 
 require:
     - play
+    - mysql -> mysql-connector-java 5.1.35
