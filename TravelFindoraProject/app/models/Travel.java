@@ -1,5 +1,7 @@
 package models;
 
+import play.db.jpa.GenericModel;
+
 import javax.persistence.*;
 import java.util.Set;
 
@@ -7,7 +9,7 @@ import java.util.Set;
  * Created by thomas on 25/05/15.
  */
 @Entity
-public class Travel {
+public class Travel extends GenericModel {
     @Id
     @GeneratedValue
     private int travelId;

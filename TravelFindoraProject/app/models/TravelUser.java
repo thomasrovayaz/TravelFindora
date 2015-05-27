@@ -1,12 +1,14 @@
 package models;
 
+import play.db.jpa.GenericModel;
+
 import javax.persistence.*;
 
 /**
  * Created by thomas on 26/05/15.
  */
 @Entity
-public class TravelUser {
+public class TravelUser extends GenericModel {
     @Id
     @GeneratedValue
     private int travelUserId;

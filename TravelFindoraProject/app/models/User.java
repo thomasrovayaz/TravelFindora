@@ -1,5 +1,7 @@
 package models;
 
+import play.db.jpa.GenericModel;
+
 import javax.persistence.*;
 import java.util.Set;
 
@@ -7,7 +9,7 @@ import java.util.Set;
  * Created by thomas on 25/05/15.
  */
 @Entity
-public class User {
+public class User extends GenericModel {
     @Id
     @GeneratedValue
     private int userId;
@@ -111,5 +113,13 @@ public class User {
 
     public int getUserId() {
         return userId;
+    }
+
+    public Set<Commentaire> getCommentaires() {
+        return commentaires;
+    }
+
+    public void setCommentaires(Set<Commentaire> commentaires) {
+        this.commentaires = commentaires;
     }
 }

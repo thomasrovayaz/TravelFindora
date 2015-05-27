@@ -5,6 +5,12 @@
 # Home page
 GET     /                                       Application.index
 
+# Login page
+GET     /login                                  Application.login
+
+# User page
+GET     /user/                                  ControllerUser.index
+
 # Ignore favicon requests
 GET     /favicon.ico                            404
 

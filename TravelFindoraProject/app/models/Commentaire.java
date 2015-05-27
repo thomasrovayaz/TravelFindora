@@ -1,5 +1,7 @@
 package models;
 
+import play.db.jpa.GenericModel;
+
 import javax.persistence.*;
 import java.util.Date;
 
@@ -7,7 +9,7 @@ import java.util.Date;
  *  Created by thomas on 25/05/15.
  */
 @Entity
-public abstract class Commentaire {
+public abstract class Commentaire extends GenericModel {
     @Id
     @GeneratedValue
     private int commentaireId;
