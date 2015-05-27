@@ -12,26 +12,13 @@ import java.util.List;
 public class ControllerUser extends Controller {
     @Before
     static void checkAuth() {
-        String email = session.get("email");
-
-        List<User> users = User.find("byEmail", email).fetch();
-        System.out.println("users.size() " + users.size());
-        System.out.println("email " + email);
-        if (users.size() != 1) error(401,"Unauthorized");
+        System.out.println(Security.isConnected());
+        if (!Security.isConnected()) error(401,"Unauthorized");
     }
 
     public static boolean connect(String email, String password) {
-
         List<User> users = User.find("byEmailAndPassword", email, password).fetch();
-        System.out.println("users.size() " + users.size());
-        System.out.println("email " + email);
-        System.out.println("password " + password);
-        if (users.size() != 1) return false;
-
-        session.clear();
-        session.put("email", email);
-
-        return true;
+        return users.size() == 1;
     }
 
     public static void index() {

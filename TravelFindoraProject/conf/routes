@@ -5,8 +5,8 @@
 # Home page
 GET     /                                       Application.index
 
-# Login page
-GET     /login                                  Application.login
+# Import Secure routes
+*       /                                       module:secure
 
 # User page
 GET     /user/                                  ControllerUser.index
