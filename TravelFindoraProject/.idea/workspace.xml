@@ -73,30 +73,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Application.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="17" selection-start="386" selection-end="386" vertical-scroll-proportion="0.43889844" vertical-offset="0" max-vertical-offset="581">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/Application/login.html">
           <provider selected="true" editor-type-id="text-editor">
             <state line="2" column="23" selection-start="70" selection-end="70" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="330">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TravelFindora.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/TravelFindora.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="47" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
               <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1432718364868" expanded="true" signature="53:426" placeholder="..." />
+                <marker date="1432718364868" expanded="true" signature="227:352" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -146,13 +129,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ControllerUser.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ControllerUser.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/ControllerUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="5" selection-start="827" selection-end="827" vertical-scroll-proportion="0.0" vertical-offset="49" max-vertical-offset="630">
+            <state line="19" column="11" selection-start="479" selection-end="479" vertical-scroll-proportion="0.38282648" vertical-offset="71" max-vertical-offset="690">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TravelFindora.User" pinned="false" current="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/5d3a5420/0c52b17a-08ba-42e4-b4c4-e4454c6b3d42/TravelFindora..User">
+          <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="initial-data.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/initial-data.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="26" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -186,7 +190,6 @@
         <option value="$PROJECT_DIR$/app/models/Astuce.java" />
         <option value="$PROJECT_DIR$/conf/dependencies.yml" />
         <option value="$PROJECT_DIR$/conf/application.conf" />
-        <option value="$PROJECT_DIR$/app/controllers/ControllerUser.java" />
         <option value="$PROJECT_DIR$/app/models/Commentaire.java" />
         <option value="$PROJECT_DIR$/app/models/Content.java" />
         <option value="$PROJECT_DIR$/app/models/ContentLike.java" />
@@ -200,6 +203,8 @@
         <option value="$PROJECT_DIR$/app/views/Application/login.html" />
         <option value="$PROJECT_DIR$/conf/routes" />
         <option value="$PROJECT_DIR$/app/controllers/Application.java" />
+        <option value="$PROJECT_DIR$/conf/initial-data.yml" />
+        <option value="$PROJECT_DIR$/app/controllers/ControllerUser.java" />
       </list>
     </option>
   </component>
@@ -266,6 +271,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="conf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TravelFindoraProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TravelFindoraProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -395,6 +414,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/conf" />
       <recent name="$PROJECT_DIR$/app/views/User" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
@@ -680,12 +700,12 @@
       <updated>1432565919616</updated>
       <workItem from="1432565923654" duration="970000" />
       <workItem from="1432567653052" duration="644000" />
-      <workItem from="1432569260491" duration="19259000" />
+      <workItem from="1432569260491" duration="22190000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20873000" />
+    <option name="totallyTimeSpent" value="23804000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
@@ -1222,27 +1242,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="38" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1335">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/UserFollowing.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="47" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/ControllerUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="5" selection-start="827" selection-end="827" vertical-scroll-proportion="0.0" vertical-offset="49" max-vertical-offset="630">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1273,14 +1275,52 @@
     <entry file="file://$PROJECT_DIR$/app/views/Application/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="23" selection-start="70" selection-end="70" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="330">
-          <folding />
+          <folding>
+            <marker date="1432718364868" expanded="true" signature="53:426" placeholder="..." />
+            <marker date="1432718364868" expanded="true" signature="227:352" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="17" selection-start="386" selection-end="386" vertical-scroll-proportion="0.43889844" vertical-offset="0" max-vertical-offset="581">
+        <state line="16" column="34" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="38" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1335">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/initial-data.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="26" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/5d3a5420/0c52b17a-08ba-42e4-b4c4-e4454c6b3d42/TravelFindora..User">
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/ControllerUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="11" selection-start="479" selection-end="479" vertical-scroll-proportion="0.38282648" vertical-offset="71" max-vertical-offset="690">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
