@@ -1,0 +1,18 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+#{form @addContentStory()}
+
+<p>
+    <label for="storyText">Story: </label>
+    <textarea name="storyText" id="storyText" ></textarea>
+</p>
+<p>
+    <input type="hidden" name="travelId" id="travelId" value="${travelId}" />
+    <input type="hidden" name="findoraId" id="findoraId" value="${findoraId}" />
+</p>
+<p>
+    <input type="submit" id="ajouter" value="Ajouter" />
+</p>
+
+#{/form}

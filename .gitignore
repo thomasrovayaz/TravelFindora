@@ -5,3 +5,5 @@
 /TravelFindoreProject/logs
 /TravelFindoreProject/eclipse
 /TravelFindoreProject/.classpath
+/TravelFindoreProject/*.iml
+/TravelFindoreProject/.idea

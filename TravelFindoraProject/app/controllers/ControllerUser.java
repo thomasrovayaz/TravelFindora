@@ -32,7 +32,35 @@ public class ControllerUser extends Controller {
     }
 
     public static void formComment() {
-        render();
+        int contentId = 2;
+        render(contentId);
+    }
+
+    public static void formContent(String type) {
+        int travelId = 4;
+        int findoraId = 3;
+        if (type.equals("story")) {
+            renderTemplate("ControllerUser/formContentStory.html", travelId, findoraId);
+        }
+    }
+
+    public static void addContentStory(int travelId, int findoraId, String storyText) {
+        Findora findora = (Findora) Findora.find("byFindoraId", findoraId).fetch().get(0);
+        Travel travel = (Travel) Travel.find("byTravelId", travelId).fetch().get(0);
+        User user = User.find("byEmail", Security.connected()).first();
+        if (!TravelUser.find("byTravelAndTraveller", travel, user).fetch().isEmpty()) {
+            TravelStory travelStory = new TravelStory();
+            travelStory.setStory(storyText);
+            travelStory.setTravel(travel);
+            travelStory.setFindora(findora);
+            travelStory.save();
+            travel.getContents().add(travelStory);
+            travel.save();
+            findora.getContents().add(travelStory);
+            findora.save();
+        } else {
+            error(401, "Not allowed to content in this story " + user.getEmail() + ".");
+        }
     }
 
     public static void deleteComment(int commentId) {
@@ -41,7 +69,7 @@ public class ControllerUser extends Controller {
         if (commentaire.getUser().getUserId() == user.getUserId()) {
             commentaire.delete();
         } else {
-            error(401, "Not allowed to delete this comment");
+            error(401, "Not allowed to content in this story " + user.getEmail() + ".");
         }
     }
 
@@ -52,7 +80,7 @@ public class ControllerUser extends Controller {
             commentaire.setText(comment);
             commentaire.save();
         } else {
-            error(401, "Not allowed to delete this comment");
+            error(401, "Not allowed to content in this story " + user.getEmail() + ".");
         }
     }
 

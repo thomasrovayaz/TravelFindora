@@ -14,3 +14,16 @@ User(toto742):
 
 TravelStory(test):
     story:          toto
+
+Travel(praguevoyage):
+
+TravelUser(pragueusers):
+    travel:         praguevoyage
+    traveller:      toto742
+
+Findora(praguefindora):
+    name:           Prague
+
+TravelFindora(travelfindoraprague):
+    findora:        praguefindora
+    travel:         praguevoyage

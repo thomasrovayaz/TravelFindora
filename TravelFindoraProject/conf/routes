@@ -8,14 +8,15 @@ GET     /                                       Application.index
 # Import Secure routes
 *       /                                       module:secure
 
-# Home page
+# Gestion commentaire
 GET     /commentaire/add                        ControllerUser.formComment
-
-# Home page
 GET     /commentaire/delete/{commentId}         ControllerUser.deleteComment
-
-# Home page
 GET     /commentaire/edit/{commentId}           ControllerUser.formEditComment
+
+# Gestion content
+GET     /content/{type}/add                     ControllerUser.formContent
+GET     /content/delete/{commentId}             ControllerUser.deleteContent
+GET     /content/edit/{commentId}               ControllerUser.formEditContent
 
 # User page
 GET     /user/                                  ControllerUser.index
