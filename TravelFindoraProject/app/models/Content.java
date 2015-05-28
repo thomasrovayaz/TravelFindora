@@ -1,5 +1,6 @@
 package models;
 
+import play.data.validation.Required;
 import play.db.jpa.GenericModel;
 
 import javax.persistence.*;
@@ -16,10 +17,12 @@ public abstract class Content extends GenericModel {
 
     @ManyToOne(fetch = FetchType.LAZY, cascade={CascadeType.ALL})
     @JoinColumn(name="TRAVEL_TRAVELID")
+    @Required
     private Travel travel; //a debattre User ou Travel, est ce qu'un utilisateur qui n'a pas forcément voyager peut poster sur ce findora ? Cela complexifie la gestion des travels
 
     @ManyToOne(fetch = FetchType.LAZY, cascade={CascadeType.ALL})
     @JoinColumn(name="FINDORA_FINDORAID")
+    @Required
     private Findora findora;
 
     @OneToMany(mappedBy="content", fetch = FetchType.EAGER)

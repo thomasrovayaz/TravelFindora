@@ -1,8 +1,11 @@
 package models;
 
+import play.data.validation.MaxSize;
+import play.data.validation.Required;
 import play.db.jpa.GenericModel;
 
 import javax.persistence.*;
+
 import java.util.Set;
 
 /**
@@ -13,9 +16,15 @@ public class Findora extends GenericModel {
     @Id
     @GeneratedValue
     private int findoraId;
+    
+    @Required
     private String name;
     private long latitude;
     private long longitude;
+    
+    @Lob
+    @Required
+    @MaxSize(10000)
     private String description;
 
     @OneToMany(mappedBy = "findora", cascade = CascadeType.ALL)
@@ -74,5 +83,9 @@ public class Findora extends GenericModel {
 
     public void setContents(Set<Content> contents) {
         this.contents = contents;
+    }
+   
+    public String toString() {
+        return this.getName();
     }
 }
