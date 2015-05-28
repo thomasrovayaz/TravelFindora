@@ -31,8 +31,13 @@ public class ControllerUser extends Controller {
     }
 
     public static void deleteComment(int commentId) {
+        User user = User.find("byEmail", Security.connected()).first();
         Commentaire commentaire = (Commentaire) Commentaire.find("byCommentaireId", commentId).fetch().get(0);
-        commentaire.delete();
+        if (commentaire.getUser().getUserId() == user.getUserId()) {
+            commentaire.delete();
+        } else {
+            error(401, "Not allowed to delete this comment");
+        }
     }
 
     public static void addCommentContent(int contentId, String comment) {
