@@ -5,6 +5,18 @@
 # Home page
 GET     /                                       Application.index
 
+# Import Secure routes
+*       /                                       module:secure
+
+# Home page
+GET     /commentaire/add                        ControllerUser.formComment
+
+# Home page
+GET     /commentaire/delete/{commentId}         ControllerUser.deleteComment
+
+# User page
+GET     /user/                                  ControllerUser.index
+
 # Ignore favicon requests
 GET     /favicon.ico                            404
 
