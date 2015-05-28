@@ -64,10 +64,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ControllerUser.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ControllerUser.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/ControllerUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="71" selection-start="1529" selection-end="1529" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="1770">
+            <state line="35" column="9" selection-start="994" selection-end="994" vertical-scroll-proportion="-3.1208792" vertical-offset="2229" max-vertical-offset="3090">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,13 +75,47 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Findora.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/Findora.java">
+      <file leaf-file-name="Commentaire.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/Commentaire.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="25" selection-start="240" selection-end="249" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="870">
+            <state line="22" column="32" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1030#1031#0" expanded="true" />
+                <element signature="e#1069#1070#0" expanded="true" />
+                <element signature="e#1131#1132#0" expanded="true" />
+                <element signature="e#1187#1188#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="formEditComment.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/ControllerUser/formEditComment.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="4" selection-start="260" selection-end="357" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="360">
+              <folding>
+                <marker date="1432822644424" expanded="true" signature="164:254" placeholder="..." />
+                <marker date="1432822644424" expanded="true" signature="178:238" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="formComment.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/ControllerUser/formComment.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="3" selection-start="271" selection-end="481" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="495">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="formContentPlace.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/ControllerUser/formContentPlace.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="12" selection-start="264" selection-end="264" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="600">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -89,83 +123,31 @@
       <file leaf-file-name="formContentStory.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/ControllerUser/formContentStory.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="75" selection-start="335" selection-end="344" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="345">
+            <state line="8" column="24" selection-start="195" selection-end="195" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="510">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="initial-data.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/initial-data.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="27" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TravelFindora.Findora" pinned="false" current="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/5d3a5420/0c52b17a-08ba-42e4-b4c4-e4454c6b3d42/TravelFindora..Findora">
+      <file leaf-file-name="TravelFindora.Commentaire" pinned="false" current="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/5d3a5420/0c52b17a-08ba-42e4-b4c4-e4454c6b3d42/TravelFindora..Commentaire">
           <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
             <state />
           </provider>
           <provider editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TravelFindora.Content" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TravelFindora.Content" pinned="false" current="false" current-in-tab="false">
         <entry file="dbDummy://dbtable:/5d3a5420/0c52b17a-08ba-42e4-b4c4-e4454c6b3d42/TravelFindora..Content">
           <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
             <state />
           </provider>
           <provider editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TravelFindora.TravelUser" pinned="false" current="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/5d3a5420/0c52b17a-08ba-42e4-b4c4-e4454c6b3d42/TravelFindora..TravelUser">
-          <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TravelFindora.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/TravelFindora.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="23" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#506#507#0" expanded="true" />
-                <element signature="e#536#537#0" expanded="true" />
-                <element signature="e#583#584#0" expanded="true" />
-                <element signature="e#621#622#0" expanded="true" />
-                <element signature="e#654#655#0" expanded="true" />
-                <element signature="e#683#684#0" expanded="true" />
-                <element signature="e#727#728#0" expanded="true" />
-                <element signature="e#763#764#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TravelFindora.Travel" pinned="false" current="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/5d3a5420/0c52b17a-08ba-42e4-b4c4-e4454c6b3d42/TravelFindora..Travel">
-          <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
               <folding />
             </state>
           </provider>
@@ -178,6 +160,15 @@
           </provider>
           <provider editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/routes">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="40" selection-start="776" selection-end="776" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
               <folding />
             </state>
           </provider>
@@ -201,29 +192,31 @@
         <option value="$PROJECT_DIR$/app/models/CommentaireTravel.java" />
         <option value="$PROJECT_DIR$/app/models/CommentaireContent.java" />
         <option value="$PROJECT_DIR$/app/models/Astuce.java" />
-        <option value="$PROJECT_DIR$/app/models/Commentaire.java" />
-        <option value="$PROJECT_DIR$/app/models/Content.java" />
         <option value="$PROJECT_DIR$/app/models/ContentLike.java" />
         <option value="$PROJECT_DIR$/app/models/Findora.java" />
         <option value="$PROJECT_DIR$/app/models/Travel.java" />
         <option value="$PROJECT_DIR$/app/models/TravelLike.java" />
         <option value="$PROJECT_DIR$/app/models/TravelUser.java" />
-        <option value="$PROJECT_DIR$/app/models/User.java" />
         <option value="$PROJECT_DIR$/app/models/UserFollowing.java" />
         <option value="$PROJECT_DIR$/app/views/Application/login.html" />
         <option value="$PROJECT_DIR$/app/controllers/Security.java" />
         <option value="$PROJECT_DIR$/conf/application.conf" />
         <option value="$PROJECT_DIR$/conf/dependencies.yml" />
-        <option value="$PROJECT_DIR$/app/controllers/Application.java" />
-        <option value="$PROJECT_DIR$/app/models/TravelPlace.java" />
         <option value="$USER_HOME$/Documents/play-1.2.7.2/framework/src/play/mvc/Controller.java" />
-        <option value="$PROJECT_DIR$/app/views/ControllerUser/formEditComment.html" />
-        <option value="$PROJECT_DIR$/app/views/ControllerUser/formComment.html" />
-        <option value="$PROJECT_DIR$/conf/routes" />
-        <option value="$PROJECT_DIR$/app/views/ControllerUser/formContentStory.html" />
         <option value="$PROJECT_DIR$/conf/initial-data.yml" />
         <option value="$PROJECT_DIR$/app/models/TravelFindora.java" />
+        <option value="$PROJECT_DIR$/app/models/TravelPlace.java" />
+        <option value="$PROJECT_DIR$/app/models/User.java" />
+        <option value="$PROJECT_DIR$/app/controllers/UserTools.java" />
+        <option value="$PROJECT_DIR$/app/controllers/Application.java" />
+        <option value="$PROJECT_DIR$/app/models/Content.java" />
+        <option value="$PROJECT_DIR$/app/views/ControllerUser/formEditComment.html" />
+        <option value="$PROJECT_DIR$/app/views/ControllerUser/formComment.html" />
+        <option value="$PROJECT_DIR$/app/models/Commentaire.java" />
+        <option value="$PROJECT_DIR$/conf/routes" />
         <option value="$PROJECT_DIR$/app/controllers/ControllerUser.java" />
+        <option value="$PROJECT_DIR$/app/views/ControllerUser/formContentPlace.html" />
+        <option value="$PROJECT_DIR$/app/views/ControllerUser/formContentStory.html" />
       </list>
     </option>
   </component>
@@ -433,6 +426,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/ControllerUser" />
       <recent name="$PROJECT_DIR$/conf" />
       <recent name="$PROJECT_DIR$/app/views/User" />
     </key>
@@ -719,12 +713,12 @@
       <updated>1432565919616</updated>
       <workItem from="1432565923654" duration="970000" />
       <workItem from="1432567653052" duration="644000" />
-      <workItem from="1432569260491" duration="33708000" />
+      <workItem from="1432569260491" duration="44650000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35322000" />
+    <option name="totallyTimeSpent" value="46264000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
@@ -733,7 +727,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32984003" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21676779" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -748,7 +742,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3290735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -891,15 +885,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Commentaire.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="54" selection-start="196" selection-end="208" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/ContentLike.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="45" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0" vertical-offset="26" max-vertical-offset="585">
@@ -936,293 +921,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="60" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="135">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/models">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>models</OriginalElement>
-          <nodes>
-            <node x="423.375" y="982.0">models.Findora</node>
-            <node x="657.0" y="0.0">models.Commentaire</node>
-            <node x="539.5" y="1228.0">models.Content</node>
-            <node x="736.0" y="1412.0">models.Astuce</node>
-            <node x="448.0" y="10.5">models.TravelUser</node>
-            <node x="444.375" y="840.0">models.TravelFindora</node>
-            <node x="0.0" y="10.5">models.ContentLike</node>
-            <node x="300.87161458333344" y="493.0">models.TravelLike</node>
-            <node x="385.0" y="1422.5">models.TravelMedia</node>
-            <node x="238.5625" y="183.0">models.User</node>
-            <node x="472.01562500000006" y="1554.0">models.TravelMovie</node>
-            <node x="479.75" y="635.0">models.Travel</node>
-            <node x="706.5" y="514.0">models.CommentaireTravel</node>
-            <node x="590.0" y="1433.0">models.TravelStory</node>
-            <node x="218.0" y="10.5">models.UserFollowing</node>
-            <node x="787.5" y="1045.0">models.CommentaireContent</node>
-            <node x="325.01562500000006" y="1564.5">models.TravelImage</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="models.Travel" target="models.CommentaireTravel">
-              <point x="55.0" y="-77.5" />
-              <point x="644.75" y="605.0" />
-              <point x="745.0" y="605.0" />
-              <point x="-38.5" y="25.0" />
-            </edge>
-            <edge source="models.Commentaire" target="models.User">
-              <point x="-28.375" y="56.5" />
-              <point x="742.125" y="163.0" />
-              <point x="532.0" y="163.0" />
-              <point x="136.93750000000003" y="-130.0" />
-            </edge>
-            <edge source="models.User" target="models.UserFollowing">
-              <point x="-58.68749999999997" y="-130.0" />
-              <point x="336.375" y="143.0" />
-              <point x="270.5" y="143.0" />
-              <point x="-52.5" y="46.0" />
-            </edge>
-            <edge source="models.Content" target="models.CommentaireContent">
-              <point x="66.875" y="-67.0" />
-              <point x="713.375" y="1198.0" />
-              <point x="829.25" y="1198.0" />
-              <point x="-41.75" y="25.0" />
-            </edge>
-            <edge source="models.TravelLike" target="models.User">
-              <point x="-45.99999999999997" y="-46.0" />
-              <point x="346.87161458333344" y="468.0" />
-              <point x="316.8125" y="468.0" />
-              <point x="-78.25" y="130.0" />
-            </edge>
-            <edge source="models.CommentaireContent" target="models.Content">
-              <point x="41.75" y="25.0" />
-              <point x="912.75" y="1208.0" />
-              <point x="740.125" y="1208.0" />
-              <point x="93.62500000000003" y="-67.0" />
-            </edge>
-            <edge source="models.TravelMovie" target="models.TravelMedia">
-              <point x="0.0" y="-46.0" />
-              <point x="545.515625" y="1529.0" />
-              <point x="523.75" y="1529.0" />
-              <point x="46.25000000000003" y="35.5" />
-            </edge>
-            <edge source="models.Findora" target="models.Content">
-              <point x="62.25" y="88.0" />
-              <point x="610.125" y="1178.0" />
-              <point x="633.125" y="1178.0" />
-              <point x="-13.375" y="-67.0" />
-            </edge>
-            <edge source="models.TravelFindora" target="models.Findora">
-              <point x="51.75" y="46.0" />
-              <point x="599.625" y="957.0" />
-              <point x="610.125" y="957.0" />
-              <point x="62.25" y="-88.0" />
-            </edge>
-            <edge source="models.User" target="models.TravelLike">
-              <point x="78.25000000000003" y="130.0" />
-              <point x="473.3125" y="468.0" />
-              <point x="438.87161458333344" y="468.0" />
-              <point x="46.00000000000003" y="-46.0" />
-            </edge>
-            <edge source="models.Findora" target="models.TravelFindora">
-              <point x="-62.25" y="-88.0" />
-              <point x="485.625" y="957.0" />
-              <point x="496.125" y="957.0" />
-              <point x="-51.75" y="46.0" />
-            </edge>
-            <edge source="models.TravelFindora" target="models.Travel">
-              <point x="-51.75" y="-46.0" />
-              <point x="496.125" y="820.0" />
-              <point x="507.25" y="820.0" />
-              <point x="-82.5" y="77.5" />
-            </edge>
-            <edge source="models.TravelLike" target="models.Travel">
-              <point x="46.00000000000003" y="46.0" />
-              <point x="438.87161458333344" y="605.0" />
-              <point x="534.75" y="605.0" />
-              <point x="-55.0" y="-77.5" />
-            </edge>
-            <edge source="models.User" target="models.ContentLike">
-              <point x="-136.93749999999997" y="-130.0" />
-              <point x="258.125" y="163.0" />
-              <point x="123.75" y="163.0" />
-              <point x="24.75" y="46.0" />
-            </edge>
-            <edge source="models.CommentaireTravel" target="models.Travel">
-              <point x="38.5" y="25.0" />
-              <point x="822.0" y="615.0" />
-              <point x="681.4166666666666" y="615.0" />
-              <point x="91.66666666666663" y="-77.5" />
-            </edge>
-            <edge source="models.ContentLike" target="models.User">
-              <point x="74.25" y="46.0" />
-              <point x="173.25" y="153.0" />
-              <point x="297.25" y="153.0" />
-              <point x="-97.81249999999997" y="-130.0" />
-            </edge>
-            <edge source="models.UserFollowing" target="models.User">
-              <point x="52.5" y="46.0" />
-              <point x="-19.56249999999997" y="-130.0" />
-            </edge>
-            <edge source="models.User" target="models.Commentaire">
-              <point x="97.81250000000003" y="-130.0" />
-              <point x="492.875" y="153.0" />
-              <point x="685.375" y="153.0" />
-              <point x="-85.125" y="56.5" />
-            </edge>
-            <edge source="models.ContentLike" target="models.Content">
-              <point x="-24.75" y="46.0" />
-              <point x="74.25" y="163.0" />
-              <point x="55.0" y="163.0" />
-              <point x="55.0" y="1198.0" />
-              <point x="579.625" y="1198.0" />
-              <point x="-66.875" y="-67.0" />
-            </edge>
-            <edge source="models.Content" target="models.Travel">
-              <point x="40.125" y="-67.0" />
-              <point x="686.625" y="1208.0" />
-              <point x="693.875" y="1208.0" />
-              <point x="693.875" y="810.0" />
-              <point x="672.25" y="810.0" />
-              <point x="82.5" y="77.5" />
-            </edge>
-            <edge source="models.CommentaireTravel" target="models.Commentaire">
-              <point x="0.0" y="-25.0" />
-              <point x="783.5" y="163.0" />
-              <point x="798.875" y="163.0" />
-              <point x="28.375" y="56.5" />
-            </edge>
-            <edge source="models.Travel" target="models.Content">
-              <point x="27.5" y="77.5" />
-              <point x="617.25" y="820.0" />
-              <point x="682.875" y="820.0" />
-              <point x="682.875" y="1198.0" />
-              <point x="659.875" y="1198.0" />
-              <point x="13.375" y="-67.0" />
-            </edge>
-            <edge source="models.TravelImage" target="models.TravelMedia">
-              <point x="0.0" y="-35.5" />
-              <point x="388.51562500000006" y="1529.0" />
-              <point x="431.25" y="1529.0" />
-              <point x="-46.25" y="35.5" />
-            </edge>
-            <edge source="models.CommentaireContent" target="models.Commentaire">
-              <point x="0.0" y="-25.0" />
-              <point x="871.0" y="163.0" />
-              <point x="855.625" y="163.0" />
-              <point x="85.125" y="56.5" />
-            </edge>
-            <edge source="models.Travel" target="models.TravelUser">
-              <point x="-18.33333333333337" y="-77.5" />
-              <point x="571.4166666666666" y="615.0" />
-              <point x="584.25" y="615.0" />
-              <point x="584.25" y="143.0" />
-              <point x="566.125" y="143.0" />
-              <point x="23.625" y="46.0" />
-            </edge>
-            <edge source="models.TravelUser" target="models.User">
-              <point x="-23.625" y="46.0" />
-              <point x="518.875" y="143.0" />
-              <point x="453.75" y="143.0" />
-              <point x="58.68750000000003" y="-130.0" />
-            </edge>
-            <edge source="models.Travel" target="models.TravelFindora">
-              <point x="-27.5" y="77.5" />
-              <point x="562.25" y="820.0" />
-              <point x="599.625" y="820.0" />
-              <point x="51.75" y="-46.0" />
-            </edge>
-            <edge source="models.TravelMedia" target="models.Content">
-              <point x="2.8421709430404007E-14" y="-35.5" />
-              <point x="477.5" y="1387.0" />
-              <point x="575.1666666666667" y="1387.0" />
-              <point x="-71.33333333333331" y="67.0" />
-            </edge>
-            <edge source="models.TravelUser" target="models.Travel">
-              <point x="70.875" y="46.0" />
-              <point x="613.375" y="143.0" />
-              <point x="638.890625" y="143.0" />
-              <point x="638.890625" y="615.0" />
-              <point x="608.0833333333334" y="615.0" />
-              <point x="18.333333333333314" y="-77.5" />
-            </edge>
-            <edge source="models.User" target="models.TravelUser">
-              <point x="19.56250000000003" y="-130.0" />
-              <point x="414.625" y="133.0" />
-              <point x="471.625" y="133.0" />
-              <point x="-70.875" y="46.0" />
-            </edge>
-            <edge source="models.Astuce" target="models.Content">
-              <point x="0.0" y="-46.0" />
-              <point x="815.5" y="1387.0" />
-              <point x="717.8333333333334" y="1387.0" />
-              <point x="71.33333333333331" y="67.0" />
-            </edge>
-            <edge source="models.Travel" target="models.TravelLike">
-              <point x="-91.66666666666666" y="-77.5" />
-              <point x="498.08333333333337" y="615.0" />
-              <point x="346.87161458333344" y="615.0" />
-              <point x="-46.0" y="46.0" />
-            </edge>
-            <edge source="models.TravelStory" target="models.Content">
-              <point x="0.0" y="-25.0" />
-              <point x="653.0" y="1387.0" />
-              <point x="646.5" y="1387.0" />
-              <point x="0.0" y="67.0" />
-            </edge>
-            <edge source="models.Content" target="models.Findora">
-              <point x="-40.125" y="-67.0" />
-              <point x="606.375" y="1188.0" />
-              <point x="485.625" y="1188.0" />
-              <point x="-62.25" y="88.0" />
-            </edge>
-            <edge source="models.Content" target="models.ContentLike">
-              <point x="-93.625" y="-67.0" />
-              <point x="552.875" y="1208.0" />
-              <point x="44.0" y="1208.0" />
-              <point x="44.0" y="163.0" />
-              <point x="24.75" y="163.0" />
-              <point x="-74.25" y="46.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="-341.0" y="1218.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/Security.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="38" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1335">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="5" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Astuce.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="24" selection-start="163" selection-end="218" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
@@ -1236,26 +934,6 @@
           <folding>
             <element signature="e#245#246#0" expanded="true" />
             <element signature="e#279#280#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/TravelPlace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="3" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
-          <folding>
-            <element signature="e#267#268#0" expanded="true" />
-            <element signature="e#301#302#0" expanded="true" />
-            <element signature="e#355#356#0" expanded="true" />
-            <element signature="e#401#402#0" expanded="true" />
-            <element signature="e#434#435#0" expanded="true" />
-            <element signature="e#465#466#0" expanded="true" />
-            <element signature="e#511#512#0" expanded="true" />
-            <element signature="e#551#552#0" expanded="true" />
-            <element signature="e#585#586#0" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
-            <element signature="e#665#666#0" expanded="true" />
-            <element signature="e#707#708#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1294,65 +972,6 @@
     <entry file="file://$USER_HOME$/Documents/play-1.2.7.2/framework/src/play/mvc/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="703" column="26" selection-start="26401" selection-end="26401" vertical-scroll-proportion="0.3508772" vertical-offset="9330" max-vertical-offset="15735">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/ControllerUser/formEditComment.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="41" selection-start="164" selection-end="164" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="300">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/routes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="78" selection-start="758" selection-end="758" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/ControllerUser/formComment.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="354" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="330">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Content.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="22" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Travel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="38" selection-start="341" selection-end="351" vertical-scroll-proportion="0.0" vertical-offset="8" max-vertical-offset="885">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/5d3a5420/0c52b17a-08ba-42e4-b4c4-e4454c6b3d42/TravelFindora..Commentaire">
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/5d3a5420/0c52b17a-08ba-42e4-b4c4-e4454c6b3d42/TravelFindora..User">
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
           <folding />
         </state>
       </provider>
@@ -1404,10 +1023,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/ControllerUser/formContentStory.html">
+    <entry file="file://$PROJECT_DIR$/conf/initial-data.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="75" selection-start="335" selection-end="344" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="345">
-          <folding />
+        <state line="21" column="27" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <folding>
+            <marker date="1432813389961" expanded="true" signature="-1:-1" placeholder="TravelStory(test):" />
+            <marker date="1432813389961" expanded="true" signature="-1:-1" placeholder="TravelUser(pragueusers):" />
+            <marker date="1432813389961" expanded="true" signature="-1:-1" placeholder="Findora(praguefindora):" />
+            <marker date="1432813389961" expanded="true" signature="-1:-1" placeholder="TravelFindora(travelfindoraprague):" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/TravelPlace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="35" selection-start="665" selection-end="665" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
+          <folding>
+            <element signature="e#519#520#0" expanded="true" />
+            <element signature="e#559#560#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1420,19 +1054,421 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/initial-data.yml">
+    <entry file="uml://JAVA/models">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>models</OriginalElement>
+          <nodes>
+            <node x="277.25" y="445.0">models.Findora</node>
+            <node x="408.0625" y="0.0">models.Commentaire</node>
+            <node x="316.0" y="544.0">models.Content</node>
+            <node x="498.0081300813008" y="623.0">models.Astuce</node>
+            <node x="268.0" y="0.0">models.TravelUser</node>
+            <node x="258.75" y="366.0">models.TravelFindora</node>
+            <node x="0.0" y="0.0">models.ContentLike</node>
+            <node x="174.43750000000003" y="198.0">models.TravelLike</node>
+            <node x="245.0081300813008" y="623.0">models.TravelMedia</node>
+            <node x="187.34476626016263" y="119.0">models.User</node>
+            <node x="283.6237296747968" y="702.0">models.TravelMovie</node>
+            <node x="307.5" y="277.0">models.Travel</node>
+            <node x="375.0625" y="198.0">models.CommentaireTravel</node>
+            <node x="122.0081300813008" y="623.0">models.TravelStory</node>
+            <node x="128.00000000000003" y="0.0">models.UserFollowing</node>
+            <node x="373.0081300813008" y="623.0">models.TravelPlace</node>
+            <node x="459.0289634146342" y="445.0">models.CommentaireContent</node>
+            <node x="154.62372967479675" y="702.0">models.TravelImage</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="models.Travel" target="models.CommentaireTravel">
+              <point x="17.75" y="-14.5" />
+              <point x="360.75" y="247.0" />
+              <point x="413.5625" y="247.0" />
+              <point x="-38.5" y="14.5" />
+            </edge>
+            <edge source="models.Commentaire" target="models.User">
+              <point x="-14.625" y="14.5" />
+              <point x="451.9375" y="89.0" />
+              <point x="246.40726626016263" y="89.0" />
+              <point x="27.5625" y="-14.5" />
+            </edge>
+            <edge source="models.User" target="models.UserFollowing">
+              <point x="-11.8125" y="-14.5" />
+              <point x="207.03226626016263" y="79.0" />
+              <point x="158.00000000000003" y="79.0" />
+              <point x="-30.0" y="14.5" />
+            </edge>
+            <edge source="models.Content" target="models.CommentaireContent">
+              <point x="26.25" y="-14.5" />
+              <point x="384.25" y="514.0" />
+              <point x="500.7789634146342" y="514.0" />
+              <point x="-41.75" y="14.5" />
+            </edge>
+            <edge source="models.CommentaireContent" target="models.Content">
+              <point x="41.75" y="14.5" />
+              <point x="584.2789634146342" y="524.0" />
+              <point x="394.75" y="524.0" />
+              <point x="36.75" y="-14.5" />
+            </edge>
+            <edge source="models.TravelLike" target="models.User">
+              <point x="-23.75" y="-14.5" />
+              <point x="198.18750000000003" y="173.0" />
+              <point x="203.09476626016263" y="173.0" />
+              <point x="-15.75" y="14.5" />
+            </edge>
+            <edge source="models.TravelMovie" target="models.TravelMedia">
+              <point x="0.0" y="-14.5" />
+              <point x="336.6237296747968" y="677.0" />
+              <point x="326.0081300813008" y="677.0" />
+              <point x="27.0" y="14.5" />
+            </edge>
+            <edge source="models.Findora" target="models.Content">
+              <point x="20.25" y="14.5" />
+              <point x="338.0" y="494.0" />
+              <point x="352.75" y="494.0" />
+              <point x="-5.25" y="-14.5" />
+            </edge>
+            <edge source="models.TravelFindora" target="models.Findora">
+              <point x="29.5" y="14.5" />
+              <point x="347.25" y="420.0" />
+              <point x="338.0" y="420.0" />
+              <point x="20.25" y="-14.5" />
+            </edge>
+            <edge source="models.User" target="models.TravelLike">
+              <point x="15.75" y="14.5" />
+              <point x="234.59476626016263" y="173.0" />
+              <point x="245.68750000000003" y="173.0" />
+              <point x="23.75" y="-14.5" />
+            </edge>
+            <edge source="models.Findora" target="models.TravelFindora">
+              <point x="-20.25" y="-14.5" />
+              <point x="297.5" y="420.0" />
+              <point x="288.25" y="420.0" />
+              <point x="-29.5" y="14.5" />
+            </edge>
+            <edge source="models.TravelFindora" target="models.Travel">
+              <point x="-29.5" y="-14.5" />
+              <point x="288.25" y="346.0" />
+              <point x="316.375" y="346.0" />
+              <point x="-26.625" y="14.5" />
+            </edge>
+            <edge source="models.TravelLike" target="models.Travel">
+              <point x="23.75" y="14.5" />
+              <point x="245.68750000000003" y="247.0" />
+              <point x="325.25" y="247.0" />
+              <point x="-17.75" y="-14.5" />
+            </edge>
+            <edge source="models.User" target="models.ContentLike">
+              <point x="-27.5625" y="-14.5" />
+              <point x="191.28226626016263" y="99.0" />
+              <point x="67.5" y="99.0" />
+              <point x="13.5" y="14.5" />
+            </edge>
+            <edge source="models.CommentaireTravel" target="models.Travel">
+              <point x="38.5" y="14.5" />
+              <point x="490.5625" y="257.0" />
+              <point x="372.58333333333337" y="257.0" />
+              <point x="29.583333333333314" y="-14.5" />
+            </edge>
+            <edge source="models.ContentLike" target="models.User">
+              <point x="40.5" y="14.5" />
+              <point x="94.5" y="89.0" />
+              <point x="199.15726626016263" y="89.0" />
+              <point x="-19.6875" y="-14.5" />
+            </edge>
+            <edge source="models.User" target="models.Commentaire">
+              <point x="19.6875" y="-14.5" />
+              <point x="238.53226626016263" y="79.0" />
+              <point x="422.6875" y="79.0" />
+              <point x="-43.875" y="14.5" />
+            </edge>
+            <edge source="models.UserFollowing" target="models.User">
+              <point x="30.0" y="14.5" />
+              <point x="218.00000000000003" y="49.0" />
+              <point x="214.90726626016263" y="49.0" />
+              <point x="-3.9375" y="-14.5" />
+            </edge>
+            <edge source="models.Content" target="models.Travel">
+              <point x="15.75" y="-14.5" />
+              <point x="373.75" y="504.0" />
+              <point x="397.75" y="504.0" />
+              <point x="397.75" y="326.0" />
+              <point x="369.625" y="326.0" />
+              <point x="26.625" y="14.5" />
+            </edge>
+            <edge source="models.ContentLike" target="models.Content">
+              <point x="-13.5" y="14.5" />
+              <point x="40.5" y="99.0" />
+              <point x="32.25000000000003" y="99.0" />
+              <point x="32.25000000000003" y="514.0" />
+              <point x="331.75" y="514.0" />
+              <point x="-26.25" y="-14.5" />
+            </edge>
+            <edge source="models.Travel" target="models.Content">
+              <point x="8.875" y="14.5" />
+              <point x="351.875" y="336.0" />
+              <point x="387.25" y="336.0" />
+              <point x="387.25" y="494.0" />
+              <point x="363.25" y="494.0" />
+              <point x="5.25" y="-14.5" />
+            </edge>
+            <edge source="models.CommentaireTravel" target="models.Commentaire">
+              <point x="0.0" y="-14.5" />
+              <point x="452.0625" y="99.0" />
+              <point x="481.1875" y="99.0" />
+              <point x="14.625" y="14.5" />
+            </edge>
+            <edge source="models.TravelImage" target="models.TravelMedia">
+              <point x="0.0" y="-14.5" />
+              <point x="209.12372967479675" y="677.0" />
+              <point x="272.0081300813008" y="677.0" />
+              <point x="-27.0" y="14.5" />
+            </edge>
+            <edge source="models.CommentaireContent" target="models.Commentaire">
+              <point x="0.0" y="-14.5" />
+              <point x="542.5289634146342" y="99.0" />
+              <point x="510.4375" y="99.0" />
+              <point x="43.875" y="14.5" />
+            </edge>
+            <edge source="models.Travel" target="models.TravelUser">
+              <point x="-5.916666666666686" y="-14.5" />
+              <point x="337.5" y="69.0" />
+              <point x="330.5" y="69.0" />
+              <point x="12.5" y="14.5" />
+            </edge>
+            <edge source="models.TravelUser" target="models.User">
+              <point x="-12.5" y="14.5" />
+              <point x="305.5" y="69.0" />
+              <point x="230.65726626016263" y="69.0" />
+              <point x="11.8125" y="-14.5" />
+            </edge>
+            <edge source="models.Travel" target="models.TravelFindora">
+              <point x="-8.875" y="14.5" />
+              <point x="334.125" y="346.0" />
+              <point x="347.25" y="346.0" />
+              <point x="29.5" y="-14.5" />
+            </edge>
+            <edge source="models.TravelMedia" target="models.Content">
+              <point x="0.0" y="-14.5" />
+              <point x="299.0081300813008" y="603.0" />
+              <point x="347.5" y="603.0" />
+              <point x="-10.5" y="14.5" />
+            </edge>
+            <edge source="models.TravelUser" target="models.Travel">
+              <point x="37.5" y="14.5" />
+              <point x="355.5" y="69.0" />
+              <point x="350.1331300813008" y="69.0" />
+              <point x="350.1331300813008" y="257.0" />
+              <point x="348.91666666666674" y="257.0" />
+              <point x="5.916666666666686" y="-14.5" />
+            </edge>
+            <edge source="models.User" target="models.TravelUser">
+              <point x="3.9375" y="-14.5" />
+              <point x="222.78226626016263" y="59.0" />
+              <point x="280.5" y="59.0" />
+              <point x="-37.5" y="14.5" />
+            </edge>
+            <edge source="models.Astuce" target="models.Content">
+              <point x="0.0" y="-14.5" />
+              <point x="536.5081300813008" y="593.0" />
+              <point x="389.5" y="593.0" />
+              <point x="31.5" y="14.5" />
+            </edge>
+            <edge source="models.TravelStory" target="models.Content">
+              <point x="0.0" y="-14.5" />
+              <point x="173.5081300813008" y="593.0" />
+              <point x="326.5" y="593.0" />
+              <point x="-31.5" y="14.5" />
+            </edge>
+            <edge source="models.Travel" target="models.TravelLike">
+              <point x="-29.58333333333337" y="-14.5" />
+              <point x="313.41666666666663" y="257.0" />
+              <point x="198.18750000000003" y="257.0" />
+              <point x="-23.75" y="14.5" />
+            </edge>
+            <edge source="models.Content" target="models.Findora">
+              <point x="-15.75" y="-14.5" />
+              <point x="342.25" y="504.0" />
+              <point x="297.5" y="504.0" />
+              <point x="-20.25" y="14.5" />
+            </edge>
+            <edge source="models.TravelPlace" target="models.Content">
+              <point x="0.0" y="-14.5" />
+              <point x="425.5081300813008" y="603.0" />
+              <point x="368.5" y="603.0" />
+              <point x="10.5" y="14.5" />
+            </edge>
+            <edge source="models.Content" target="models.ContentLike">
+              <point x="-36.75" y="-14.5" />
+              <point x="321.25" y="524.0" />
+              <point x="21.75" y="524.0" />
+              <point x="21.75" y="99.0" />
+              <point x="13.5" y="99.0" />
+              <point x="-40.5" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="173.0" y="205.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Travel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="27" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+        <state line="23" column="48" selection-start="612" selection-end="707" vertical-scroll-proportion="0.0" vertical-offset="8" max-vertical-offset="885">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="34" selection-start="1204" selection-end="1204" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1500">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3027#3028#0" expanded="true" />
+            <element signature="e#3058#3059#0" expanded="true" />
+            <element signature="e#3112#3113#0" expanded="true" />
+            <element signature="e#3152#3153#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/UserTools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="93" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/ControllerUser.java">
+    <entry file="file://$PROJECT_DIR$/app/views/Application/signIn.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="71" selection-start="1529" selection-end="1529" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="1770">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/Security.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="34" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="60" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="135">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="40" selection-start="409" selection-end="409" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Content.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="27" selection-start="1112" selection-end="1112" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="1290">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1878#1879#0" expanded="true" />
+            <element signature="e#1905#1906#0" expanded="true" />
+            <element signature="e#1943#1944#0" expanded="true" />
+            <element signature="e#1975#1976#0" expanded="true" />
+            <element signature="e#2012#2013#0" expanded="true" />
+            <element signature="e#2047#2048#0" expanded="true" />
+            <element signature="e#2101#2102#0" expanded="true" />
+            <element signature="e#2149#2150#0" expanded="true" />
+            <element signature="e#2190#2191#0" expanded="true" />
+            <element signature="e#2229#2230#0" expanded="true" />
+            <element signature="e#2291#2292#0" expanded="true" />
+            <element signature="e#2347#2348#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/ControllerUser/formEditComment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="4" selection-start="260" selection-end="357" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="360">
+          <folding>
+            <marker date="1432822644424" expanded="true" signature="164:254" placeholder="..." />
+            <marker date="1432822644424" expanded="true" signature="178:238" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/5d3a5420/0c52b17a-08ba-42e4-b4c4-e4454c6b3d42/TravelFindora..Commentaire">
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Commentaire.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="32" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1030#1031#0" expanded="true" />
+            <element signature="e#1069#1070#0" expanded="true" />
+            <element signature="e#1131#1132#0" expanded="true" />
+            <element signature="e#1187#1188#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/routes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="40" selection-start="776" selection-end="776" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/ControllerUser/formComment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="3" selection-start="271" selection-end="481" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="495">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/web-forms2.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="649" column="16" selection-start="14636" selection-end="14636" vertical-scroll-proportion="0.3321859" vertical-offset="9542" max-vertical-offset="12210">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/ControllerUser/formContentStory.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="24" selection-start="195" selection-end="195" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/ControllerUser/formContentPlace.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="12" selection-start="264" selection-end="264" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/5d3a5420/0c52b17a-08ba-42e4-b4c4-e4454c6b3d42/TravelFindora..User">
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1443,6 +1479,15 @@
       <provider editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/ControllerUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="9" selection-start="994" selection-end="994" vertical-scroll-proportion="-3.1208792" vertical-offset="2229" max-vertical-offset="3090">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

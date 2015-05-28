@@ -5,10 +5,21 @@
 
 <p>
     <label for="comment">Commentaire: </label>
-    <textarea name="comment" id="comment" ></textarea>
+    <textarea name="comment" id="comment" >
+        #{if commentaire }
+            ${commentaire.text}
+        #{/if}
+    </textarea>
 </p>
 <p>
-    <input type="hidden" name="contentId" id="contentId" value="${contentId}" />
+    #{if commentaire }
+        <input type="hidden" name="commentId" id="commentId" value="${commentaire.commentaireId}" />
+        <input type="hidden" name="contentId" id="contentId" value="-1" />
+    #{/if}
+    #{else }
+        <input type="hidden" name="commentId" id="commentId" value="-1" />
+        <input type="hidden" name="contentId" id="contentId" value="${contentId}" />
+    #{/else}
 </p>
 <p>
     <input type="submit" id="ajouter" value="Ajouter" />
