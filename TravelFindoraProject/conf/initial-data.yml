@@ -5,3 +5,25 @@ User(toto74):
     password:       toto74
     firstname:      toto74
     lastname:       toto74
+
+User(toto742):
+    email:          toto742
+    password:       toto742
+    firstname:      toto742
+    lastname:       toto742
+
+TravelStory(test):
+    story:          toto
+
+Travel(praguevoyage):
+
+TravelUser(pragueusers):
+    travel:         praguevoyage
+    traveller:      toto742
+
+Findora(praguefindora):
+    name:           Prague
+
+TravelFindora(travelfindoraprague):
+    findora:        praguefindora
+    travel:         praguevoyage

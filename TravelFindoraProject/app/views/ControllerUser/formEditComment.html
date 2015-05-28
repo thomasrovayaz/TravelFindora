@@ -1,0 +1,15 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+#{form @editComment()}
+
+<p>
+    <label for="comment">Commentaire: </label>
+    <textarea name="comment" id="comment">${commentaire.text}</textarea>
+</p>
+    <input type="hidden" name="commentId" id="commentId" value="${commentaire.commentaireId}" />
+<p>
+    <input type="submit" id="ajouter" value="Ajouter" />
+</p>
+
+#{/form}

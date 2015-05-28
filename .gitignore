@@ -1,5 +1,9 @@
-/tmp
-/modules
-/lib
-/test-result
-/logs
+/TravelFindoraProject/tmp
+/TravelFindoraProject/modules
+/TravelFindoraProject/lib
+/TravelFindoraProject/test-result
+/TravelFindoraProject/logs
+/TravelFindoraProject/eclipse
+/TravelFindoraProject/.classpath
+/TravelFindoraProject/*.iml
+/TravelFindoraProject/.idea

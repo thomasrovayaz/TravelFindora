@@ -10,6 +10,18 @@ GET		/signIn									Application.signIn
 
 # Login page
 GET     /login                                  Application.login
+# Import Secure routes
+*       /                                       module:secure
+
+# Gestion commentaire
+GET     /commentaire/add                        ControllerUser.formComment
+GET     /commentaire/delete/{commentId}         ControllerUser.deleteComment
+GET     /commentaire/edit/{commentId}           ControllerUser.formEditComment
+
+# Gestion content
+GET     /content/{type}/add                     ControllerUser.formContent
+GET     /content/delete/{commentId}             ControllerUser.deleteContent
+GET     /content/edit/{commentId}               ControllerUser.formEditContent
 
 # User page
 GET     /user/                                  ControllerUser.index
