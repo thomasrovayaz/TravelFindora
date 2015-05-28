@@ -14,6 +14,9 @@ GET     /commentaire/add                        ControllerUser.formComment
 # Home page
 GET     /commentaire/delete/{commentId}         ControllerUser.deleteComment
 
+# Home page
+GET     /commentaire/edit/{commentId}           ControllerUser.formEditComment
+
 # User page
 GET     /user/                                  ControllerUser.index
 

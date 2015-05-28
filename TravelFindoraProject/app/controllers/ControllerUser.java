@@ -26,6 +26,11 @@ public class ControllerUser extends Controller {
         render();
     }
 
+    public static void formEditComment(int commentId) {
+        Commentaire commentaire = (Commentaire) Commentaire.find("byCommentaireId", commentId).fetch().get(0);
+        render(commentaire);
+    }
+
     public static void formComment() {
         render();
     }
@@ -35,6 +40,17 @@ public class ControllerUser extends Controller {
         Commentaire commentaire = (Commentaire) Commentaire.find("byCommentaireId", commentId).fetch().get(0);
         if (commentaire.getUser().getUserId() == user.getUserId()) {
             commentaire.delete();
+        } else {
+            error(401, "Not allowed to delete this comment");
+        }
+    }
+
+    public static void editComment(int commentId, String comment) {
+        User user = User.find("byEmail", Security.connected()).first();
+        Commentaire commentaire = (Commentaire) Commentaire.find("byCommentaireId", commentId).fetch().get(0);
+        if (commentaire.getUser().getUserId() == user.getUserId()) {
+            commentaire.setText(comment);
+            commentaire.save();
         } else {
             error(401, "Not allowed to delete this comment");
         }
