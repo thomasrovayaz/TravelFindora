@@ -30,6 +30,11 @@ public class ControllerUser extends Controller {
         render();
     }
 
+    public static void deleteComment(int commentId) {
+        Commentaire commentaire = (Commentaire) Commentaire.find("byCommentaireId", commentId).fetch().get(0);
+        commentaire.delete();
+    }
+
     public static void addCommentContent(int contentId, String comment) {
         Content content = (Content) Content.find("byContentId", contentId).fetch().get(0);
         CommentaireContent commentaireContent = new CommentaireContent();

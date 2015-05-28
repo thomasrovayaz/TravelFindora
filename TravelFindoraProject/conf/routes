@@ -11,6 +11,9 @@ GET     /                                       Application.index
 # Home page
 GET     /commentaire/add                        ControllerUser.formComment
 
+# Home page
+GET     /commentaire/delete/{commentId}         ControllerUser.deleteComment
+
 # User page
 GET     /user/                                  ControllerUser.index
 
