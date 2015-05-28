@@ -27,7 +27,9 @@ public abstract class Commentaire extends GenericModel {
     private String text;
     
     @Required
-    private Date date; //voir avec jpa si l'objet java.util.Date passe
+    private Date dateCreation;
+    
+    private Date dateModification;
 
     public User getUser() {
         return user;
@@ -45,15 +47,23 @@ public abstract class Commentaire extends GenericModel {
         this.text = text;
     }
 
-    public Date getDate() {
-        return date;
+    public Date getDateCreation() {
+        return dateCreation;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setDateCreation(Date dateCreation) {
+        this.dateCreation = dateCreation;
     }
 
     public int getCommentaireId() {
         return commentaireId;
+    }
+
+    public Date getDateModification() {
+        return dateModification;
+    }
+
+    public void setDateModification(Date dateModification) {
+        this.dateModification = dateModification;
     }
 }

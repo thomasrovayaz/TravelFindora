@@ -58,6 +58,9 @@ public class User extends GenericModel {
     @OneToMany(mappedBy="user", fetch = FetchType.EAGER)
     private Set<Commentaire> commentaires;
 
+    @OneToMany(mappedBy="user", fetch = FetchType.EAGER)
+    private Set<Content> contents;
+
     public String getLastname() {
         return lastname;
     }
@@ -144,5 +147,12 @@ public class User extends GenericModel {
     
     public String toString() {
         return this.getEmail();
+
+    public Set<Content> getContents() {
+        return contents;
+    }
+
+    public void setContents(Set<Content> contents) {
+        this.contents = contents;
     }
 }

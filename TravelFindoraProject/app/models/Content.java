@@ -4,6 +4,7 @@ import play.data.validation.Required;
 import play.db.jpa.GenericModel;
 
 import javax.persistence.*;
+import java.util.Date;
 import java.util.Set;
 
 /**
@@ -25,11 +26,18 @@ public abstract class Content extends GenericModel {
     @Required
     private Findora findora;
 
+    @ManyToOne(fetch = FetchType.LAZY, cascade={CascadeType.ALL})
+    @JoinColumn(name="USER_USERID")
+    private User user;
+
     @OneToMany(mappedBy="content", fetch = FetchType.EAGER)
     private Set<CommentaireContent> commentaires;
 
     @OneToMany(mappedBy = "likingContent", cascade = CascadeType.ALL)
     private Set<ContentLike> likers;
+
+    private Date dateCreation;
+    private Date dateModification;
 
     public Travel getTravel() {
         return travel;
@@ -65,5 +73,29 @@ public abstract class Content extends GenericModel {
 
     public int getContentId() {
         return contentId;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public Date getDateCreation() {
+        return dateCreation;
+    }
+
+    public void setDateCreation(Date dateCreation) {
+        this.dateCreation = dateCreation;
+    }
+
+    public Date getDateModification() {
+        return dateModification;
+    }
+
+    public void setDateModification(Date dateModification) {
+        this.dateModification = dateModification;
     }
 }

@@ -5,9 +5,20 @@
 
 <p>
     <label for="storyText">Story: </label>
-    <textarea name="storyText" id="storyText" ></textarea>
+    <textarea name="storyText" id="storyText" >
+        #{if travelStory }
+            ${travelStory.story}
+        #{/if}
+    </textarea>
 </p>
 <p>
+
+    #{if travelStory }
+        <input type="hidden" name="contentId" id="contentId" value="${travelStory.contentId}" />
+    #{/if}
+    #{else }
+        <input type="hidden" name="contentId" id="contentId" value="-1" />
+    #{/else}
     <input type="hidden" name="travelId" id="travelId" value="${travelId}" />
     <input type="hidden" name="findoraId" id="findoraId" value="${findoraId}" />
 </p>

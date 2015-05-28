@@ -1,5 +1,6 @@
 package controllers;
 
+import models.User;
 import play.mvc.Controller;
 import java.sql.Connection;
 import java.sql.DriverManager;
