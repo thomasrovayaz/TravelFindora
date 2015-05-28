@@ -1,0 +1,25 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+#{form @register()}
+
+<p>
+    <label for="firstname">First name: </label>
+    <input type="text" name="firstname" id="firstname" maxlength="30" value="${params.firstname}" />
+</p>
+<p>
+    <label for="lastname">Last name: </label>
+    <input type="text" name="lastname" id="lastname" maxlength="30" value="${params.lastname}" />
+</p>
+<p>
+    <label for="email">Email: </label>
+    <input type="text" name="email" id="email" maxlength="30" value="${params.email}" />
+</p>
+<p>
+    <label for="password">Password: </label>
+    <input type="password" name="password" id="password" maxlength="30" />
+</p>
+<p>
+    <input type="submit" id="signin" value="Sign in" />
+</p>
+
+#{/form}
