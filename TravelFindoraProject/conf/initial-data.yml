@@ -5,3 +5,6 @@ User(toto74):
     password:       toto74
     firstname:      toto74
     lastname:       toto74
+
+TravelStory(test):
+    story:          toto

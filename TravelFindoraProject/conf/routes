@@ -8,6 +8,9 @@ GET     /                                       Application.index
 # Import Secure routes
 *       /                                       module:secure
 
+# Home page
+GET     /commentaire/add                        ControllerUser.formComment
+
 # User page
 GET     /user/                                  ControllerUser.index
 

@@ -1,9 +1,10 @@
 package controllers;
 
-import models.User;
+import models.*;
 import play.mvc.Before;
 import play.mvc.Controller;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -23,5 +24,35 @@ public class ControllerUser extends Controller {
 
     public static void index() {
         render();
+    }
+
+    public static void formComment() {
+        render();
+    }
+
+    public static void addCommentContent(int contentId, String comment) {
+        Content content = (Content) Content.find("byContentId", contentId).fetch().get(0);
+        CommentaireContent commentaireContent = new CommentaireContent();
+        commentaireContent.setContent(content);
+        commentaireContent.setText(comment);
+
+        User user = User.find("byEmail", Security.connected()).first();
+        commentaireContent.setUser(user);
+        commentaireContent.setDate(new Date());
+
+        commentaireContent.save();
+    }
+
+    public static void addCommentTravel(int travelId, String comment) {
+        Travel travel = (Travel) Content.find("byTravelId", travelId).fetch().get(0);
+        CommentaireTravel commentaireTravel = new CommentaireTravel();
+        commentaireTravel.setTravel(travel);
+        commentaireTravel.setText(comment);
+
+        User user = User.find("byEmail", Security.connected()).first();
+        commentaireTravel.setUser(user);
+        commentaireTravel.setDate(new Date());
+
+        commentaireTravel.save();
     }
 }
