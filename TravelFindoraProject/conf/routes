@@ -21,6 +21,12 @@ GET     /content/{type}/add                     ControllerUser.formContent
 GET     /content/delete/{commentId}             ControllerUser.deleteContent
 GET     /content/{type}/edit/{contentId}        ControllerUser.formEditContent
 
+# Gestion like
+GET     /content/{contentId}/like               ControllerUser.likeContent
+GET     /travel/{travelId}/like                 ControllerUser.likeTravel
+GET     /content/{contentId}/dislike            ControllerUser.dislikeContent
+GET     /travel/{travelId}/dislike              ControllerUser.dislikeTravel
+
 # User page
 GET     /user/                                  ControllerUser.index
 

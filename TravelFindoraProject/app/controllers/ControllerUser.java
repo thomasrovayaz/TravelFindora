@@ -27,6 +27,57 @@ public class ControllerUser extends Controller {
         render();
     }
 
+    /**gestion like */
+    public static void likeContent(int contentId) {
+        ContentLike contentLike = new ContentLike();
+        Content content = (Content) Content.find("byContentId", contentId).fetch().get(0);
+        User user = User.find("byEmail", Security.connected()).first();
+        contentLike.setLikingContent(content);
+        contentLike.setLikerContent(user);
+        contentLike.save();
+        user.getContentLikes().add(contentLike);
+        user.save();
+        content.getLikers().add(contentLike);
+        content.save();
+    }
+    public static void likeTravel(int travelId) {
+        TravelLike travelLike = new TravelLike();
+        Travel travel = (Travel) Travel.find("byTravelId", travelId).fetch().get(0);
+        User user = User.find("byEmail", Security.connected()).first();
+        travelLike.setLikingTravel(travel);
+        travelLike.setLikerTravel(user);
+        travelLike.save();
+        user.getTravelLikes().add(travelLike);
+        user.save();
+        travel.getLikers().add(travelLike);
+        travel.save();
+    }
+
+    public static void dislikeContent(int contentId) {
+        User user = User.find("byEmail", Security.connected()).first();
+        Content content = (Content) Content.find("byContentId", contentId).fetch().get(0);
+        ContentLike contentLike = (ContentLike) ContentLike.find("byLikingContentAndLikerContent", content, user).fetch().get(0);
+
+        user.getContentLikes().remove(contentLike);
+        user.save();
+        content.getLikers().remove(contentLike);
+        content.save();
+
+        contentLike.delete();
+    }
+    public static void dislikeTravel(int travelId) {
+        User user = User.find("byEmail", Security.connected()).first();
+        Travel travel = (Travel) Travel.find("byTravelId", travelId).fetch().get(0);
+        TravelLike travelLike = (TravelLike) TravelLike.find("byLikingTravelAndLikerTravel", travel, user).fetch().get(0);
+
+        user.getTravelLikes().remove(travelLike);
+        user.save();
+        travel.getLikers().remove(travelLike);
+        travel.save();
+
+        travelLike.delete();
+    }
+
     /**gestion des contents */
     public static void formContent(String type) {
         int travelId = 4;
