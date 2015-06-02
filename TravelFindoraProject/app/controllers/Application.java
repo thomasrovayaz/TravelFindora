@@ -38,7 +38,10 @@ public class Application extends Controller {
     newUser.setEmail(email);
     newUser.setPassword(password);
 
-    newUser.save();
+        newUser.save();
+
+        session.put("email",email);
+        Application.index();
     }
 
 }
