@@ -20,13 +20,12 @@ public class Findora extends GenericModel {
     @Required
     private String name;
 
-    @Lob
-    @Required
-    @MaxSize(10000)
-
     private double latitude;
     private double longitude;
 
+    @Lob
+    @Required
+    @MaxSize(10000)
     private String description;
 
     @OneToMany(mappedBy = "findora", cascade = CascadeType.ALL)
