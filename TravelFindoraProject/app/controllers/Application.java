@@ -30,6 +30,9 @@ public class Application extends Controller {
     }
     session.put("email", email);
     redirect("index.html");
+    
+    storeCurrentUrl();
+    onAuthenticated();
 
     }
 
