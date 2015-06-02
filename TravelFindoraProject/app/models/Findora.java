@@ -14,8 +14,8 @@ public class Findora extends GenericModel {
     @GeneratedValue
     private int findoraId;
     private String name;
-    private long latitude;
-    private long longitude;
+    private double latitude;
+    private double longitude;
     private String description;
 
     @OneToMany(mappedBy = "findora", cascade = CascadeType.ALL)
@@ -32,19 +32,19 @@ public class Findora extends GenericModel {
         this.name = name;
     }
 
-    public long getLatitude() {
+    public double getLatitude() {
         return latitude;
     }
 
-    public void setLatitude(long latitude) {
+    public void setLatitude(double latitude) {
         this.latitude = latitude;
     }
 
-    public long getLongitude() {
+    public double getLongitude() {
         return longitude;
     }
 
-    public void setLongitude(long longitude) {
+    public void setLongitude(double longitude) {
         this.longitude = longitude;
     }
 
