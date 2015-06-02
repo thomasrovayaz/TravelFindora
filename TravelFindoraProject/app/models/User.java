@@ -1,5 +1,6 @@
 package models;
 
+import play.data.validation.*;
 import play.db.jpa.GenericModel;
 
 import javax.persistence.*;
@@ -14,12 +15,30 @@ public class User extends GenericModel {
     @GeneratedValue
     private int userId;
 
+    @Required
     private String lastname;
+    
+    @Required
     private String firstname;
+    
+    @Required
+    @Email
     private String email;
+    
+    @Required
     private String password;
+    
+    public boolean isAdmin;
 
-    //gestion des voyages
+    public boolean isAdmin() {
+		return isAdmin;
+	}
+
+	public void setAdmin(boolean isAdmin) {
+		this.isAdmin = isAdmin;
+	}
+
+	//gestion des voyages
     @OneToMany(mappedBy = "traveller", cascade = CascadeType.ALL)
     private Set<TravelUser> travels;
 
@@ -124,6 +143,10 @@ public class User extends GenericModel {
 
     public void setCommentaires(Set<Commentaire> commentaires) {
         this.commentaires = commentaires;
+    }
+    
+    public String toString() {
+        return this.getEmail();
     }
 
     public Set<Content> getContents() {

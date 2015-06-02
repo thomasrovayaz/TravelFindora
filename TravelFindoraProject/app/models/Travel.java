@@ -72,4 +72,7 @@ public class Travel extends GenericModel {
     public void setContents(Set<Content> contents) {
         this.contents = contents;
     }
+    public String toString() {
+        return "idTravel"+this.getTravelId();
+    }
 }

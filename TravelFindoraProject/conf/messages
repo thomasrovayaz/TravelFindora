@@ -1,3 +1,23 @@
 # You can specialize this file for each language.
 # For example, for French create a messages.fr file
 #
+title=Title
+content=Content
+postedAt=Posted at
+name=Common name
+email=Email
+password=Password
+fullname=Full name
+isAdmin=User is admin
+text=Text
+latitude=Latitude
+longitude=Longitude
+travel=Travel
+findora=Findora
+user=User
+text=Text
+date=Date
+pathOnServer=Path on server
+description=Description
+lastname=Lastname 
+firstname=Firstname

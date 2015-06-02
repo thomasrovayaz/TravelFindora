@@ -9,6 +9,8 @@ import play.mvc.Controller;
 import java.util.Date;
 import java.util.List;
 
+import controllers.admin.UserTools;
+
 /**
  * Created by thomas on 27/05/15.
  */

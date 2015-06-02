@@ -1,5 +1,7 @@
 package models;
 
+import play.data.validation.MaxSize;
+import play.data.validation.Required;
 import play.db.jpa.GenericModel;
 
 import javax.persistence.*;
@@ -16,10 +18,17 @@ public abstract class Commentaire extends GenericModel {
 
     @ManyToOne(fetch = FetchType.LAZY, cascade={CascadeType.ALL})
     @JoinColumn(name="USER_USERID")
+    @Required
     private User user;
 
+    @Lob
+    @Required
+    @MaxSize(10000)
     private String text;
+    
+    @Required
     private Date dateCreation;
+    
     private Date dateModification;
 
     public User getUser() {
