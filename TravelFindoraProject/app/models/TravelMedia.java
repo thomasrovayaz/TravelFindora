@@ -8,7 +8,9 @@ import javax.persistence.Entity;
 @Entity
 public class TravelMedia extends Content {
     private String description;
-    private String pathOnServer;
+    public byte[] file;
+    public String fileName;
+    public String contentType;
 
     public String getDescription() {
         return description;
@@ -18,11 +20,28 @@ public class TravelMedia extends Content {
         this.description = description;
     }
 
-    public String getPathOnServer() {
-        return pathOnServer;
+    public byte[] getFile() {
+        return file;
     }
 
-    public void setPathOnServer(String pathOnServer) {
-        this.pathOnServer = pathOnServer;
+    public void setFile(byte[] file) {
+        this.file = file;
+    }
+
+    public String getContentType() {
+        return contentType;
+    }
+
+    public void setContentType(String contentType) {
+        this.contentType = contentType;
+    }
+
+    public String getFileName() {
+
+        return fileName;
+    }
+
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
     }
 }

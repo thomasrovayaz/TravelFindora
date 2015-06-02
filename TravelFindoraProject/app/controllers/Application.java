@@ -1,10 +1,7 @@
 package controllers;
 
-import play.mvc.Controller;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
 import models.User;
+import play.mvc.Controller;
 
 public class Application extends Controller {
 
@@ -17,11 +14,12 @@ public class Application extends Controller {
     }
 
     public static void register(String firstname, String lastname, String email, String password) {
-    User newUser = new User();
-    newUser.setFirstname(firstname);
-    newUser.setLastname(lastname);
-    newUser.setEmail(email);
-    newUser.setPassword(password);
+        User newUser = new User();
+        newUser.setFirstname(firstname);
+        newUser.setLastname(lastname);
+        newUser.setEmail(email);
+        newUser.setPassword(password);
+
 
     newUser.save();
 
