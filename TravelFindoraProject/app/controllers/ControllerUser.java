@@ -6,6 +6,7 @@ import play.data.Upload;
 import play.mvc.Before;
 import play.mvc.Controller;
 
+import java.io.FileNotFoundException;
 import java.util.Date;
 import java.util.List;
 
@@ -200,7 +201,7 @@ public class ControllerUser extends Controller {
         }
     }
 
-    public static void addContentImage(int contentId, int travelId, int findoraId, String description, Upload data) {
+    public static void addContentImage(int contentId, int travelId, int findoraId, String description, Upload data) throws FileNotFoundException {
         Findora findora = (Findora) Findora.find("byFindoraId", findoraId).fetch().get(0);
         Travel travel = (Travel) Travel.find("byTravelId", travelId).fetch().get(0);
         User user = User.find("byEmail", Security.connected()).first();
@@ -223,7 +224,7 @@ public class ControllerUser extends Controller {
         Logger.info(data.getFileName());
         travelImage.setContentType(data.getContentType());
         travelImage.setFileName(data.getFileName());
-        travelImage.setFile(data.asBytes());
+        travelImage.setFile(data.asFile());
 
         travelImage.setTravel(travel);
         travelImage.setFindora(findora);
