@@ -24,8 +24,8 @@ public class Findora extends GenericModel {
     @Required
     @MaxSize(10000)
 
-    private long latitude;
-    private long longitude;
+    private double latitude;
+    private double longitude;
 
     private String description;
 
@@ -47,7 +47,7 @@ public class Findora extends GenericModel {
         return latitude;
     }
 
-    public void setLatitude(long latitude) {
+    public void setLatitude(double latitude) {
         this.latitude = latitude;
     }
 
@@ -55,7 +55,7 @@ public class Findora extends GenericModel {
         return longitude;
     }
 
-    public void setLongitude(long longitude) {
+    public void setLongitude(double longitude) {
         this.longitude = longitude;
     }
 
