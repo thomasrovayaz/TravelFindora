@@ -3,6 +3,7 @@ package controllers;
 import models.Findora;
 import models.User;
 import play.mvc.Controller;
+import play.api.mvc.*;
 
 import java.util.List;
 
@@ -24,20 +25,10 @@ public class Application extends Controller {
         newUser.setEmail(email);
         newUser.setPassword(password);
 
+        newUser.save();
 
-    newUser.save();
-
-    try {
-        Secure.authenticate(email, password, false); 
-    } catch(Throwable t) {
-        t.printStackTrace();
-    }
-    session.put("email", email);
-    redirect("index.html");
-    
-    storeCurrentUrl();
-    onAuthenticated();
-
+        session.put("email",email);
+        Application.index();
     }
 
 }
