@@ -249,7 +249,7 @@ public class ControllerUser extends Controller {
         }
     }
 
-    public static void addContentMovie(int contentId, int travelId, int findoraId, String description, Upload data) {
+    public static void addContentMovie(int contentId, int travelId, int findoraId, String description, Upload data) throws FileNotFoundException {
         Findora findora = (Findora) Findora.find("byFindoraId", findoraId).fetch().get(0);
         Travel travel = (Travel) Travel.find("byTravelId", travelId).fetch().get(0);
         User user = User.find("byEmail", Security.connected()).first();
@@ -272,7 +272,7 @@ public class ControllerUser extends Controller {
         Logger.info(data.getFileName());
         travelMovie.setContentType(data.getContentType());
         travelMovie.setFileName(data.getFileName());
-        travelMovie.setFile(data.asBytes());
+        travelMovie.setFile(data.asFile());
 
         travelMovie.setTravel(travel);
         travelMovie.setFindora(findora);
