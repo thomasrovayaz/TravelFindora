@@ -8,8 +8,6 @@ GET     /                                       Application.index
 # Sign in page
 GET		/signIn									Application.signIn
 
-# Login page
-GET     /login                                  Application.login
 # Import Secure routes
 *       /                                       module:secure
 

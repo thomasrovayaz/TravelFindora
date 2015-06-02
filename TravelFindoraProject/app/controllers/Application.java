@@ -16,16 +16,6 @@ public class Application extends Controller {
         render();
     }
 
-    public static void login() {
-        render();
-    }
-
-    public static void authenticate(String username, String password) {
-        boolean auth;
-        auth = (ControllerUser.connect(username, password));
-        render();
-    }
-
     public static void register(String firstname, String lastname, String email, String password) {
     User newUser = new User();
     newUser.setFirstname(firstname);
@@ -34,6 +24,15 @@ public class Application extends Controller {
     newUser.setPassword(password);
 
     newUser.save();
+
+    try {
+        Secure.authenticate(email, password, false); 
+    } catch(Throwable t) {
+        t.printStackTrace();
+    }
+    session.put("email", email);
+    redirect("index.html");
+
     }
 
 }
