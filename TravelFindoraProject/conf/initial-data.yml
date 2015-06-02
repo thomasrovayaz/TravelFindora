@@ -23,6 +23,23 @@ TravelUser(pragueusers):
 
 Findora(praguefindora):
     name:           Prague
+    latitude:       50.0755381
+    longitude:      14.4378005
+
+Findora(parisfindora):
+    name:           Paris
+    latitude:       48.8566140
+    longitude:      2.3522219
+
+Findora(copenhaguefindora):
+    name:           Copenhague
+    latitude:       55.6760968
+    longitude:      12.5683371
+
+Findora(clusesfindora):
+    name:           Cluses
+    latitude:       46.0603900
+    longitude:      6.5805820
 
 TravelFindora(travelfindoraprague):
     findora:        praguefindora
