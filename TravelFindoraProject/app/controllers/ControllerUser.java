@@ -1,6 +1,8 @@
 package controllers;
 
 import models.*;
+import play.Logger;
+import play.data.Upload;
 import play.mvc.Before;
 import play.mvc.Controller;
 
@@ -25,6 +27,57 @@ public class ControllerUser extends Controller {
         render();
     }
 
+    /**gestion like */
+    public static void likeContent(int contentId) {
+        ContentLike contentLike = new ContentLike();
+        Content content = (Content) Content.find("byContentId", contentId).fetch().get(0);
+        User user = User.find("byEmail", Security.connected()).first();
+        contentLike.setLikingContent(content);
+        contentLike.setLikerContent(user);
+        contentLike.save();
+        user.getContentLikes().add(contentLike);
+        user.save();
+        content.getLikers().add(contentLike);
+        content.save();
+    }
+    public static void likeTravel(int travelId) {
+        TravelLike travelLike = new TravelLike();
+        Travel travel = (Travel) Travel.find("byTravelId", travelId).fetch().get(0);
+        User user = User.find("byEmail", Security.connected()).first();
+        travelLike.setLikingTravel(travel);
+        travelLike.setLikerTravel(user);
+        travelLike.save();
+        user.getTravelLikes().add(travelLike);
+        user.save();
+        travel.getLikers().add(travelLike);
+        travel.save();
+    }
+
+    public static void dislikeContent(int contentId) {
+        User user = User.find("byEmail", Security.connected()).first();
+        Content content = (Content) Content.find("byContentId", contentId).fetch().get(0);
+        ContentLike contentLike = (ContentLike) ContentLike.find("byLikingContentAndLikerContent", content, user).fetch().get(0);
+
+        user.getContentLikes().remove(contentLike);
+        user.save();
+        content.getLikers().remove(contentLike);
+        content.save();
+
+        contentLike.delete();
+    }
+    public static void dislikeTravel(int travelId) {
+        User user = User.find("byEmail", Security.connected()).first();
+        Travel travel = (Travel) Travel.find("byTravelId", travelId).fetch().get(0);
+        TravelLike travelLike = (TravelLike) TravelLike.find("byLikingTravelAndLikerTravel", travel, user).fetch().get(0);
+
+        user.getTravelLikes().remove(travelLike);
+        user.save();
+        travel.getLikers().remove(travelLike);
+        travel.save();
+
+        travelLike.delete();
+    }
+
     /**gestion des contents */
     public static void formContent(String type) {
         int travelId = 4;
@@ -33,6 +86,10 @@ public class ControllerUser extends Controller {
             renderTemplate("ControllerUser/formContentStory.html", travelId, findoraId);
         } else if (type.equals("place")) {
             renderTemplate("ControllerUser/formContentPlace.html", travelId, findoraId);
+        } else if (type.equals("image")) {
+            renderTemplate("ControllerUser/formContentImage.html", travelId, findoraId);
+        } else if (type.equals("movie")) {
+            renderTemplate("ControllerUser/formContentMovie.html", travelId, findoraId);
         }
     }
 
@@ -45,6 +102,12 @@ public class ControllerUser extends Controller {
         } else if (type.equals("place")) {
             TravelPlace travelPlace = (TravelPlace) TravelPlace.find("byContentId", contentId).fetch().get(0);
             renderTemplate("ControllerUser/formContentPlace.html", travelId, findoraId, travelPlace);
+        } else if (type.equals("image")) {
+            TravelImage travelImage = (TravelImage) TravelImage.find("byContentId", contentId).fetch().get(0);
+            renderTemplate("ControllerUser/formContentImage.html", travelId, findoraId, travelImage);
+        } else if (type.equals("movie")) {
+            TravelMovie travelMovie = (TravelMovie) TravelMovie.find("byContentId", contentId).fetch().get(0);
+            renderTemplate("ControllerUser/formContentMovie.html", travelId, findoraId, travelMovie);
         }
     }
 
@@ -130,6 +193,102 @@ public class ControllerUser extends Controller {
             travelPlace.setLongitude(Double.parseDouble(longitude));
             travelPlace.setDateModification(new Date());
             travelPlace.save();
+        } else {
+            error(401, "Not allowed to edit this content " + user.getEmail() + ".");
+        }
+    }
+
+    public static void addContentImage(int contentId, int travelId, int findoraId, String description, Upload data) {
+        Findora findora = (Findora) Findora.find("byFindoraId", findoraId).fetch().get(0);
+        Travel travel = (Travel) Travel.find("byTravelId", travelId).fetch().get(0);
+        User user = User.find("byEmail", Security.connected()).first();
+
+        if (!UserTools.checkTravelFindoraUser(findora, travel, user)) {
+            error(401, "Not allowed to add content in this story. " + user.getEmail());
+        }
+
+        if (contentId != -1) {
+            editContentImage(contentId, description);
+            return;
+        }
+
+        TravelImage travelImage = new TravelImage();
+        travelImage.setDescription(description);
+        travelImage.setDateCreation(new Date());
+        //todo check content type
+        Logger.info(data.getContentType());
+        Logger.info(data.getFieldName());
+        Logger.info(data.getFileName());
+        travelImage.setContentType(data.getContentType());
+        travelImage.setFileName(data.getFileName());
+        travelImage.setFile(data.asBytes());
+
+        travelImage.setTravel(travel);
+        travelImage.setFindora(findora);
+        travelImage.save();
+        travel.getContents().add(travelImage);
+        travel.save();
+        findora.getContents().add(travelImage);
+        findora.save();
+        user.getContents().add(travelImage);
+        findora.save();
+    }
+
+    public static void editContentImage(int contentId, String description) {
+        User user = User.find("byEmail", Security.connected()).first();
+        TravelImage travelImage = (TravelImage) TravelImage.find("byContentId", contentId).fetch().get(0);
+        if (travelImage.getUser().getUserId() == user.getUserId()) {
+            travelImage.setDescription(description);
+            travelImage.setDateModification(new Date());
+            travelImage.save();
+        } else {
+            error(401, "Not allowed to edit this content " + user.getEmail() + ".");
+        }
+    }
+
+    public static void addContentMovie(int contentId, int travelId, int findoraId, String description, Upload data) {
+        Findora findora = (Findora) Findora.find("byFindoraId", findoraId).fetch().get(0);
+        Travel travel = (Travel) Travel.find("byTravelId", travelId).fetch().get(0);
+        User user = User.find("byEmail", Security.connected()).first();
+
+        if (!UserTools.checkTravelFindoraUser(findora, travel, user)) {
+            error(401, "Not allowed to add content in this story. " + user.getEmail());
+        }
+
+        if (contentId != -1) {
+            editContentMovie(contentId, description);
+            return;
+        }
+
+        TravelMovie travelMovie = new TravelMovie();
+        travelMovie.setDescription(description);
+        travelMovie.setDateCreation(new Date());
+        //todo check content type
+        Logger.info(data.getContentType());
+        Logger.info(data.getFieldName());
+        Logger.info(data.getFileName());
+        travelMovie.setContentType(data.getContentType());
+        travelMovie.setFileName(data.getFileName());
+        travelMovie.setFile(data.asBytes());
+
+        travelMovie.setTravel(travel);
+        travelMovie.setFindora(findora);
+        travelMovie.save();
+        travel.getContents().add(travelMovie);
+        travel.save();
+        findora.getContents().add(travelMovie);
+        findora.save();
+        user.getContents().add(travelMovie);
+        findora.save();
+    }
+
+    public static void editContentMovie(int contentId, String description) {
+        User user = User.find("byEmail", Security.connected()).first();
+        TravelMovie travelMovie = (TravelMovie) TravelMovie.find("byContentId", contentId).fetch().get(0);
+        if (travelMovie.getUser().getUserId() == user.getUserId()) {
+            travelMovie.setDescription(description);
+            travelMovie.setDateModification(new Date());
+            travelMovie.save();
         } else {
             error(401, "Not allowed to edit this content " + user.getEmail() + ".");
         }

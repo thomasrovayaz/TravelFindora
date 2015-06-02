@@ -1,11 +1,14 @@
 package controllers;
 
+import models.Findora;
 import models.User;
 import play.mvc.Controller;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import models.User;
+
+import java.util.List;
 
 public class Application extends Controller {
 
@@ -14,7 +17,8 @@ public class Application extends Controller {
     }
 
     public static void index() {
-        render();
+        List<Findora> findoras = Findora.findAll();
+        render(findoras);
     }
 
     public static void login() {

@@ -147,6 +147,7 @@ public class User extends GenericModel {
     
     public String toString() {
         return this.getEmail();
+    }
 
     public Set<Content> getContents() {
         return contents;
