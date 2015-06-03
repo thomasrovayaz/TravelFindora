@@ -24,7 +24,7 @@ public class TravelMedia extends Content {
     @MaxSize(10000)
 	private String description;
 
-    public Blob file;
+    public byte[] file;
     public String fileName;
     public String contentType;
 
@@ -36,13 +36,12 @@ public class TravelMedia extends Content {
         this.description = description;
     }
 
-    public File getFile() {
-        return file.getFile();
+    public byte[] getFile() {
+        return file;
     }
 
-    public void setFile(File file) throws FileNotFoundException {
-        this.file = new Blob();
-        this.file.set (new FileInputStream(file), MimeTypes.getContentType(file.getName()));
+    public void setFile(byte[] file) throws FileNotFoundException {
+        this.file = file;
     }
 
     public String getContentType() {

@@ -224,7 +224,7 @@ public class ControllerUser extends Controller {
         Logger.info(data.getFileName());
         travelImage.setContentType(data.getContentType());
         travelImage.setFileName(data.getFileName());
-        travelImage.setFile(data.asFile());
+        travelImage.setFile(data.asBytes());
 
         travelImage.setTravel(travel);
         travelImage.setFindora(findora);
@@ -272,7 +272,7 @@ public class ControllerUser extends Controller {
         Logger.info(data.getFileName());
         travelMovie.setContentType(data.getContentType());
         travelMovie.setFileName(data.getFileName());
-        travelMovie.setFile(data.asFile());
+        travelMovie.setFile(data.asBytes());
 
         travelMovie.setTravel(travel);
         travelMovie.setFindora(findora);
