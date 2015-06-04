@@ -4,6 +4,7 @@ import models.Commentaire;
 import models.Findora;
 import models.Travel;
 import models.TravelFindora;
+import models.TravelLike;
 import models.TravelUser;
 import models.User;
 import play.data.validation.Required;
@@ -14,10 +15,13 @@ import java.sql.SQLException;
 import models.User;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-
+import org.joda.time.Days;
 public class Application extends Controller {
 
     public static void signIn(){
@@ -61,14 +65,27 @@ public class Application extends Controller {
         	ts.add(t.getTravel());
         }
         Set<Integer> userIds = new HashSet<Integer>();
-        int likes = 0;
+     //   Set<Integer> likersIds = new HashSet<Integer>();
         List<Commentaire> com = new ArrayList<Commentaire>();
+        
         for(Travel t: ts){
         	for(TravelUser tu: t.getTravellers())
-        	userIds.add(tu.getTraveller().getUserId());
-        	com.addAll(t.getCommentaires());
+        		userIds.add(tu.getTraveller().getUserId());
+        com.addAll(t.getCommentaires());
+     
+     //   	for(TravelLike tl: t.getLikers())
+     //   		likersIds.add(tl.getLikerTravel().getUserId());
         }
         int nbUsers = userIds.size();
+      //  int likes = likersIds.size();
+      
+        Collections.sort(com, new Comparator() {
+        	public int compare(Object A, Object B) {
+        	return ((Commentaire)A).getDateCreation()
+        	.compareTo(((Commentaire)B).getDateCreation());
+        	}
+        	});
+        
         render(name, nbUsers, com);
     	}
     	else render();
@@ -77,5 +94,4 @@ public class Application extends Controller {
     public static void searchVal(String query){
     	search(query);    	
     }
-
 }
