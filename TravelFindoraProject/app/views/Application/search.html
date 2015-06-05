@@ -1,0 +1,28 @@
+#{extends 'main.html' /}
+#{set title:'Search' /}
+
+#{form @searchVal()}
+    <p>
+        <label for="query">TravelFindora</label>
+        <input type="text" name="query" id="query" />
+    </p>
+    <p>
+        	<input type="submit" value="Search" />
+    </p>
+#{/form}
+
+#{if nbUsers}
+   <h1>${name}</h1>
+   <p>Visité par ${nbUsers} Travellers</p>
+		<ul>
+    		#{list items:com, as:'commentaire' }
+     		   <p>${commentaire.text}</p>
+     		   <p>${commentaire.user} - ${ commentaire.dateCreation.since() }</p>
+   			 #{/list}
+		</ul>
+#{/if}
+#{else}
+    <div class="empty">
+        There are no Findoras like that.
+    </div>
+#{/else}
