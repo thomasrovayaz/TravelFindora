@@ -67,7 +67,52 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="98" selection-start="985" selection-end="985" vertical-scroll-proportion="-18.75" vertical-offset="75" max-vertical-offset="990">
+            <state line="12" column="34" selection-start="295" selection-end="295" vertical-scroll-proportion="-5.625" vertical-offset="45" max-vertical-offset="1005">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomGoogleMapMarker.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/CustomGoogleMapMarker.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="40" selection-start="967" selection-end="967" vertical-scroll-proportion="0.0" vertical-offset="168" max-vertical-offset="1320">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Findora.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/Findora.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="31" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0" vertical-offset="100" max-vertical-offset="990">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TravelLike.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/TravelLike.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="37" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/Application/search.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="64" selection-start="192" selection-end="192" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="495">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dependencies.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/dependencies.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="0" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
               <folding />
             </state>
           </provider>
@@ -76,18 +121,31 @@
       <file leaf-file-name="initial-data.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf/initial-data.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="30" selection-start="847" selection-end="847" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
-              <folding>
-                <marker date="1433228212142" expanded="true" signature="766:878" placeholder="Findora(clusesfindora):" />
-              </folding>
+            <state line="305" column="36" selection-start="7598" selection-end="7634" vertical-scroll-proportion="0.0" vertical-offset="1035" max-vertical-offset="4695">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomGoogleMapMarker.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/CustomGoogleMapMarker.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="41" selection-start="310" selection-end="310" vertical-scroll-proportion="0.2631579" vertical-offset="0" max-vertical-offset="960">
+      <file leaf-file-name="TravelFindora.Findora" pinned="false" current="true" current-in-tab="true">
+        <entry file="dbDummy://dbtable:/5d3a5420/0c52b17a-08ba-42e4-b4c4-e4454c6b3d42/TravelFindora..Findora">
+          <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TravelFindora.Commentaire" pinned="false" current="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/5d3a5420/0c52b17a-08ba-42e4-b4c4-e4454c6b3d42/TravelFindora..Commentaire">
+          <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
               <folding />
             </state>
           </provider>
@@ -96,8 +154,14 @@
       <file leaf-file-name="Application.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="23" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-              <folding />
+            <state line="29" column="36" selection-start="716" selection-end="716" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1230">
+              <folding>
+                <element signature="e#1126#1134#0" expanded="true" />
+                <element signature="e#1257#1266#0" expanded="true" />
+                <element signature="e#1374#1387#0" expanded="true" />
+                <element signature="e#1805#2003#0" expanded="true" />
+                <element signature="e#1991#1992#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -139,16 +203,18 @@
         <option value="$PROJECT_DIR$/app/views/ControllerUser/formContentPlace.html" />
         <option value="$PROJECT_DIR$/app/views/ControllerUser/formContentStory.html" />
         <option value="$PROJECT_DIR$/app/models/TravelMedia.java" />
-        <option value="$PROJECT_DIR$/app/views/ControllerUser/formContentImage.html" />
         <option value="$PROJECT_DIR$/app/views/ControllerUser/formContentMovie.html" />
-        <option value="$PROJECT_DIR$/public/stylesheets/main.css" />
         <option value="$PROJECT_DIR$/conf/routes" />
-        <option value="$PROJECT_DIR$/app/controllers/Application.java" />
         <option value="$PROJECT_DIR$/app/models/Findora.java" />
         <option value="$PROJECT_DIR$/app/controllers/ControllerUser.java" />
-        <option value="$PROJECT_DIR$/conf/initial-data.yml" />
+        <option value="$PROJECT_DIR$/public/javascripts/jquery_before.js" />
         <option value="$PROJECT_DIR$/app/views/Application/index.html" />
+        <option value="$PROJECT_DIR$/conf/initial-data.yml" />
+        <option value="$PROJECT_DIR$/app/views/ControllerUser/formContentImage.html" />
+        <option value="$PROJECT_DIR$/public/stylesheets/main.css" />
         <option value="$PROJECT_DIR$/public/javascripts/CustomGoogleMapMarker.js" />
+        <option value="$PROJECT_DIR$/app/controllers/Application.java" />
+        <option value="$PROJECT_DIR$/app/views/Application/search.html" />
       </list>
     </option>
   </component>
@@ -722,12 +788,12 @@
       <workItem from="1432567653052" duration="644000" />
       <workItem from="1432569260491" duration="44761000" />
       <workItem from="1433060885828" duration="2794000" />
-      <workItem from="1433174798175" duration="7976000" />
+      <workItem from="1433174798175" duration="23562000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57145000" />
+    <option name="totallyTimeSpent" value="72731000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
@@ -785,13 +851,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="19" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="315">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/TravelMovie.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="27" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
@@ -886,16 +945,8 @@
     <entry file="file://$PROJECT_DIR$/app/models/TravelStory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="24" selection-start="163" selection-end="168" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
-          <folding>
-            <element signature="e#200#201#0" expanded="false" />
-            <element signature="e#228#229#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/dependencies.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="112" selection-end="112" vertical-scroll-proportion="0.10368664" vertical-offset="0" max-vertical-offset="868" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/conf/application.conf">
@@ -948,10 +999,7 @@
     <entry file="file://$PROJECT_DIR$/app/models/TravelPlace.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="35" selection-start="665" selection-end="665" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-          <folding>
-            <element signature="e#519#520#0" expanded="false" />
-            <element signature="e#559#560#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1231,18 +1279,7 @@
         <state line="42" column="34" selection-start="1204" selection-end="1204" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1500">
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#3027#3028#0" expanded="false" />
-            <element signature="e#3058#3059#0" expanded="false" />
-            <element signature="e#3112#3113#0" expanded="false" />
-            <element signature="e#3152#3153#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/UserTools.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="93" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1251,18 +1288,6 @@
         <state line="36" column="27" selection-start="1112" selection-end="1112" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="1290">
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#1878#1879#0" expanded="false" />
-            <element signature="e#1905#1906#0" expanded="false" />
-            <element signature="e#1943#1944#0" expanded="false" />
-            <element signature="e#1975#1976#0" expanded="false" />
-            <element signature="e#2012#2013#0" expanded="false" />
-            <element signature="e#2047#2048#0" expanded="false" />
-            <element signature="e#2101#2102#0" expanded="false" />
-            <element signature="e#2149#2150#0" expanded="false" />
-            <element signature="e#2190#2191#0" expanded="false" />
-            <element signature="e#2229#2230#0" expanded="false" />
-            <element signature="e#2291#2292#0" expanded="false" />
-            <element signature="e#2347#2348#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1277,24 +1302,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/5d3a5420/0c52b17a-08ba-42e4-b4c4-e4454c6b3d42/TravelFindora..Commentaire">
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Commentaire.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="32" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/ControllerUser/formComment.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="3" selection-start="271" selection-end="481" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="495">
           <folding />
         </state>
       </provider>
@@ -1328,30 +1338,9 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/TravelMedia.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="29" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/ControllerUser/formContentImage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="8" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="405">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/ControllerUser/formContentMovie.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="81" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="405">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="892">
           <folding />
         </state>
       </provider>
@@ -1378,25 +1367,6 @@
             <element signature="e#772#773#0" expanded="false" />
             <element signature="e#809#810#0" expanded="false" />
             <element signature="e#845#846#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/TravelLike.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="35" selection-start="275" selection-end="286" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#441#442#0" expanded="false" />
-            <element signature="e#475#476#0" expanded="false" />
-            <element signature="e#527#528#0" expanded="false" />
-            <element signature="e#573#574#0" expanded="false" />
-            <element signature="e#612#613#0" expanded="false" />
-            <element signature="e#647#648#0" expanded="false" />
-            <element signature="e#703#704#0" expanded="false" />
-            <element signature="e#751#752#0" expanded="false" />
-            <element signature="e#787#788#0" expanded="false" />
-            <element signature="e#822#823#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1445,13 +1415,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Findora.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="31" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/Security.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="34" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
@@ -1468,32 +1431,125 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/initial-data.yml">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/jquery_before.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="30" selection-start="847" selection-end="847" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+        <state line="41" column="18" selection-start="1352" selection-end="1352" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
           <folding>
-            <marker date="1433228212142" expanded="true" signature="766:878" placeholder="Findora(clusesfindora):" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
+    <entry file="file://$PROJECT_DIR$/app/models/TravelMedia.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="23" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+        <state line="47" column="0" selection-start="890" selection-end="890" vertical-scroll-proportion="0.53932583" vertical-offset="0" max-vertical-offset="890">
+          <folding>
+            <element signature="e#487#488#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/ControllerUser/formComment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="22" selection-start="294" selection-end="294" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="495">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/ControllerUser/formContentImage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="12" selection-start="425" selection-end="425" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="405">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="23" selection-start="1102" selection-end="1102" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5160">
+          <folding>
+            <marker date="1433246116714" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="98" selection-start="985" selection-end="985" vertical-scroll-proportion="-18.75" vertical-offset="75" max-vertical-offset="990">
+        <state line="12" column="34" selection-start="295" selection-end="295" vertical-scroll-proportion="-5.625" vertical-offset="45" max-vertical-offset="1005">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/CustomGoogleMapMarker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="41" selection-start="310" selection-end="310" vertical-scroll-proportion="0.2631579" vertical-offset="0" max-vertical-offset="960">
+        <state line="34" column="40" selection-start="967" selection-end="967" vertical-scroll-proportion="0.0" vertical-offset="168" max-vertical-offset="1320">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Findora.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="31" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0" vertical-offset="100" max-vertical-offset="990">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/TravelLike.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="37" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="36" selection-start="716" selection-end="716" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1230">
+          <folding>
+            <element signature="e#1126#1134#0" expanded="true" />
+            <element signature="e#1257#1266#0" expanded="true" />
+            <element signature="e#1374#1387#0" expanded="true" />
+            <element signature="e#1805#2003#0" expanded="true" />
+            <element signature="e#1991#1992#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/Application/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="64" selection-start="192" selection-end="192" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="495">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/dependencies.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/5d3a5420/0c52b17a-08ba-42e4-b4c4-e4454c6b3d42/TravelFindora..Commentaire">
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/initial-data.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="305" column="36" selection-start="7598" selection-end="7634" vertical-scroll-proportion="0.0" vertical-offset="1035" max-vertical-offset="4695">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/5d3a5420/0c52b17a-08ba-42e4-b4c4-e4454c6b3d42/TravelFindora..Findora">
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
           <folding />
         </state>
       </provider>

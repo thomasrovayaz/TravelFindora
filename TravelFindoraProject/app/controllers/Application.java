@@ -1,27 +1,9 @@
 package controllers;
 
-import models.Commentaire;
-import models.Findora;
-import models.Travel;
-import models.TravelFindora;
-import models.TravelLike;
-import models.TravelUser;
-import models.User;
-import play.data.validation.Required;
+import models.*;
 import play.mvc.Controller;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import models.User;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.Date;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-import org.joda.time.Days;
+import java.util.*;
 public class Application extends Controller {
 
     public static void signIn(){
