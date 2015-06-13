@@ -1,0 +1,50 @@
+<nav class=" light-blue darken-1">
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo">
+            <img id="logo" src="@{'public/images/logo-0.png'}">
+        </a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li style="background-color: rgba(0,0,0,0) !important;">
+                #{form @searchVal()}
+                    <div class="input-field">
+                        #{if f}
+                            <input type="search" name="query" id="query" value="${f.name}" required/>
+                        #{/if}
+                        #{else}
+                            <input type="search" name="query" id="query" placeholder="Trouve un findora !" required/>
+                        #{/else}
+                        <label for="search"><i class="mdi-action-search"></i></label>
+                        <i class="mdi-navigation-close"></i>
+                    </div>
+                #{/form}
+            </li>
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="components.html">Components</a></li>
+            <li><a href="javascript.html">JavaScript</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+            <li>
+            #{form @searchVal()}
+                <div class="input-field">
+                    #{if f}
+                        <input type="search" name="query" id="query" value="${f.name}" required/>
+                    #{/if}
+                    #{else}
+                        <input type="search" name="query" id="query" placeholder="Trouve un findora !" required/>
+                    #{/else}
+                    <label for="search"><i class="mdi-action-search"></i></label>
+                    <i class="mdi-navigation-close"></i>
+                </div>
+            #{/form}
+            </li>
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="components.html">Components</a></li>
+            <li><a href="javascript.html">Javascript</a></li>
+        </ul>
+    </div>
+</nav>
+
+<script type="text/javascript">
+    $(".button-collapse").sideNav();
+</script>
