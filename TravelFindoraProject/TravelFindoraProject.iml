@@ -6,6 +6,9 @@
       <sourceFolder url="file://$MODULE_DIR$/app" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
     </content>
+    <content url="file://$MODULE_DIR$/../../play-1.2.7.2/modules/secure">
+      <sourceFolder url="file://$MODULE_DIR$/../../play-1.2.7.2/modules/secure/app" isTestSource="false" />
+    </content>
     <orderEntry type="jdk" jdkName="1.6" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="inheritedJdk" />
@@ -20,25 +23,24 @@
     <orderEntry type="module-library">
       <library name="PlayFramework Dependencies">
         <CLASSES>
-          <root url="file://$USER_HOME$/Documents/play-1.2.7.2/framework/lib" />
+          <root url="file://$MODULE_DIR$/../../play-1.2.7.2/framework/lib" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
-        <jarDirectory url="file://$USER_HOME$/Documents/play-1.2.7.2/framework/lib" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/../../play-1.2.7.2/framework/lib" recursive="false" />
       </library>
     </orderEntry>
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Documents/play-1.2.7.2/framework/play-1.2.7.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../play-1.2.7.2/framework/play-1.2.7.2.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="file://$USER_HOME$/Documents/play-1.2.7.2/framework/src" />
+          <root url="file://$MODULE_DIR$/../../play-1.2.7.2/framework/src" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="library" name="materialize" level="application" />
   </component>
 </module>
-
