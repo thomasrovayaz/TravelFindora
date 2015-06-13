@@ -16,8 +16,14 @@ public class Application extends Controller {
     }
 
     public static void index() {
+        User user = User.find("byEmail", Security.connected()).first();
+        render(user);
+    }
+
+    public static void explore() {
+        User user = User.find("byEmail", Security.connected()).first();
         List<Findora> findoras = Findora.findAll();
-        render(findoras);
+        render(user, findoras);
     }
 
     public static void authenticate(String username, String password) {
@@ -40,9 +46,8 @@ public class Application extends Controller {
     }
 
     public static void search(String name){
-        System.out.println(name);
+        User user = User.find("byEmail", Security.connected()).first();
         Findora f = Findora.find("byName", name).first();
-        System.out.println(f);
 
         if(f!=null){
             Set<TravelFindora> tfs = f.getTravels();
@@ -71,10 +76,10 @@ public class Application extends Controller {
                             .compareTo(((Commentaire)B).getDateCreation());
                 }
             });
-
-            render(f, nbUsers, com);
+            Set<Content> con = f.getContents();
+            render(f, nbUsers, con, user);
         }
-        else render();
+        else render(user);
     }
 
     public static void searchVal(String query){

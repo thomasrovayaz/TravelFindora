@@ -26,8 +26,9 @@ public class ControllerUser extends Controller {
         return users.size() == 1;
     }
 
-    public static void index() {
-        render();
+    public static void profile() {
+        User user = User.find("byEmail", Security.connected()).first();
+        render(user);
     }
 
     /**gestion like */
@@ -43,6 +44,7 @@ public class ControllerUser extends Controller {
         content.getLikers().add(contentLike);
         content.save();
     }
+
     public static void likeTravel(int travelId) {
         TravelLike travelLike = new TravelLike();
         Travel travel = (Travel) Travel.find("byTravelId", travelId).fetch().get(0);
@@ -83,34 +85,36 @@ public class ControllerUser extends Controller {
 
     /**gestion des contents */
     public static void formContent(String type) {
-        int travelId = 4;
-        int findoraId = 3;
+        User user = User.find("byEmail", Security.connected()).first();
+        int travelId = 1;
+        int findoraId = 1;
         if (type.equals("story")) {
-            renderTemplate("ControllerUser/formContentStory.html", travelId, findoraId);
+            renderTemplate("ControllerUser/formContentStory.html", travelId, findoraId, user);
         } else if (type.equals("place")) {
-            renderTemplate("ControllerUser/formContentPlace.html", travelId, findoraId);
+            renderTemplate("ControllerUser/formContentPlace.html", travelId, findoraId, user);
         } else if (type.equals("image")) {
-            renderTemplate("ControllerUser/formContentImage.html", travelId, findoraId);
+            renderTemplate("ControllerUser/formContentImage.html", travelId, findoraId, user);
         } else if (type.equals("movie")) {
-            renderTemplate("ControllerUser/formContentMovie.html", travelId, findoraId);
+            renderTemplate("ControllerUser/formContentMovie.html", travelId, findoraId, user);
         }
     }
 
     public static void formEditContent(String type, int contentId) {
-        int travelId = 4;
-        int findoraId = 3;
+        User user = User.find("byEmail", Security.connected()).first();
+        int travelId = 1;
+        int findoraId = 1;
         if (type.equals("story")) {
             TravelStory travelStory = (TravelStory) TravelStory.find("byContentId", contentId).fetch().get(0);
-            renderTemplate("ControllerUser/formContentStory.html", travelId, findoraId, travelStory);
+            renderTemplate("ControllerUser/formContentStory.html", travelId, findoraId, travelStory, user);
         } else if (type.equals("place")) {
             TravelPlace travelPlace = (TravelPlace) TravelPlace.find("byContentId", contentId).fetch().get(0);
-            renderTemplate("ControllerUser/formContentPlace.html", travelId, findoraId, travelPlace);
+            renderTemplate("ControllerUser/formContentPlace.html", travelId, findoraId, travelPlace, user);
         } else if (type.equals("image")) {
             TravelImage travelImage = (TravelImage) TravelImage.find("byContentId", contentId).fetch().get(0);
-            renderTemplate("ControllerUser/formContentImage.html", travelId, findoraId, travelImage);
+            renderTemplate("ControllerUser/formContentImage.html", travelId, findoraId, travelImage, user);
         } else if (type.equals("movie")) {
             TravelMovie travelMovie = (TravelMovie) TravelMovie.find("byContentId", contentId).fetch().get(0);
-            renderTemplate("ControllerUser/formContentMovie.html", travelId, findoraId, travelMovie);
+            renderTemplate("ControllerUser/formContentMovie.html", travelId, findoraId, travelMovie, user);
         }
     }
 
@@ -299,13 +303,15 @@ public class ControllerUser extends Controller {
 
     /**gestion des commentaires*/
     public static void formEditComment(int commentId) {
+        User user = User.find("byEmail", Security.connected()).first();
         Commentaire commentaire = (Commentaire) Commentaire.find("byCommentaireId", commentId).fetch().get(0);
-        renderTemplate("ControllerUser/formComment.html", commentaire);
+        renderTemplate("ControllerUser/formComment.html", commentaire, user);
     }
 
     public static void formComment() {
+        User user = User.find("byEmail", Security.connected()).first();
         int contentId = 6;
-        render(contentId);
+        render(contentId, user);
     }
 
     public static void deleteComment(int commentId) {

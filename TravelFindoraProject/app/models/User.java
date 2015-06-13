@@ -20,6 +20,8 @@ public class User extends GenericModel {
     
     @Required
     private String firstname;
+
+    private Gender gender;
     
     @Required
     @Email
@@ -155,5 +157,13 @@ public class User extends GenericModel {
 
     public void setContents(Set<Content> contents) {
         this.contents = contents;
+    }
+
+    public Gender getGender() {
+        return gender;
+    }
+
+    public void setGender(Gender gender) {
+        this.gender = gender;
     }
 }
