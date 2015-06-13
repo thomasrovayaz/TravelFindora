@@ -1,0 +1,67 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+#{set 'moreScripts'}
+    #{script 'jquery_before.js'/}
+<script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxtsdrVK6ZbFJTBebvoRID-69LkSUwiMA">
+</script>
+    #{script 'CustomGoogleMapMarker.js'/}
+<script type="text/javascript">
+
+    function initialize() {
+
+        var myLatlng = new google.maps.LatLng(50.0755381,14.4378005);
+        var mapOptions = {
+            zoom: 5,
+            center: myLatlng,
+            disableDefaultUI: false
+        };
+
+        var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+        /*
+        // Example standard marker
+        var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+            title: 'Hello World!'
+        });
+        */
+
+        $( "#listFindora").find("li" ).each(function( index ) {
+            var findoraLatlng = new google.maps.LatLng($(this).attr("lat"), $(this).attr("long"));
+
+            overlay = new CustomMarker(
+                    findoraLatlng,
+                    map,
+                    {
+                        marker_id: $(this).attr("id"),
+                        nb_travel: $(this).attr("nb_travel")
+                    }
+            );
+        });
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+#{/set}
+<body>
+<div id="map-canvas"></div>
+
+<ul id="listFindora">
+#{list items:findoras, as:'findora'}
+    <li id="${findora.findoraId}" nb_travel="${findora.travels.size()}" lat="${findora.latitude}" long="${findora.longitude}" name="${findora.name}">
+
+        <ul>
+            #{list items:findoras, as:'findora'}
+                <li id="${findora.findoraId}" nb_travel="${findora.travels.size()}" lat="${findora.latitude}" long="${findora.longitude}" name="${findora.name}">
+
+                </li>
+            #{/list}
+        </ul>
+    </li>
+#{/list}
+</ul>
+
+</body>
