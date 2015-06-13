@@ -10,6 +10,10 @@ public class Application extends Controller {
         render();
     }
 
+    public static void test() {
+        render();
+    }
+
     public static void index() {
         List<Findora> findoras = Findora.findAll();
         render(findoras);
@@ -26,16 +30,15 @@ public class Application extends Controller {
     }
 
     public static void register(String firstname, String lastname, String email, String password) {
-        User newUser = new User();
-        newUser.setFirstname(firstname);
-        newUser.setLastname(lastname);
-        newUser.setEmail(email);
-        newUser.setPassword(password);
+    User newUser = new User();
+    newUser.setFirstname(firstname);
+    newUser.setLastname(lastname);
+    newUser.setEmail(email);
+    newUser.setPassword(password);
+    newUser.save();
 
-        newUser.save();
-
-        session.put("email",email);
-        Application.index();
+    session.put("email",email);
+    Application.index();
     }
 
     public static void search(String name){

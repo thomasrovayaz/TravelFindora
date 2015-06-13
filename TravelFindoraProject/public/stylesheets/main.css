@@ -1,3 +1,18 @@
+
+nav #mobile-demo .input-field label.active i, nav #mobile-demo .input-field input {
+    color: #000 !important;
+}
+
+nav #mobile-demo li:first-child {
+    background-color: rgba(0,0,0,0) !important;
+}
+
+nav #logo {
+    height: 48px;
+    margin-top: 8px;
+    margin-left: 20px;
+}
+
 .pin {
     width: 30px;
     height: 30px;
