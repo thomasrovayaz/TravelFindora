@@ -36,6 +36,7 @@ public abstract class Content extends GenericModel {
     @OneToMany(mappedBy = "likingContent", cascade = CascadeType.ALL)
     private Set<ContentLike> likers;
 
+    @Required
     private Date dateCreation;
     private Date dateModification;
 
