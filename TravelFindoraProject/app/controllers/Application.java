@@ -10,6 +10,10 @@ public class Application extends Controller {
         render();
     }
 
+    public static void test() {
+        render();
+    }
+
     public static void index() {
         List<Findora> findoras = Findora.findAll();
         render(findoras);
