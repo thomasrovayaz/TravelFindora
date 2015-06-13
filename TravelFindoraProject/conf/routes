@@ -15,6 +15,9 @@ GET     /login                                  Application.login
 # Search 
 GET 	/search									Application.search
 
+
+GET 	/test									Application.test
+
 # Import Secure routes
 *       /                                       module:secure
 
