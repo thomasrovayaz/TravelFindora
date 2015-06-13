@@ -7,10 +7,27 @@ nav #mobile-demo li:first-child {
     background-color: rgba(0,0,0,0) !important;
 }
 
-nav #logo {
+nav .logo {
     height: 48px;
     margin-top: 8px;
     margin-left: 20px;
+}
+
+nav .profile_picture {
+    height: 48px;
+    margin-top: 8px;
+    margin-left: 20px;
+}
+
+#map-canvas {
+    overflow-x: visible !important;
+    overflow-y: hidden;
+    margin: auto !important;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 64px;
+    left: 0;
 }
 
 .pin {
