@@ -1,9 +1,12 @@
 package models;
 
 import javax.persistence.Entity;
+import java.io.FileNotFoundException;
 
 /** * Created by thomas on 25/05/15. */
-@Entity public class TravelMedia extends Content { private String description; public byte[] file; public String fileName; public String contentType;
+@Entity
+public class TravelMedia extends Content {
+    private String description;
     public byte[] file;
     public String fileName;
     public String contentType;
@@ -13,10 +16,6 @@ import javax.persistence.Entity;
     public void setDescription(String description) { this.description = description; }
 
     public byte[] getFile() { return file; }
-    
-    public byte[] getFile() {
-        return file;
-    }
 
     public void setFile(byte[] file) throws FileNotFoundException {
         this.file = file;
@@ -27,7 +26,7 @@ import javax.persistence.Entity;
     public void setContentType(String contentType) { this.contentType = contentType; }
 
     public String getFileName() {
-
-        return fileName; }
+        return fileName;
+    }
 
     public void setFileName(String fileName) { this.fileName = fileName; } }
