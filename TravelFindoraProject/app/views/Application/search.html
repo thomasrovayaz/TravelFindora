@@ -6,6 +6,7 @@
         <label for="query">TravelFindora</label>
 #{if f}
         <input type="text" name="query" id="query" value="${f.name}" />
+        
 #{/if}
 #{else}
         <input type="text" name="query" id="query" />
@@ -19,10 +20,12 @@
 #{if f}
    <h1>${f.name}</h1>
    <p>Visité par ${nbUsers} Travellers</p>
-		<ul>
-    		#{list items:com, as:'commentaire' }
-     		   <p>${commentaire.text}</p>
-     		   <p>${commentaire.user} - ${ commentaire.dateCreation.since() }</p>
+   <p>${f.nbHab} millions</p>
+   <p>${f.size} km&sup2;</p>
+   <p>${f.description}</p>
+		<ul> blop
+    		#{list items:con, as:'contentt' }
+     		      #{displayContent content:contentt, as:'full' /}
    			#{/list}
 		</ul>
 #{/if}

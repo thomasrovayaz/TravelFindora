@@ -71,7 +71,8 @@ public class Application extends Controller {
                 }
             });
 
-            render(f, nbUsers, com);
+            Set<Content> con = f.getContents();
+            render(f, nbUsers, con);
         }
         else render();
     }
