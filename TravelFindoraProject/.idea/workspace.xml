@@ -82,11 +82,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Findora.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Findora.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/Findora.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="23" selection-start="365" selection-end="369" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1470">
-              <folding />
+            <state line="26" column="21" selection-start="479" selection-end="479" vertical-scroll-proportion="0.33632287" vertical-offset="0" max-vertical-offset="1275">
+              <folding>
+                <element signature="e#1966#1967#0" expanded="true" />
+                <element signature="e#1994#1995#0" expanded="true" />
+                <element signature="e#2036#2037#0" expanded="true" />
+                <element signature="e#2070#2071#0" expanded="true" />
+                <element signature="e#2101#2102#0" expanded="true" />
+                <element signature="e#2128#2129#0" expanded="true" />
+                <element signature="e#2168#2169#0" expanded="true" />
+                <element signature="e#2200#2201#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -130,16 +139,27 @@
       <file leaf-file-name="initial-data.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf/initial-data.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="23" selection-start="1996" selection-end="1996" vertical-scroll-proportion="0.0" vertical-offset="1380" max-vertical-offset="4695">
+            <state line="238" column="32" selection-start="5890" selection-end="5890" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4695">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Application.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Application.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="13" selection-start="1323" selection-end="1323" vertical-scroll-proportion="0.39461884" vertical-offset="353" max-vertical-offset="1245">
+            <state line="2" column="7" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1290">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Content.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/Content.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="7" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080">
               <folding />
             </state>
           </provider>
@@ -184,7 +204,6 @@
         <option value="$PROJECT_DIR$/app/models/TravelMedia.java" />
         <option value="$PROJECT_DIR$/app/views/ControllerUser/formContentMovie.html" />
         <option value="$PROJECT_DIR$/conf/routes" />
-        <option value="$PROJECT_DIR$/app/models/Findora.java" />
         <option value="$PROJECT_DIR$/app/controllers/ControllerUser.java" />
         <option value="$PROJECT_DIR$/public/javascripts/jquery_before.js" />
         <option value="$PROJECT_DIR$/conf/initial-data.yml" />
@@ -194,6 +213,7 @@
         <option value="$PROJECT_DIR$/app/views/Application/index.html" />
         <option value="$PROJECT_DIR$/public/javascripts/CustomGoogleMapMarker.js" />
         <option value="$PROJECT_DIR$/app/controllers/Application.java" />
+        <option value="$PROJECT_DIR$/app/models/Findora.java" />
       </list>
     </option>
   </component>
@@ -769,12 +789,12 @@
       <workItem from="1433060885828" duration="2794000" />
       <workItem from="1433174798175" duration="25444000" />
       <workItem from="1433764952166" duration="3686000" />
-      <workItem from="1434178562356" duration="859000" />
+      <workItem from="1434178562356" duration="1192000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79158000" />
+    <option name="totallyTimeSpent" value="79491000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
@@ -1251,15 +1271,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Content.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="27" selection-start="1112" selection-end="1112" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="1290">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/ControllerUser/formEditComment.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="4" selection-start="260" selection-end="357" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="360" />
@@ -1429,20 +1440,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/initial-data.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="23" selection-start="1996" selection-end="1996" vertical-scroll-proportion="0.0" vertical-offset="1035" max-vertical-offset="4695">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Findora.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="23" selection-start="365" selection-end="369" vertical-scroll-proportion="0.0" vertical-offset="100" max-vertical-offset="990">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/5d3a5420/0c52b17a-08ba-42e4-b4c4-e4454c6b3d42/TravelFindora..Findora">
       <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
         <state />
@@ -1481,8 +1478,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="13" selection-start="1323" selection-end="1323" vertical-scroll-proportion="0.39461884" vertical-offset="353" max-vertical-offset="1245">
+        <state line="2" column="7" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1290">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Content.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="7" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/initial-data.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="238" column="32" selection-start="5890" selection-end="5890" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4695">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Findora.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="21" selection-start="479" selection-end="479" vertical-scroll-proportion="0.33632287" vertical-offset="0" max-vertical-offset="1275">
+          <folding>
+            <element signature="e#1966#1967#0" expanded="true" />
+            <element signature="e#1994#1995#0" expanded="true" />
+            <element signature="e#2036#2037#0" expanded="true" />
+            <element signature="e#2070#2071#0" expanded="true" />
+            <element signature="e#2101#2102#0" expanded="true" />
+            <element signature="e#2128#2129#0" expanded="true" />
+            <element signature="e#2168#2169#0" expanded="true" />
+            <element signature="e#2200#2201#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
