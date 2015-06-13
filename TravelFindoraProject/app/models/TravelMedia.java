@@ -22,7 +22,7 @@ public class TravelMedia extends Content {
     @Required
     @MaxSize(10000)
     private String description;
-
+    
     public Blob file;
     public String fileName;
     public String contentType;
@@ -35,7 +35,10 @@ public class TravelMedia extends Content {
         this.description = description;
     }
     public File getFile() {
+    	if(file != null)
         return file.getFile();
+    	else return null;
+      
     }
 
     public void setFile(File file) throws FileNotFoundException {
