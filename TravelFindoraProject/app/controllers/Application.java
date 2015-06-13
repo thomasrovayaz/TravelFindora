@@ -39,7 +39,10 @@ public class Application extends Controller {
     }
     
     public static void search(String name){
-    	Findora f = Findora.find("name = ?", name).first();
+    	System.out.println(name);
+    	Findora f = Findora.find("byName", name).first();
+    	System.out.println(f);
+
     	if(f!=null){
         Set<TravelFindora> tfs = f.getTravels();
         List <Travel> ts = new ArrayList<Travel>();
@@ -68,7 +71,7 @@ public class Application extends Controller {
         	}
         	});
         
-        render(name, nbUsers, com);
+        render(f, nbUsers, com);
     	}
     	else render();
     }
