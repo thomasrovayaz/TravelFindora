@@ -4,15 +4,20 @@
 #{form @searchVal()}
     <p>
         <label for="query">TravelFindora</label>
-        <input type="text" name="query" id="query" value="${name}" />
+#{if f}
+        <input type="text" name="query" id="query" value="${f.name}" />
+#{/if}
+#{else}
+        <input type="text" name="query" id="query" />
+#{/else}
     </p>
     <p>
         	<input type="submit" value="Search" />
     </p>
 #{/form}
 
-#{if nbUsers}
-   <h1>${name}</h1>
+#{if f}
+   <h1>${f.name}</h1>
    <p>Visité par ${nbUsers} Travellers</p>
 		<ul>
     		#{list items:com, as:'commentaire' }
