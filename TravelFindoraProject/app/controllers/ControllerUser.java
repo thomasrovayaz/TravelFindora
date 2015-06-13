@@ -85,8 +85,8 @@ public class ControllerUser extends Controller {
     /**gestion des contents */
     public static void formContent(String type) {
         User user = User.find("byEmail", Security.connected()).first();
-        int travelId = 4;
-        int findoraId = 3;
+        int travelId = 1;
+        int findoraId = 1;
         if (type.equals("story")) {
             renderTemplate("ControllerUser/formContentStory.html", travelId, findoraId, user);
         } else if (type.equals("place")) {
@@ -100,8 +100,8 @@ public class ControllerUser extends Controller {
 
     public static void formEditContent(String type, int contentId) {
         User user = User.find("byEmail", Security.connected()).first();
-        int travelId = 4;
-        int findoraId = 3;
+        int travelId = 1;
+        int findoraId = 1;
         if (type.equals("story")) {
             TravelStory travelStory = (TravelStory) TravelStory.find("byContentId", contentId).fetch().get(0);
             renderTemplate("ControllerUser/formContentStory.html", travelId, findoraId, travelStory, user);
