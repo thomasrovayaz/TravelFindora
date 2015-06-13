@@ -213,6 +213,11 @@ public class ControllerUser extends Controller {
             error(401, "Not allowed to add content in this story. " + user.getEmail());
         }
 
+        if(!(data.getContentType().equals("image/png") || data.getContentType().equals("image/jpeg")
+        		|| data.getContentType().equals("image/gif") || data.getContentType().equals("image/x-png") 
+        		|| data.getContentType().equals("image/pjpeg") )){
+            error(401, "Not allowed to add content of this type in the story. ");
+        }
         if (contentId != -1) {
             editContentImage(contentId, description);
             return;
@@ -261,11 +266,16 @@ public class ControllerUser extends Controller {
             error(401, "Not allowed to add content in this story. " + user.getEmail());
         }
 
+        if(!data.getContentType().equals("video/mp4")){
+            error(401, "Not allowed to add content of this type in the story. ");
+        }
+        
         if (contentId != -1) {
             editContentMovie(contentId, description);
             return;
         }
-
+        
+        
         TravelMovie travelMovie = new TravelMovie();
         travelMovie.setDescription(description);
         travelMovie.setDateCreation(new Date());

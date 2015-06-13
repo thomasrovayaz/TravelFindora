@@ -38,6 +38,7 @@ public class TravelMedia extends Content {
     	if(file != null)
         return file.getFile();
     	else return null;
+    	
       
     }
 
