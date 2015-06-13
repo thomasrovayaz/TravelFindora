@@ -8,17 +8,20 @@
 #{/set}
 
 #{set 'moreScripts'}
-    #{script 'maps-js.js'/}
+    #{script 'jquery_before.js'/}
+    <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxtsdrVK6ZbFJTBebvoRID-69LkSUwiMA">
+    </script>
     #{script 'CustomGoogleMapMarker.js'/}
 <script type="text/javascript">
 
     function initialize() {
 
-        var myLatlng = new google.maps.LatLng(-31.9546781,115.852662);
+        var myLatlng = new google.maps.LatLng(50.0755381,14.4378005);
         var mapOptions = {
-            zoom: 14,
+            zoom: 5,
             center: myLatlng,
-            disableDefaultUI: true
+            disableDefaultUI: false
         };
 
         var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);

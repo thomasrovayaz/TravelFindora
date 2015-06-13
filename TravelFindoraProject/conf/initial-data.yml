@@ -16,6 +16,60 @@ TravelStory(test):
     story:          toto
 
 Travel(praguevoyage):
+Travel(praguevoyage1):
+Travel(praguevoyage2):
+Travel(praguevoyage3):
+Travel(praguevoyage4):
+Travel(praguevoyage5):
+Travel(praguevoyage6):
+Travel(praguevoyage7):
+Travel(praguevoyage8):
+Travel(praguevoyage9):
+Travel(praguevoyage10):
+Travel(praguevoyage11):
+Travel(praguevoyage12):
+Travel(praguevoyage13):
+Travel(praguevoyage14):
+Travel(praguevoyage15):
+Travel(praguevoyage16):
+Travel(praguevoyage17):
+Travel(praguevoyage18):
+Travel(praguevoyage19):
+Travel(praguevoyage20):
+Travel(praguevoyage21):
+Travel(praguevoyage22):
+Travel(praguevoyage23):
+Travel(praguevoyage24):
+Travel(praguevoyage25):
+Travel(praguevoyage26):
+Travel(praguevoyage27):
+Travel(praguevoyage28):
+Travel(praguevoyage29):
+Travel(praguevoyage30):
+
+Travel(parisvoyage):
+Travel(parisvoyage1):
+Travel(parisvoyage2):
+Travel(parisvoyage3):
+Travel(parisvoyage4):
+Travel(parisvoyage5):
+Travel(parisvoyage6):
+Travel(parisvoyage7):
+Travel(parisvoyage8):
+Travel(parisvoyage9):
+Travel(parisvoyage10):
+Travel(parisvoyage11):
+Travel(parisvoyage12):
+Travel(parisvoyage13):
+Travel(parisvoyage14):
+Travel(parisvoyage15):
+
+Travel(clusesvoyage):
+Travel(clusesvoyage1):
+Travel(clusesvoyage2):
+Travel(clusesvoyage3):
+Travel(clusesvoyage4):
+Travel(clusesvoyage5):
 
 TravelUser(pragueusers):
     travel:         praguevoyage
@@ -44,3 +98,211 @@ Findora(clusesfindora):
 TravelFindora(travelfindoraprague):
     findora:        praguefindora
     travel:         praguevoyage
+
+TravelFindora(travelfindoraprague1):
+    findora:        praguefindora
+    travel:         praguevoyage1
+
+TravelFindora(travelfindoraprague2):
+    findora:        praguefindora
+    travel:         praguevoyage2
+
+TravelFindora(travelfindoraprague3):
+    findora:        praguefindora
+    travel:         praguevoyage3
+
+TravelFindora(travelfindoraprague4):
+    findora:        praguefindora
+    travel:         praguevoyage4
+
+TravelFindora(travelfindoraprague5):
+    findora:        praguefindora
+    travel:         praguevoyage5
+
+TravelFindora(travelfindoraprague6):
+    findora:        praguefindora
+    travel:         praguevoyage6
+
+TravelFindora(travelfindoraprague7):
+    findora:        praguefindora
+    travel:         praguevoyage7
+
+TravelFindora(travelfindoraprague8):
+    findora:        praguefindora
+    travel:         praguevoyage8
+
+TravelFindora(travelfindoraprague9):
+    findora:        praguefindora
+    travel:         praguevoyage9
+
+TravelFindora(travelfindoraprague10):
+    findora:        praguefindora
+    travel:         praguevoyage10
+
+TravelFindora(travelfindoraprague11):
+    findora:        praguefindora
+    travel:         praguevoyage11
+
+TravelFindora(travelfindoraprague12):
+    findora:        praguefindora
+    travel:         praguevoyage12
+
+TravelFindora(travelfindoraprague13):
+    findora:        praguefindora
+    travel:         praguevoyage13
+
+TravelFindora(travelfindoraprague14):
+    findora:        praguefindora
+    travel:         praguevoyage14
+
+TravelFindora(travelfindoraprague15):
+    findora:        praguefindora
+    travel:         praguevoyage15
+
+TravelFindora(travelfindoraprague16):
+    findora:        praguefindora
+    travel:         praguevoyage16
+
+TravelFindora(travelfindoraprague17):
+    findora:        praguefindora
+    travel:         praguevoyage17
+
+TravelFindora(travelfindoraprague18):
+    findora:        praguefindora
+    travel:         praguevoyage18
+
+TravelFindora(travelfindoraprague19):
+    findora:        praguefindora
+    travel:         praguevoyage19
+
+TravelFindora(travelfindoraprague20):
+    findora:        praguefindora
+    travel:         praguevoyage20
+
+TravelFindora(travelfindoraprague21):
+    findora:        praguefindora
+    travel:         praguevoyage21
+
+TravelFindora(travelfindoraprague22):
+    findora:        praguefindora
+    travel:         praguevoyage22
+
+TravelFindora(travelfindoraprague23):
+    findora:        praguefindora
+    travel:         praguevoyage23
+
+TravelFindora(travelfindoraprague24):
+    findora:        praguefindora
+    travel:         praguevoyage24
+
+TravelFindora(travelfindoraprague25):
+    findora:        praguefindora
+    travel:         praguevoyage25
+
+TravelFindora(travelfindoraprague26):
+    findora:        praguefindora
+    travel:         praguevoyage26
+
+TravelFindora(travelfindoraprague27):
+    findora:        praguefindora
+    travel:         praguevoyage27
+
+TravelFindora(travelfindoraprague28):
+    findora:        praguefindora
+    travel:         praguevoyage28
+
+TravelFindora(travelfindoraprague29):
+    findora:        praguefindora
+    travel:         praguevoyage29
+
+TravelFindora(travelfindoraprague30):
+    findora:        praguefindora
+    travel:         praguevoyage30
+
+TravelFindora(travelfindoraparis):
+    findora:        parisfindora
+    travel:         parisvoyage
+
+TravelFindora(travelfindoraparis1):
+    findora:        parisfindora
+    travel:         parisvoyage1
+
+TravelFindora(travelfindoraparis2):
+    findora:        parisfindora
+    travel:         parisvoyage2
+
+TravelFindora(travelfindoraparis3):
+    findora:        parisfindora
+    travel:         parisvoyage3
+
+TravelFindora(travelfindoraparis4):
+    findora:        parisfindora
+    travel:         parisvoyage4
+
+TravelFindora(travelfindoraparis5):
+    findora:        parisfindora
+    travel:         parisvoyage5
+
+TravelFindora(travelfindoraparis6):
+    findora:        parisfindora
+    travel:         parisvoyage6
+
+TravelFindora(travelfindoraparis7):
+    findora:        parisfindora
+    travel:         parisvoyage7
+
+TravelFindora(travelfindoraparis8):
+    findora:        parisfindora
+    travel:         parisvoyage8
+
+TravelFindora(travelfindoraparis9):
+    findora:        parisfindora
+    travel:         parisvoyage9
+
+TravelFindora(travelfindoraparis10):
+    findora:        parisfindora
+    travel:         parisvoyage10
+
+TravelFindora(travelfindoraparis11):
+    findora:        parisfindora
+    travel:         parisvoyage11
+
+TravelFindora(travelfindoraparis12):
+    findora:        parisfindora
+    travel:         parisvoyage12
+
+TravelFindora(travelfindoraparis13):
+    findora:        parisfindora
+    travel:         parisvoyage13
+
+TravelFindora(travelfindoraparis14):
+    findora:        parisfindora
+    travel:         parisvoyage14
+
+TravelFindora(travelfindoraparis15):
+    findora:        parisfindora
+    travel:         parisvoyage15
+
+TravelFindora(travelfindoracluses):
+    findora:        clusesfindora
+    travel:         clusesvoyage
+
+TravelFindora(travelfindoracluses1):
+    findora:        clusesfindora
+    travel:         clusesvoyage1
+
+TravelFindora(travelfindoracluses2):
+    findora:        clusesfindora
+    travel:         clusesvoyage2
+
+TravelFindora(travelfindoracluses3):
+    findora:        clusesfindora
+    travel:         clusesvoyage3
+
+TravelFindora(travelfindoracluses4):
+    findora:        clusesfindora
+    travel:         clusesvoyage4
+
+TravelFindora(travelfindoracluses5):
+    findora:        clusesfindora
+    travel:         clusesvoyage5

@@ -23,6 +23,9 @@ public class Findora extends GenericModel {
     private double latitude;
     private double longitude;
 
+    private double nbHab;
+    private double size;
+
     @Lob
     @Required
     @MaxSize(10000)
@@ -88,5 +91,21 @@ public class Findora extends GenericModel {
    
     public String toString() {
         return this.getName();
+    }
+
+    public double getNbHab() {
+        return nbHab;
+    }
+
+    public void setNbHab(double nbHab) {
+        this.nbHab = nbHab;
+    }
+
+    public double getSize() {
+        return size;
+    }
+
+    public void setSize(double size) {
+        this.size = size;
     }
 }
