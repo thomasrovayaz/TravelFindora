@@ -8,9 +8,9 @@ GET     /                                       Application.index
 # Sign in page
 GET		/signIn									Application.signIn
 
+# Delete an account
+GET     /deleteAccount                          ControllerUser.deleteAccount
 
-# Login page
-GET     /login                                  Application.login
 
 # Search 
 GET 	/search									Application.search

@@ -10,6 +10,7 @@ public class Application extends Controller {
         render();
     }
 
+
     public static void test() {
         render();
     }
@@ -17,10 +18,6 @@ public class Application extends Controller {
     public static void index() {
         List<Findora> findoras = Findora.findAll();
         render(findoras);
-    }
-
-    public static void login() {
-        render();
     }
 
     public static void authenticate(String username, String password) {
@@ -38,6 +35,7 @@ public class Application extends Controller {
     newUser.save();
 
     session.put("email",email);
+    Secure.login();
     Application.index();
     }
 

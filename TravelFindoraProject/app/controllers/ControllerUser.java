@@ -6,11 +6,12 @@ import play.Logger;
 import play.data.Upload;
 import play.mvc.Before;
 import play.mvc.Controller;
+import play.mvc.results.Redirect;
 
 import java.io.FileNotFoundException;
 import java.util.Date;
 import java.util.List;
-
+import java.lang.Throwable;
 /**
  * Created by thomas on 27/05/15.
  */
@@ -357,5 +358,14 @@ public class ControllerUser extends Controller {
         commentaireTravel.setDateCreation(new Date());
 
         commentaireTravel.save();
+    }
+
+    public static void deleteAccount() {render();}
+
+    public static void deleteMember() throws Throwable{
+        User user = User.find("byEmail", Security.connected()).first();
+        user.delete();
+        session.clear();
+        Application.index();
     }
 }
