@@ -74,8 +74,8 @@ public class Application extends Controller {
                             .compareTo(((Commentaire)B).getDateCreation());
                 }
             });
-
-            render(f, nbUsers, com, user);
+            Set<Content> con = f.getContents();
+            render(f, nbUsers, con, user);
         }
         else render(user);
     }

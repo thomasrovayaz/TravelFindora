@@ -1,5 +1,10 @@
 package controllers.admin;
 
-public class TravelStorys {
+
+import controllers.CRUD;
+import play.*;
+import play.mvc.*;
+
+public class TravelStorys extends CRUD{
 
 }
