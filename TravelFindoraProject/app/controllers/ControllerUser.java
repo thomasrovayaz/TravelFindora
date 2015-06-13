@@ -1,5 +1,6 @@
 package controllers;
 
+import controllers.admin.UserTools;
 import models.*;
 import play.Logger;
 import play.data.Upload;
@@ -9,8 +10,6 @@ import play.mvc.Controller;
 import java.io.FileNotFoundException;
 import java.util.Date;
 import java.util.List;
-
-import controllers.admin.UserTools;
 
 /**
  * Created by thomas on 27/05/15.
