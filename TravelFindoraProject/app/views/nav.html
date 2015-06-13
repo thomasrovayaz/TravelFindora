@@ -1,31 +1,12 @@
 <nav class=" light-blue darken-1">
     <div class="nav-wrapper">
         <a href="#" class="brand-logo">
-            <img id="logo" src="@{'public/images/logo-0.png'}">
+            <img class="logo" src="@{'public/images/logo-0.png'}">
         </a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li style="background-color: rgba(0,0,0,0) !important;">
-                #{form @searchVal()}
-                    <div class="input-field">
-                        #{if f}
-                            <input type="search" name="query" id="query" value="${f.name}" required/>
-                        #{/if}
-                        #{else}
-                            <input type="search" name="query" id="query" placeholder="Trouve un findora !" required/>
-                        #{/else}
-                        <label for="search"><i class="mdi-action-search"></i></label>
-                        <i class="mdi-navigation-close"></i>
-                    </div>
-                #{/form}
-            </li>
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="components.html">Components</a></li>
-            <li><a href="javascript.html">JavaScript</a></li>
-        </ul>
-        <ul class="side-nav" id="mobile-demo">
-            <li>
-            #{form @searchVal()}
+            #{form @Application.searchVal()}
                 <div class="input-field">
                     #{if f}
                         <input type="search" name="query" id="query" value="${f.name}" required/>
@@ -38,9 +19,56 @@
                 </div>
             #{/form}
             </li>
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="components.html">Components</a></li>
-            <li><a href="javascript.html">Javascript</a></li>
+            <li><a href="@{Application.index()}">Board</a></li>
+            <li><a href="@{Application.explore()}">Explore</a></li>
+        #{if user}
+            <li><a href="@{ControllerUser.profile()}">
+                #{if user && user.gender == MALE}
+                    <img class="profile_picture" src="@{'public/images/male.png'}">
+                #{/if}
+                #{else }
+                    <img class="profile_picture" src="@{'public/images/female.png'}">
+                #{/else}
+            </a></li>
+        #{/if}
+        #{else }
+            <li><a href="@{secure.login()}">
+                Login
+            </a></li>
+        #{/else}
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+            <li>
+            #{form @Application.searchVal()}
+                <div class="input-field">
+                    #{if f}
+                        <input type="search" name="query" id="query" value="${f.name}" required/>
+                    #{/if}
+                    #{else}
+                        <input type="search" name="query" id="query" placeholder="Trouve un findora !" required/>
+                    #{/else}
+                    <label for="search"><i class="mdi-action-search"></i></label>
+                    <i class="mdi-navigation-close"></i>
+                </div>
+            #{/form}
+            </li>
+            <li><a href="@{Application.index()}">Board</a></li>
+            <li><a href="@{Application.explore()}">Explore</a></li>
+        #{if user}
+            <li><a href="javascript.html">
+                #{if user && user.gender == MALE}
+                    <img class="profile_picture" src="@{'public/images/male.png'}">
+                #{/if}
+                #{else }
+                    <img class="profile_picture" src="@{'public/images/female.png'}">
+                #{/else}
+            </a></li>
+        #{/if}
+        #{else }
+            <li><a href="@{secure.login()}">
+                Login
+            </a></li>
+        #{/else}
         </ul>
     </div>
 </nav>
