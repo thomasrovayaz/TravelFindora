@@ -6,6 +6,9 @@
       <sourceFolder url="file://$MODULE_DIR$/app" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
     </content>
+    <content url="file://$MODULE_DIR$/../../play-1.2.7.2/modules/crud">
+      <sourceFolder url="file://$MODULE_DIR$/../../play-1.2.7.2/modules/crud/app" isTestSource="false" />
+    </content>
     <content url="file://$MODULE_DIR$/../../play-1.2.7.2/modules/secure">
       <sourceFolder url="file://$MODULE_DIR$/../../play-1.2.7.2/modules/secure/app" isTestSource="false" />
     </content>
@@ -41,6 +44,5 @@
         </SOURCES>
       </library>
     </orderEntry>
-    <orderEntry type="library" name="materialize" level="application" />
   </component>
 </module>
