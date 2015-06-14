@@ -29,15 +29,25 @@
         });
         */
 
-        $( "#listFindora").find("li" ).each(function( index ) {
+        $( "#listFindora").find(" > li" ).each(function( index ) {
             var findoraLatlng = new google.maps.LatLng($(this).attr("lat"), $(this).attr("long"));
 
+            var authors = ["toto", "toto", "toto"];
+            $(this).find("ul").find("li").each(function(index) {
+                var author = $(this).html();
+                var found = $.inArray(author, authors) > -1;
+                if(!found) {
+                    authors.push(author);
+                }
+            });
             overlay = new CustomMarker(
                     findoraLatlng,
                     map,
                     {
                         marker_id: $(this).attr("id"),
-                        nb_travel: $(this).attr("nb_travel")
+                        nb_travel: $(this).attr("nb_travel"),
+                        name: $(this).attr("name"),
+                        authors: authors
                     }
             );
         });
@@ -54,10 +64,8 @@
     <li id="${findora.findoraId}" nb_travel="${findora.travels.size()}" lat="${findora.latitude}" long="${findora.longitude}" name="${findora.name}">
 
         <ul>
-            #{list items:findoras, as:'findora'}
-                <li id="${findora.findoraId}" nb_travel="${findora.travels.size()}" lat="${findora.latitude}" long="${findora.longitude}" name="${findora.name}">
-
-                </li>
+            #{list items:findora.travels, as:'travelFindora'}
+                <li>${travelFindora.travel.author}</li>
             #{/list}
         </ul>
     </li>

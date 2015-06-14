@@ -1,0 +1,17 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+#{form @deleteMember()}
+
+<p>
+    <label for="email">Email: </label>
+    <input type="text" name="email" id="email" maxlength="30" value="${params.email}" />
+</p>
+<p>
+    <label for="password">Password: </label>
+    <input type="password" name="password" id="password" maxlength="30" />
+</p>
+<p>
+    <input type="submit" id="deleteAccount" value="Delete account" />
+</p>
+
+#{/form}

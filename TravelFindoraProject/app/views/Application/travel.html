@@ -1,0 +1,27 @@
+#{extends 'main.html' /}
+#{set title:'Board' /}
+
+#{set 'moreScripts'}
+    #{script 'board.js'/}
+#{/set}
+
+#{if is}
+<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-large red">
+        <i class="large mdi-editor-mode-edit"></i>
+    </a>
+    <ul>
+        <li><a onclick="addFindora(${travel.travelId});" class="btn-floating red tooltipped" data-position="left" data-delay="50" data-tooltip="Add findora"><i class="large mdi-action-room"></i></a></li>
+        #{if !travel.getFindoras().isEmpty()}
+            <li><a onclick="addTravelPlace(${travel.travelId}, ${travel.getFindoras().iterator().next().getFindora().findoraId});" class="btn-floating red tooltipped" data-position="left" data-delay="50" data-tooltip="Add place"><i class="large mdi-maps-pin-drop"></i></a></li>
+            <li><a onclick="addTravelPhoto(${travel.travelId}, ${travel.getFindoras().iterator().next().getFindora().findoraId});" class="btn-floating yellow darken-1 tooltipped" data-position="left" data-delay="50" data-tooltip="Add image"><i class="large mdi-editor-insert-photo"></i></a></li>
+            <li><a onclick="addTravelVideo(${travel.travelId}, ${travel.getFindoras().iterator().next().getFindora().findoraId});" class="btn-floating green tooltipped" data-position="left" data-delay="50" data-tooltip="Add movie"><i class="large mdi-av-videocam"></i></a></li>
+            <li><a onclick="addTravelStory(${travel.travelId}, ${travel.getFindoras().iterator().next().getFindora().findoraId});" class="btn-floating blue tooltipped" data-position="left" data-delay="50" data-tooltip="Add story"><i class="large mdi-content-create"></i></a></li>
+        #{/if}
+    </ul>
+</div>
+#{/if}
+
+#{list items:travel.contents, as:'contentt' }
+${contentt.dateCreation}
+#{/list}

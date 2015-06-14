@@ -204,14 +204,14 @@
       <column name="latitude" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5"/>
       <column name="longitude" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5"/>
       <column name="text" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
-      <column name="story" sqlType="LONGTEXT" length="2147483647" precision="0" nullable="true" jdbcType="-1"/>
-      <column name="description" sqlType="LONGTEXT" length="2147483647" precision="0" nullable="true" jdbcType="-1"/>
       <column name="contentType" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
-      <column name="file" sqlType="TINYBLOB" length="255" precision="0" nullable="true" jdbcType="-2"/>
+      <column name="description" sqlType="LONGTEXT" length="2147483647" precision="0" nullable="true" jdbcType="-1"/>
+      <column name="file" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
       <column name="fileName" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
-      <column name="duration" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5"/>
       <column name="heigth" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
       <column name="width" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="story" sqlType="LONGTEXT" length="2147483647" precision="0" nullable="true" jdbcType="-1"/>
+      <column name="duration" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5"/>
       <column name="FINDORA_FINDORAID" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
       <column name="TRAVEL_TRAVELID" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
       <column name="USER_USERID" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
@@ -236,13 +236,17 @@
       <column name="latitude" sqlType="DOUBLE" length="22" precision="0" nullable="false" jdbcType="8"/>
       <column name="longitude" sqlType="DOUBLE" length="22" precision="0" nullable="false" jdbcType="8"/>
       <column name="name" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="nbHab" sqlType="DOUBLE" length="22" precision="0" nullable="false" jdbcType="8"/>
+      <column name="size" sqlType="DOUBLE" length="22" precision="0" nullable="false" jdbcType="8"/>
       <primary-key name="PRIMARY" columns="findoraId"/>
       <exported-key name="FK9BEFCC595E2FF807" table="Content" schema="" catalog="TravelFindora" columns="FINDORA_FINDORAID"/>
       <exported-key name="FK36F8A9EBA7916D66" table="TravelFindora" schema="" catalog="TravelFindora" columns="findora"/>
     </table>
     <table name="Travel" schema="" catalog="TravelFindora" type="TABLE">
       <column name="travelId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="travels" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="travelId"/>
+      <foreign-key name="FK95CB6B3A10428588" columns="travels" ref-table="User" ref-schema="" ref-catalog="TravelFindora" ref-columns="userId" update-rule="3" delete-rule="3" deferrability="2"/>
       <exported-key name="FKE0D0FF1A13663878" table="Commentaire" schema="" catalog="TravelFindora" columns="TRAVEL_TRAVELID"/>
       <exported-key name="FK9BEFCC5913663878" table="Content" schema="" catalog="TravelFindora" columns="TRAVEL_TRAVELID"/>
       <exported-key name="FK36F8A9EB88B67A58" table="TravelFindora" schema="" catalog="TravelFindora" columns="travel"/>
@@ -277,6 +281,7 @@
       <column name="userId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="email" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
       <column name="firstname" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="gender" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
       <column name="isAdmin" sqlType="BIT" length="1" precision="0" nullable="false" jdbcType="-7"/>
       <column name="lastname" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
       <column name="password" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
@@ -284,6 +289,7 @@
       <exported-key name="FKE0D0FF1A4A3D9A09" table="Commentaire" schema="" catalog="TravelFindora" columns="USER_USERID"/>
       <exported-key name="FK9BEFCC594A3D9A09" table="Content" schema="" catalog="TravelFindora" columns="USER_USERID"/>
       <exported-key name="FK4C341B90B547794D" table="ContentLike" schema="" catalog="TravelFindora" columns="likerContent"/>
+      <exported-key name="FK95CB6B3A10428588" table="Travel" schema="" catalog="TravelFindora" columns="travels"/>
       <exported-key name="FK9F7361F1A1D1EB84" table="TravelLike" schema="" catalog="TravelFindora" columns="likerTravel"/>
       <exported-key name="FK9F779E259B7BB5AE" table="TravelUser" schema="" catalog="TravelFindora" columns="traveller"/>
       <exported-key name="FKD2566AE661D640FF" table="UserFollowing" schema="" catalog="TravelFindora" columns="followed"/>

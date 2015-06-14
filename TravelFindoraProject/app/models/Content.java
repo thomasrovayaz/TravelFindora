@@ -11,7 +11,7 @@ import java.util.Set;
  * Created by thomas on 25/05/15.
  */
 @Entity
-public abstract class Content extends GenericModel {
+public abstract class Content extends GenericModel implements Comparable<Content> {
     @Id
     @GeneratedValue
     private int contentId;
@@ -98,5 +98,12 @@ public abstract class Content extends GenericModel {
 
     public void setDateModification(Date dateModification) {
         this.dateModification = dateModification;
+    }
+
+    @Override
+    public int compareTo(Content o) {
+        if (getDateCreation() == null || o.getDateCreation() == null)
+            return 0;
+        return o.getDateCreation().compareTo(getDateCreation());
     }
 }

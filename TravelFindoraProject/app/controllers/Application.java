@@ -10,13 +10,29 @@ public class Application extends Controller {
         render();
     }
 
+
     public static void test() {
         render();
     }
 
     public static void index() {
         User user = User.find("byEmail", Security.connected()).first();
-        render(user);
+        ArrayList<Content> contents = new ArrayList<Content>();
+        /*Query q = em.createNativeQuery("select * " +
+                "from User u " +
+                "join UserFollowing uf on u=uf.follower " +
+                "join User u2 on uf.followed=u2 " +
+                "join Content c on c.USER_USERID=u2.userId " +
+                "where u=" + user);*/
+        for (UserFollowing userFollowing : user.getFolloweds()) {
+            contents.addAll(userFollowing.getFollowed().getContents());
+        }
+
+        Collections.sort(contents);
+        for (Content content : contents) {
+            System.out.println(content);
+        }
+        render(user, contents);
     }
 
     public static void explore() {
@@ -32,15 +48,16 @@ public class Application extends Controller {
     }
 
     public static void register(String firstname, String lastname, String email, String password) {
-        User newUser = new User();
-        newUser.setFirstname(firstname);
-        newUser.setLastname(lastname);
-        newUser.setEmail(email);
-        newUser.setPassword(password);
-        newUser.save();
+    User newUser = new User();
+    newUser.setFirstname(firstname);
+    newUser.setLastname(lastname);
+    newUser.setEmail(email);
+    newUser.setPassword(password);
+    newUser.save();
 
-        session.put("email",email);
-        Application.index();
+    session.put("email",email);
+    Secure.login();
+    Application.index();
     }
 
     public static void search(String name){
@@ -79,5 +96,13 @@ public class Application extends Controller {
 
     public static void searchVal(String query){
         search(query);
+    }
+
+    public static void showTravel(int travelId) {
+        User user = User.find("byEmail", Security.connected()).first();
+        Travel travel = (Travel) Travel.find("byTravelId", travelId).fetch().get(0);
+        boolean is = !TravelUser.find("byTravellerAndTravel", user, travel).fetch().isEmpty();
+        System.out.println(is);
+        renderTemplate("Application/travel.html", travel, user, is);
     }
 }

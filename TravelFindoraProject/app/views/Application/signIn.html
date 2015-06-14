@@ -12,11 +12,11 @@
 </p>
 <p>
     <label for="email">Email: </label>
-    <input type="text" name="email" id="email" maxlength="30" value="${params.email}" />
+    <input type="email" name="email" id="email" maxlength="30" value="${params.email}" />
 </p>
 <p>
     <label for="password">Password: </label>
-    <input type="password" name="password" id="password" maxlength="30" />
+    <input type="password" name="password" id="password" input pattern=".{6,30}" required title="6 to 30 characters"/>
 </p>
 <p>
     <input type="submit" id="signin" value="Sign in" />

@@ -14,6 +14,10 @@ public class Travel extends GenericModel {
     @GeneratedValue
     private int travelId;
 
+    @ManyToOne
+    @JoinColumn(name = "travels")
+    private User author;
+
     @OneToMany(mappedBy = "travel", cascade = CascadeType.ALL)
     private Set<TravelUser> travellers; //permet le gestion de groupe (plus tard ...)
 
@@ -74,5 +78,13 @@ public class Travel extends GenericModel {
     }
     public String toString() {
         return "idTravel"+this.getTravelId();
+    }
+
+    public User getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(User author) {
+        this.author = author;
     }
 }
