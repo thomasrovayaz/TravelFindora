@@ -33,9 +33,13 @@ public class ControllerUser extends Controller {
 
     /**gestion like */
     public static void likeContent(int contentId) {
+        System.out.print("****");
         ContentLike contentLike = new ContentLike();
         Content content = (Content) Content.find("byContentId", contentId).fetch().get(0);
+        System.out.print("content "+content);
         User user = User.find("byEmail", Security.connected()).first();
+        System.out.print("user "+user);
+
         contentLike.setLikingContent(content);
         contentLike.setLikerContent(user);
         contentLike.save();
