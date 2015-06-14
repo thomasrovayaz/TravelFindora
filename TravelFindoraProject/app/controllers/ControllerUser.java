@@ -30,6 +30,13 @@ public class ControllerUser extends Controller {
         render(user);
     }
 
+    public static void stories(String usermail, String findoraName) {
+        User user = User.find("byEmail", Security.connected()).first();
+        User user2 = User.find("byEmail", usermail).first();
+        Findora findora = Findora.find("byName", findoraName).first();
+        render(user, user2, findora);
+    }
+
     /**gestion like */
     public static void likeContent(int contentId) {
         ContentLike contentLike = new ContentLike();
@@ -83,10 +90,8 @@ public class ControllerUser extends Controller {
     }
 
     /**gestion des contents */
-    public static void formContent(String type) {
+    public static void formContent(String travelId, String findoraId, String type) {
         User user = User.find("byEmail", Security.connected()).first();
-        int travelId = 1;
-        int findoraId = 1;
         if (type.equals("story")) {
             renderTemplate("ControllerUser/formContentStory.html", travelId, findoraId, user);
         } else if (type.equals("place")) {
@@ -98,10 +103,8 @@ public class ControllerUser extends Controller {
         }
     }
 
-    public static void formEditContent(String type, int contentId) {
+    public static void formEditContent(String travelId, String findoraId, String type, int contentId) {
         User user = User.find("byEmail", Security.connected()).first();
-        int travelId = 1;
-        int findoraId = 1;
         if (type.equals("story")) {
             TravelStory travelStory = (TravelStory) TravelStory.find("byContentId", contentId).fetch().get(0);
             renderTemplate("ControllerUser/formContentStory.html", travelId, findoraId, travelStory, user);
@@ -307,9 +310,9 @@ public class ControllerUser extends Controller {
         renderTemplate("ControllerUser/formComment.html", commentaire, user);
     }
 
-    public static void formComment() {
+    public static void formComment(int contentId) {
         User user = User.find("byEmail", Security.connected()).first();
-        int contentId = 6;
+        //todo gestion travelcomment
         render(contentId, user);
     }
 
@@ -363,5 +366,92 @@ public class ControllerUser extends Controller {
         commentaireTravel.setDateCreation(new Date());
 
         commentaireTravel.save();
+    }
+
+    /**gestion des travels*/
+    /*public static void formEditTravel(int travelId) {
+        User user = User.find("byEmail", Security.connected()).first();
+        Travel travel = (Travel) Travel.find("byTravelId", travelId).fetch().get(0);
+        renderTemplate("ControllerUser/formTravel.html", travel, user);
+    }*/
+
+    public static void formTravel() {
+        User user = User.find("byEmail", Security.connected()).first();
+        render(user);
+    }
+
+    public static void deleteTravel(int travelId) {
+        User user = User.find("byEmail", Security.connected()).first();
+        Travel travel = (Travel) Travel.find("byTravelId", travelId).fetch().get(0);
+        if (travel.getAuthor().getUserId() == user.getUserId()) {
+            travel.delete();
+
+            redirect("/board");
+        } else {
+            error(401, "Not allowed to delete this story " + user.getEmail() + ".");
+        }
+    }
+
+    public static void addFindoraTravel(int travelId, String findoraName) {
+        User user = User.find("byEmail", Security.connected()).first();
+        Travel travel = (Travel) Travel.find("byTravelId", travelId).fetch().get(0);
+        if (travel.getAuthor().getUserId() == user.getUserId()) {
+            List<Findora> findoras = Findora.find("byName", findoraName).fetch();
+            Findora findora;
+            if (findoras.isEmpty()) {
+                findora = new Findora();
+                findora.setName(findoraName);
+                findora.save();
+            } else {
+                findora = findoras.get(0);
+            }
+
+            TravelFindora travelFindora = new TravelFindora();
+            travelFindora.setFindora(findora);
+            travelFindora.setTravel(travel);
+            travelFindora.save();
+
+            travel.getFindoras().add(travelFindora);
+            travel.save();
+
+            redirect("/travel/" + travel.getTravelId());
+        } else {
+            error(401, "Not allowed to edit this story " + user.getEmail() + ".");
+        }
+    }
+
+    public static void deleteFindoraTravel(int travelId, int findoraId) {
+        User user = User.find("byEmail", Security.connected()).first();
+        Travel travel = (Travel) Travel.find("byTravelId", travelId).fetch().get(0);
+        if (travel.getAuthor().getUserId() == user.getUserId()) {
+            Findora findora = (Findora) Findora.find("byFindoraId", findoraId).fetch().get(0);
+            TravelFindora travelFindora = (TravelFindora) TravelFindora.find("byTravelAndFindora", travel, findora).fetch().get(0);
+
+            travel.getFindoras().remove(travelFindora);
+            travel.save();
+
+            findora.getTravels().remove(travelFindora);
+            findora.save();
+
+            travelFindora.delete();
+        } else {
+            error(401, "Not allowed to edit this story " + user.getEmail() + ".");
+        }
+        redirect("/board");
+    }
+
+    public static void addTravel() {
+        User user = User.find("byEmail", Security.connected()).first();
+        Travel travel = new Travel();
+        travel.setAuthor(user);
+
+        TravelUser travelUser = new TravelUser();
+        travelUser.setTravel(travel);
+        travelUser.setTraveller(user);
+        travel.save();
+
+        travelUser.save();
+
+        redirect("/travel/" + travel.getTravelId());
     }
 }

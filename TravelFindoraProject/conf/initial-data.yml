@@ -12,64 +12,122 @@ User(toto742):
     firstname:      toto742
     lastname:       toto742
 
+UserFollowing(uf):
+    followed:       toto74
+    follower:       toto742
+
 TravelStory(test):
-    story:          toto
+    story:          bla bla bla blabla blabla
+    user:           toto74
 
 Travel(praguevoyage):
+    author:      toto742
 Travel(praguevoyage1):
+    author:      toto742
 Travel(praguevoyage2):
+    author:      toto742
 Travel(praguevoyage3):
+    author:      toto742
 Travel(praguevoyage4):
+    author:      toto742
 Travel(praguevoyage5):
+    author:      toto742
 Travel(praguevoyage6):
+    author:      toto742
 Travel(praguevoyage7):
+    author:      toto742
 Travel(praguevoyage8):
+    author:      toto742
 Travel(praguevoyage9):
+    author:      toto742
 Travel(praguevoyage10):
+    author:      toto742
 Travel(praguevoyage11):
+    author:      toto742
 Travel(praguevoyage12):
+    author:      toto742
 Travel(praguevoyage13):
+    author:      toto742
 Travel(praguevoyage14):
+    author:      toto742
 Travel(praguevoyage15):
+    author:      toto742
 Travel(praguevoyage16):
+    author:      toto742
 Travel(praguevoyage17):
+    author:      toto742
 Travel(praguevoyage18):
+    author:      toto742
 Travel(praguevoyage19):
+    author:      toto742
 Travel(praguevoyage20):
+    author:      toto742
 Travel(praguevoyage21):
+    author:      toto742
 Travel(praguevoyage22):
+    author:      toto742
 Travel(praguevoyage23):
+    author:      toto742
 Travel(praguevoyage24):
+    author:      toto742
 Travel(praguevoyage25):
+    author:      toto742
 Travel(praguevoyage26):
+    author:      toto742
 Travel(praguevoyage27):
+    author:      toto742
 Travel(praguevoyage28):
+    author:      toto742
 Travel(praguevoyage29):
+    author:      toto742
 Travel(praguevoyage30):
+    author:      toto742
 
 Travel(parisvoyage):
+    author:      toto742
 Travel(parisvoyage1):
+    author:      toto742
 Travel(parisvoyage2):
+    author:      toto742
 Travel(parisvoyage3):
+    author:      toto742
 Travel(parisvoyage4):
+    author:      toto742
 Travel(parisvoyage5):
+    author:      toto742
 Travel(parisvoyage6):
+    author:      toto742
 Travel(parisvoyage7):
+    author:      toto742
 Travel(parisvoyage8):
+    author:      toto742
 Travel(parisvoyage9):
+    author:      toto742
 Travel(parisvoyage10):
+    author:      toto742
 Travel(parisvoyage11):
+    author:      toto742
 Travel(parisvoyage12):
+    author:      toto742
 Travel(parisvoyage13):
+    author:      toto742
 Travel(parisvoyage14):
+    author:      toto742
 Travel(parisvoyage15):
+    author:      toto742
 
 Travel(clusesvoyage):
+    author:      toto742
 Travel(clusesvoyage1):
+    author:      toto742
 Travel(clusesvoyage2):
+    author:      toto742
 Travel(clusesvoyage3):
+    author:      toto742
 Travel(clusesvoyage4):
+    author:      toto742
 Travel(clusesvoyage5):
+    author:      toto742
 
 TravelUser(pragueusers):
     travel:         praguevoyage

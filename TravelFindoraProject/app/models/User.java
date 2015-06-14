@@ -29,6 +29,9 @@ public class User extends GenericModel {
     
     @Required
     private String password;
+
+    @OneToMany(mappedBy = "author", cascade = CascadeType.ALL)
+    private Set<Travel> travels;
     
     public boolean isAdmin;
 
@@ -42,12 +45,12 @@ public class User extends GenericModel {
 
 	//gestion des voyages
     @OneToMany(mappedBy = "traveller", cascade = CascadeType.ALL)
-    private Set<TravelUser> travels;
+    private Set<TravelUser> travelsUser;
 
     //gestion des followers
-    @OneToMany(mappedBy = "followed", cascade = CascadeType.ALL)
-    private Set<UserFollowing> followeds;
     @OneToMany(mappedBy = "follower", cascade = CascadeType.ALL)
+    private Set<UserFollowing> followeds;
+    @OneToMany(mappedBy = "followed", cascade = CascadeType.ALL)
     private Set<UserFollowing> followers ;
 
     //gestion des likes
@@ -111,12 +114,12 @@ public class User extends GenericModel {
         this.followers = followers;
     }
 
-    public Set<TravelUser> getTravels() {
-        return travels;
+    public Set<TravelUser> getTravelsUser() {
+        return travelsUser;
     }
 
-    public void setTravels(Set<TravelUser> travels) {
-        this.travels = travels;
+    public void setTravelsUser(Set<TravelUser> travelsUser) {
+        this.travelsUser = travelsUser;
     }
 
     public Set<TravelLike> getTravelLikes() {
@@ -165,5 +168,13 @@ public class User extends GenericModel {
 
     public void setGender(Gender gender) {
         this.gender = gender;
+    }
+
+    public void setTravels(Set<Travel> travels) {
+        this.travels = travels;
+    }
+
+    public Set<Travel> getTravels() {
+        return travels;
     }
 }

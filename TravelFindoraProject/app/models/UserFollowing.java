@@ -24,4 +24,20 @@ public class UserFollowing extends GenericModel {
     public int getUserFollowingId() {
         return userFollowingId;
     }
+
+    public User getFollower() {
+        return follower;
+    }
+
+    public void setFollower(User follower) {
+        this.follower = follower;
+    }
+
+    public User getFollowed() {
+        return followed;
+    }
+
+    public void setFollowed(User followed) {
+        this.followed = followed;
+    }
 }

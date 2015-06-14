@@ -25,15 +25,26 @@ GET 	/test									Application.test
 #profile
 GET     /profile                                ControllerUser.profile
 
+#stories
+GET     /stories/{usermail}/{findoraName}       ControllerUser.stories
+
+# Gestion travel
+GET     /travel/add                             ControllerUser.formTravel
+GET     /travel/delete/{travelId}               ControllerUser.deleteTravel
+#GET     /travel/edit/{travelId}                 ControllerUser.formEditTravel
+GET     /travel/{travelId}                      Application.showTravel
+GET     /travel/{travelId}/{findoraName}/add    ControllerUser.addFindoraTravel
+GET     /travel/{travelId}/{findoraId}/delete   ControllerUser.deleteFindoraTravel
+
 # Gestion commentaire
-GET     /commentaire/add                        ControllerUser.formComment
+GET     /commentaire/add/{contentId}            ControllerUser.formComment
 GET     /commentaire/delete/{commentId}         ControllerUser.deleteComment
 GET     /commentaire/edit/{commentId}           ControllerUser.formEditComment
 
 # Gestion content
-GET     /content/{type}/add                     ControllerUser.formContent
-GET     /content/delete/{commentId}             ControllerUser.deleteContent
-GET     /content/{type}/edit/{contentId}        ControllerUser.formEditContent
+GET     /{travelId}/{findoraId}/content/{type}/add                  ControllerUser.formContent
+GET     /content/delete/{commentId}                                 ControllerUser.deleteContent
+GET     /{travelId}/{findoraId}/content/{type}/edit/{contentId}     ControllerUser.formEditContent
 
 # Gestion like
 GET     /content/{contentId}/like               ControllerUser.likeContent
