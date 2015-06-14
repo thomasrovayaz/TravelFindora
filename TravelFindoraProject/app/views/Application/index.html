@@ -14,7 +14,7 @@
 #{/set}
 
 <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-    <a class="btn-floating btn-large waves-effect waves-light red" href="/travel/add"><i class="mdi-content-add"></i></a>
+    <a class="btn-floating btn-large waves-effect waves-light red tooltipped" data-position="left" data-delay="50" data-tooltip="Share your travel" href="/travel/add"><i class="mdi-content-add"></i></a>
 </div>
 #{/if}
 
@@ -39,5 +39,5 @@
 #{/else}
 
 #{list items:contents, as:'contentt' }
-    ${contentt.dateCreation}
+    #{displayContent content:contentt, as:'full' /}
 #{/list}

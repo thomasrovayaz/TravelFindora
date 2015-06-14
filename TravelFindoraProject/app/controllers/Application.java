@@ -26,13 +26,11 @@ public class Application extends Controller {
                 "join User u2 on uf.followed=u2 " +
                 "join Content c on c.USER_USERID=u2.userId " +
                 "where u=" + user);*/
-        for (UserFollowing userFollowing : user.getFolloweds()) {
-            contents.addAll(userFollowing.getFollowed().getContents());
-        }
-
-        Collections.sort(contents);
-        for (Content content : contents) {
-            System.out.println(content);
+        if (user != null) {
+            for (UserFollowing userFollowing : user.getFolloweds()) {
+                contents.addAll(userFollowing.getFollowed().getContents());
+            }
+            Collections.sort(contents);
         }
         render(user, contents);
     }

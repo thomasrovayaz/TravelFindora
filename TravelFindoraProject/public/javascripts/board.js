@@ -22,5 +22,6 @@ function addTravelPlace(travelId, findoraId) {
 }
 
 function addFindora(travelId) {
-    window.location.href = "/travel/" + travelId + "/toto/add";
+    $("#addFindora").show();
+    //window.location.href = "/travel/" + travelId + "/toto/add";
 }
