@@ -47,17 +47,17 @@ public class Application extends Controller {
         render();
     }
 
-    public static void register(String firstname, String lastname, String email, String password) {
-    User newUser = new User();
-    newUser.setFirstname(firstname);
-    newUser.setLastname(lastname);
-    newUser.setEmail(email);
-    newUser.setPassword(password);
-    newUser.save();
+    public static void register(String firstname, String lastname, String email, String password) throws Throwable {
+        User newUser = new User();
+        newUser.setFirstname(firstname);
+        newUser.setLastname(lastname);
+        newUser.setEmail(email);
+        newUser.setPassword(password);
+        newUser.save();
 
-    session.put("email",email);
-    Secure.login();
-    Application.index();
+        session.put("email",email);
+        Secure.login();
+        Application.index();
     }
 
     public static void search(String name){
@@ -86,8 +86,8 @@ public class Application extends Controller {
                             .compareTo(((Commentaire)B).getDateCreation());
                 }
             });
-            
-            
+
+
             List<Content> con = Content.find("findora like ?  order by dateCreation desc", f).fetch();
             render(f, nbUsers, con, user);
         }
