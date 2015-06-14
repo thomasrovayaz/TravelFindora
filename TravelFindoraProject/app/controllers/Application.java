@@ -4,6 +4,8 @@ import models.*;
 import play.mvc.Controller;
 
 import java.util.*;
+import java.lang.Throwable;
+
 public class Application extends Controller {
 
     public static void signIn(){
@@ -47,7 +49,7 @@ public class Application extends Controller {
         render();
     }
 
-    public static void register(String firstname, String lastname, String email, String password) {
+    public static void register(String firstname, String lastname, String email, String password) throws Throwable {
     User newUser = new User();
     newUser.setFirstname(firstname);
     newUser.setLastname(lastname);
