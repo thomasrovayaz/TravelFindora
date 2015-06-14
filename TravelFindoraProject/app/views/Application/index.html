@@ -1,16 +1,50 @@
 #{extends 'main.html' /}
 #{set title:'Board' /}
 
+
 #{set 'moreScripts'}
     #{script 'board.js'/}
 #{/set}
 
 
 #{if user}
+
+#{set 'moreScripts'}
+#{script 'board.js'/}
+#{/set}
+
 <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
     <a class="btn-floating btn-large waves-effect waves-light red tooltipped" data-position="left" data-delay="50" data-tooltip="Share your travel" href="/travel/add"><i class="mdi-content-add"></i></a>
 </div>
 #{/if}
+
+
+#{else}
+#{set 'moreScripts'}
+#{script 'parallax.js'/}
+#{/set}
+#{set 'moreStyles'}
+#{stylesheet 'parallax.css' /}
+#{/set}
+
+<div class="parallax-container">
+    <div class="parallax"><img src="/public/images/suitcase.jpg"></div>
+</div>
+<div class="section white">
+    <div class="row container">
+        <h2 class="header">TravelFindora</h2>
+        <br class="grey-text text-darken-3 lighten-3">
+            TravelFindora is a website on which you can consult different information
+            about travels all around the world. </br>
+            Interested ?
+            <a href="/signIn">Sign in !</a>
+        </p>
+    </div>
+</div>
+<div class="parallax-container">
+    <div class="parallax"><img src="/public/images/travel.jpg"></div>
+</div>
+#{/else}
 
 #{list items:contents, as:'contentt' }
     #{displayContent content:contentt, as:'full' /}

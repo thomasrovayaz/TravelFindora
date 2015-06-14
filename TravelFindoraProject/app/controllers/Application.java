@@ -4,6 +4,8 @@ import models.*;
 import play.mvc.Controller;
 
 import java.util.*;
+import java.lang.Throwable;
+
 public class Application extends Controller {
 
     public static void signIn(){
@@ -58,16 +60,16 @@ public class Application extends Controller {
     }
 
     public static void register(String firstname, String lastname, String email, String password) throws Throwable {
-        User newUser = new User();
-        newUser.setFirstname(firstname);
-        newUser.setLastname(lastname);
-        newUser.setEmail(email);
-        newUser.setPassword(password);
-        newUser.save();
+    User newUser = new User();
+    newUser.setFirstname(firstname);
+    newUser.setLastname(lastname);
+    newUser.setEmail(email);
+    newUser.setPassword(password);
+    newUser.save();
 
-        session.put("email",email);
-        Secure.login();
-        Application.index();
+    session.put("email",email);
+    Secure.login();
+    Application.index();
     }
 
     public static void search(String name){
