@@ -1,15 +1,24 @@
 .findoraInfo {
     position: fixed;
+    color: #ffffff;
 }
+
+.findoraActu {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 90%;
+}
+
  #main {
      width: 100%;
      height: 100%;
+     background-image: url("../images/prague_04.jpg");
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     position: fixed;
  }
 .container {
     margin: auto;
     height: 100%;
-    background-image: url("../images/prague_04.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
