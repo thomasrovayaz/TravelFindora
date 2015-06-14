@@ -1,19 +1,33 @@
 #{extends 'main.html' /}
 #{set title:'Home' /}
 
+#{set 'moreStyles'}
+<link rel="stylesheet" media="screen" href="@{'/public/stylesheets/formContent.css'}">
+#{/set}
+
 #{form @addContentImage(), enctype:'multipart/form-data'}
-<label for="description">Description: </label>
-<textarea name="description" id="description" >
+<div class="row">
+    <div class="input-field col s12">
+        <textarea id="description" name="description" class="materialize-textarea">
+            #{if travelMovie }
+                ${travelMovie.description}
+            #{/if}
+        </textarea>
+        <label for="description">Description</label>
+    </div>
+</div>
     #{if travelMovie }
-        ${travelMovie.description}
-    #{/if}
-</textarea>
-    #{if travelMovie }
-        <input type="hidden" name="contentId" id="contentId" value="${travelMovie.contentId}" />
+    <input type="hidden" name="contentId" id="contentId" value="${travelMovie.contentId}" />
     #{/if}
     #{else }
-        <input type="file" name="data" />
-        <input type="hidden" name="contentId" id="contentId" value="-1" />
+    <div class="file-field input-field col s12">
+        <input class="file-path validate" type="text"/>
+        <div class="btn">
+            <span>File</span>
+            <input type="file" name="data" />
+        </div>
+    </div>
+    <input type="hidden" name="contentId" id="contentId" value="-1" />
     #{/else}
 <input type="hidden" name="travelId" id="travelId" value="${travel.travelId}" />
     #{if findoraId}
