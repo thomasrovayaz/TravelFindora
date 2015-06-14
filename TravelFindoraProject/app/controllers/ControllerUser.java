@@ -464,6 +464,7 @@ public class ControllerUser extends Controller {
         travelUser.save();
 
         redirect("/travel/" + travel.getTravelId());
+    }
 
     public static void deleteAccount() {render();}
 
