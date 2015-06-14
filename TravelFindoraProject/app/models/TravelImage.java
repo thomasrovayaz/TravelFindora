@@ -10,10 +10,8 @@ import play.data.validation.Required;
 @Entity
 public class TravelImage extends TravelMedia {
 	
-	@Required
     private int width;
 	
-	@Required
     private int heigth;
 
     public int getWidth() {
