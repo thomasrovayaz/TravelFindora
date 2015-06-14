@@ -2,10 +2,14 @@
 #{set 'moreStyles'}
   <link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/findora.css'}" />
 #{/set}
+
     <div >
         #{if _as == 'full'}
  			 #{if _content instanceof models.TravelStory  }					 
                 	<p>${_content.story}</p>
+                #{/if}
+                 #{if _content instanceof models.Astuce  }					 
+                	<p>${_content.text}</p>
                 #{/if}
                 #{if _content instanceof models.TravelPlace  }					 
                 	<p>${_content.description}</p>
@@ -21,44 +25,72 @@
  					 <source src="data/attachments/${_content.file.getName()}" type="video/mp4">
  					 Your browser does not support the video tag.
 					 </video> 
-                #{/if}
-           
-           
-          	<span >by ${_content.user?.lastname} ${_content.user?.firstname}</span>,
-       	   	<span >${_content.dateCreation?.since()}</span>
-			<span >${_content.likers.size()} likes</span>	
+                #{/if}	
               
         #{/if}
         
         #{else}
-                #{if _content instanceof models.TravelStory  }					 
-                	<p class="storyD">${_content.story}</p>
+                #{if _content instanceof models.TravelStory  }
+                <div class="card blue-grey darken-1">
+          		  	<div class="card-content white-text">
+              			<p>${_content.story}</p>
+            		</div>
+           		 <div class="card-action">
+             	 <a href="#">Go to story</a>
+             	           	<span > ${_content.user?.email}</span>
+       	   	<span >${_content.dateCreation?.since()}</span>
+			<span >${_content.likers.size()} likes</span>	
+           		 </div>
+         		 </div>    	
                 #{/if}
+                
                 #{if _content instanceof models.TravelPlace  }					 
-                	<p>${_content.description}</p>
+                	  <div class="card blue-grey darken-1">
+          		  	<div class="card-content white-text">
+             		 <span class="card-title">Card Title</span>
+              			<p>${_content.description}</p>
+            		</div>
+           		 <div class="card-action">
+             	 <a href="#">Go to story</a>
+             	           	<span > ${_content.user?.email}</span>
+       	   	<span >${_content.dateCreation?.since()}</span>
+			<span >${_content.likers.size()} likes</span>	
+           		 </div>
+         		 </div>    	
+                #{/if}
+                
+                 #{if _content instanceof models.Astuce  }					 
+                	  <div class="card blue-grey darken-1">
+          		  	<div class="card-content white-text">
+             		 <span class="card-title">Card Title</span>
+              			<p>${_content.text}</p>
+            		</div>
+           		 <div class="card-action">
+             	 <a href="#">Go to story</a>
+             	           	<span > ${_content.user?.email}</span>
+       	   	<span >${_content.dateCreation?.since()}</span>
+			<span >${_content.likers.size()} likes</span>	
+           		 </div>
+         		 </div>    	
                 #{/if}
                 
                 #{if _content instanceof models.TravelImage }
-                
-                
-                
-      
-          <div class="card medium miniImg">
-            <div class="card-image">
-              <img class="materialboxed" src="data/attachments/${_content.file.getName()}">
-              <span class="card-title">${_content.fileName}</span>
-            </div>
-            <div class="card-content">
-              <p>${_content.description}</p>
-            </div>
-            <div class="card-action">
-              <a href="#">Go to story</a>
-            </div>
-          </div>
-        
-      
-            
-                #{/if}
+          			<div class="card medium miniImg">
+           				 <div class="card-image">
+             				 <img  src="data/attachments/${_content.file.getName()}">
+             				 <span class="card-title">${_content.fileName}</span>
+           				 </div>
+          				 <div class="card-content">
+              				<p>${_content.description}</p>
+		           		 </div>
+		            	<div class="card-action">
+		             		 <a href="#">Go to story</a>
+		             		           	<span > ${_content.user?.email}</span>
+       	   	<span >${_content.dateCreation?.since()}</span>
+			<span >${_content.likers.size()} likes</span>	
+		           		</div>
+		          	</div>
+				#{/if}
                 
                 #{if _content instanceof models.TravelMovie}					 
                 	 <video width="100" height="auto" controls>
@@ -68,9 +100,15 @@
                 #{/if}
            
            
-          	<span > ${_content.user?.lastname} ${_content.user?.firstname}</span>,
-       	   	<span >${_content.dateCreation?.since()}</span>
-			<span >${_content.likers.size()} likes</span>	
-              
+			<div class="card-action">
+            	<ul>
+					#{list items:_content.commentaires, as:'comm' }
+						<li>
+				     		 ${comm.text} 
+				     	</li>
+				   	#{/list}
+				</ul>
+			</div>
+   	
         #{/else}
     </div>
