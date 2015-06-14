@@ -1,5 +1,9 @@
 #{extends 'main.html' /}
 #{set title:'Board' /}
+#{set 'moreStyles'}
+#{get 'moreStyles'/}
+    #{stylesheet 'board.css' /}
+#{/set}
 
 
 #{set 'moreScripts'}
@@ -9,9 +13,9 @@
 
 #{if user}
 
-#{set 'moreScripts'}
-#{script 'board.js'/}
-#{/set}
+    #{set 'moreScripts'}
+        #{script 'board.js'/}
+    #{/set}
 
 <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
     <a class="btn-floating btn-large waves-effect waves-light red tooltipped" data-position="left" data-delay="50" data-tooltip="Share your travel" href="/travel/add"><i class="mdi-content-add"></i></a>
@@ -20,12 +24,13 @@
 
 
 #{else}
-#{set 'moreScripts'}
-#{script 'parallax.js'/}
-#{/set}
-#{set 'moreStyles'}
-#{stylesheet 'parallax.css' /}
-#{/set}
+    #{set 'moreScripts'}
+        #{script 'parallax.js'/}
+    #{/set}
+    #{set 'moreStyles'}
+        #{get 'moreStyles'/}
+        #{stylesheet 'parallax.css' /}
+    #{/set}
 
 <div class="parallax-container">
     <div class="parallax"><img src="/public/images/suitcase.jpg"></div>
@@ -46,7 +51,8 @@
     <div class="parallax"><img src="/public/images/travel.jpg"></div>
 </div>
 #{/else}
-
+<div class="contents">
 #{list items:contents, as:'contentt' }
     #{displayContent content:contentt, as:'findora' /}
 #{/list}
+</div>
