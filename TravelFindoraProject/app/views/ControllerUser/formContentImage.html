@@ -1,6 +1,10 @@
 #{extends 'main.html' /}
 #{set title:'Home' /}
 
+#{set 'moreStyles'}
+<link rel="stylesheet" media="screen" href="@{'/public/stylesheets/formContent.css'}">
+#{/set}
+
 #{form @addContentImage(), enctype:'multipart/form-data'}
 <div class="row">
     <div class="input-field col s12">

@@ -5,6 +5,7 @@
         <title>#{get 'title' /}</title>
         <meta charset="${_response_encoding}">
         <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main.css'}">
+        <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/navbar.css'}">
         <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/materialize.min.css'}">
         #{get 'moreStyles' /}
         <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
@@ -14,6 +15,8 @@
     </head>
     <body>
         #{include 'nav.html'/}
-        #{doLayout /}
+        <section id="main">
+            #{doLayout /}
+        </section>
     </body>
 </html>
