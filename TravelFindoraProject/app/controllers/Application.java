@@ -88,8 +88,8 @@ public class Application extends Controller {
                             .compareTo(((Commentaire)B).getDateCreation());
                 }
             });
-            
-            
+
+
             List<Content> con = Content.find("findora like ?  order by dateCreation desc", f).fetch();
             render(f, nbUsers, con, user);
         }
