@@ -91,16 +91,17 @@ public class ControllerUser extends Controller {
     }
 
     /**gestion des contents */
-    public static void formContent(String travelId, String findoraId, String type) {
+    public static void formContent(int travelId, String type) {
         User user = User.find("byEmail", Security.connected()).first();
+        Travel travel = Travel.find("byTravelId", travelId).first();
         if (type.equals("story")) {
-            renderTemplate("ControllerUser/formContentStory.html", travelId, findoraId, user);
+            renderTemplate("ControllerUser/formContentStory.html", travel, user);
         } else if (type.equals("place")) {
-            renderTemplate("ControllerUser/formContentPlace.html", travelId, findoraId, user);
+            renderTemplate("ControllerUser/formContentPlace.html", travel, user);
         } else if (type.equals("image")) {
-            renderTemplate("ControllerUser/formContentImage.html", travelId, findoraId, user);
+            renderTemplate("ControllerUser/formContentImage.html", travel, user);
         } else if (type.equals("movie")) {
-            renderTemplate("ControllerUser/formContentMovie.html", travelId, findoraId, user);
+            renderTemplate("ControllerUser/formContentMovie.html", travel, user);
         }
     }
 
@@ -149,6 +150,8 @@ public class ControllerUser extends Controller {
         findora.save();
         user.getContents().add(travelStory);
         findora.save();
+
+        redirect("/travel/" + travel.getTravelId());
     }
 
     public static void editContentStory(int contentId, String storyText) {
@@ -158,6 +161,8 @@ public class ControllerUser extends Controller {
             travelStory.setStory(storyText);
             travelStory.setDateModification(new Date());
             travelStory.save();
+
+            redirect("/travel/" + travelStory.getTravel().getTravelId());
         } else {
             error(401, "Not allowed to edit this content " + user.getEmail() + ".");
         }
@@ -192,6 +197,8 @@ public class ControllerUser extends Controller {
         findora.save();
         user.getContents().add(travelPlace);
         findora.save();
+
+        redirect("/travel/" + travel.getTravelId());
     }
 
     public static void editContentPlace(int contentId, String description, String latitude, String longitude) {
@@ -203,6 +210,8 @@ public class ControllerUser extends Controller {
             travelPlace.setLongitude(Double.parseDouble(longitude));
             travelPlace.setDateModification(new Date());
             travelPlace.save();
+
+            redirect("/travel/" + travelPlace.getTravel().getTravelId());
         } else {
             error(401, "Not allowed to edit this content " + user.getEmail() + ".");
         }
@@ -247,6 +256,8 @@ public class ControllerUser extends Controller {
         findora.save();
         user.getContents().add(travelImage);
         findora.save();
+
+        redirect("/travel/" + travel.getTravelId());
     }
 
     public static void editContentImage(int contentId, String description) {
@@ -256,6 +267,8 @@ public class ControllerUser extends Controller {
             travelImage.setDescription(description);
             travelImage.setDateModification(new Date());
             travelImage.save();
+
+            redirect("/travel/" + travelImage.getTravel().getTravelId());
         } else {
             error(401, "Not allowed to edit this content " + user.getEmail() + ".");
         }
@@ -300,6 +313,8 @@ public class ControllerUser extends Controller {
         findora.save();
         user.getContents().add(travelMovie);
         findora.save();
+
+        redirect("/travel/" + travel.getTravelId());
     }
 
     public static void editContentMovie(int contentId, String description) {
@@ -309,6 +324,8 @@ public class ControllerUser extends Controller {
             travelMovie.setDescription(description);
             travelMovie.setDateModification(new Date());
             travelMovie.save();
+
+            redirect("/travel/" + travelMovie.getTravel().getTravelId());
         } else {
             error(401, "Not allowed to edit this content " + user.getEmail() + ".");
         }

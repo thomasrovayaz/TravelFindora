@@ -2,21 +2,46 @@
 #{set title:'Home' /}
 
 #{form @addContentImage(), enctype:'multipart/form-data'}
-<label for="description">Description: </label>
-<textarea name="description" id="description" >
-    #{if travelImage }
-        ${travelImage.description}
-    #{/if}
-</textarea>
+<div class="row">
+    <div class="input-field col s12">
+        <textarea id="description" name="description" class="materialize-textarea">
+            #{if travelImage }
+                ${travelImage.description}
+            #{/if}
+        </textarea>
+        <label for="description">Description</label>
+    </div>
+</div>
     #{if travelImage }
         <input type="hidden" name="contentId" id="contentId" value="${travelImage.contentId}" />
     #{/if}
     #{else }
-        <input type="file" name="data" />
+        <div class="file-field input-field col s12">
+            <input class="file-path validate" type="text"/>
+            <div class="btn">
+                <span>File</span>
+                <input type="file" name="data" />
+            </div>
+        </div>
         <input type="hidden" name="contentId" id="contentId" value="-1" />
     #{/else}
-<input type="hidden" name="travelId" id="travelId" value="${travelId}" />
-<input type="hidden" name="findoraId" id="findoraId" value="${findoraId}" />
-<input type="submit" id="ajouter" value="Ajouter" />
+<input type="hidden" name="travelId" id="travelId" value="${travel.travelId}" />
+#{if findoraId}
+    <input type="hidden" name="findoraId" id="findoraId" value="${findoraId}" />
+#{/if}
+#{elseif travel }
+<div class="row">
+    <div class="input-field col s12">
+        <select id="findoraId" name="findoraId" style="display: inline-block;">
+            <option value="" disabled selected>Choose your findora</option>
+            #{list items:travel.findoras, as:'travelfindora' }
+                <option value="${travelfindora.findora.findoraId}">${travelfindora.findora.name}</option>
+            #{/list}
+        </select>
+    </div>
+</div>
+#{/elseif}
+<button class="btn waves-effect waves-light" type="submit" name="action">Submit
+</button>
 
 #{/form}
