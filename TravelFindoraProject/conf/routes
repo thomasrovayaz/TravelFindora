@@ -29,10 +29,13 @@ GET 	/test									Application.test
 GET     /profile                                ControllerUser.profile
 
 #stories
-GET     /stories/{usermail}/{findoraName}       ControllerUser.stories
+GET     /stories/{usermail}/{findoraName}       Application.stories
+
+#findora search
+GET     /findora/search/{searchText}            Application.searchFindora
 
 # Gestion travel
-GET     /travel/add                             ControllerUser.formTravel
+GET     /travel/add                             ControllerUser.addTravel
 GET     /travel/delete/{travelId}               ControllerUser.deleteTravel
 #GET     /travel/edit/{travelId}                 ControllerUser.formEditTravel
 GET     /travel/{travelId}                      Application.showTravel

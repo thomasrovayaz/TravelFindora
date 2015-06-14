@@ -31,13 +31,6 @@ public class ControllerUser extends Controller {
         render(user);
     }
 
-    public static void stories(String usermail, String findoraName) {
-        User user = User.find("byEmail", Security.connected()).first();
-        User user2 = User.find("byEmail", usermail).first();
-        Findora findora = Findora.find("byName", findoraName).first();
-        render(user, user2, findora);
-    }
-
     /**gestion like */
     public static void likeContent(int contentId) {
         ContentLike contentLike = new ContentLike();

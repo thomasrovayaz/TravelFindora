@@ -1,3 +1,18 @@
 #addFindora {
     display: none;
 }
+
+.ui-autocomplete .ui-menu-item {
+    cursor: pointer;
+    color: #039be5;
+    width: 200px;
+    padding: 5px;
+}
+
+.ui-autocomplete .ui-menu-item:hover {
+    background-color: #eeeeee;
+}
+
+.ui-helper-hidden-accessible {
+    display: none;
+}

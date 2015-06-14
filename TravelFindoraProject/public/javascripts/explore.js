@@ -24,11 +24,13 @@ function initialize() {
         var findoraLatlng = new google.maps.LatLng($(this).attr("lat"), $(this).attr("long"));
 
         var authors = [];
+        var travels = [];
         $(this).find("ul").find("li").each(function(index) {
             var author = $(this).html();
             var found = $.inArray(author, authors) > -1;
             if(!found) {
                 authors.push(author);
+                travels.push($(this).attr("id"));
             }
         });
         overlay = new CustomMarker(
@@ -38,7 +40,8 @@ function initialize() {
                 marker_id: $(this).attr("id"),
                 nb_travel: $(this).attr("nb_travel"),
                 name: $(this).attr("name"),
-                authors: authors
+                authors: authors,
+                travels: travels
             }
         );
     });

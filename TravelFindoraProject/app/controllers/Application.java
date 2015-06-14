@@ -15,6 +15,18 @@ public class Application extends Controller {
         render();
     }
 
+    public static void searchFindora(String searchText) {
+        List<Findora> findoras = Findora.em().createNativeQuery("select * from Findora where name like '%" + searchText + "%'").getResultList();
+        renderJSON(findoras);
+    }
+
+    public static void stories(String usermail, String findoraName) {
+        User user = User.find("byEmail", Security.connected()).first();
+        User user2 = User.find("byEmail", usermail).first();
+        Findora findora = Findora.find("byName", findoraName).first();
+        render(user, user2, findora);
+    }
+
     public static void index() {
         User user = User.find("byEmail", Security.connected()).first();
         ArrayList<Content> contents = new ArrayList<Content>();

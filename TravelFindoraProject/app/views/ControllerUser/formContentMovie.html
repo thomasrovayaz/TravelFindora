@@ -5,7 +5,26 @@
 <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/formContent.css'}">
 #{/set}
 
+#{set 'moreScripts'}
+    #{script 'formContent.js'/}
+#{/set}
+
 #{form @addContentImage(), enctype:'multipart/form-data'}
+    #{if findoraId}
+    <input type="hidden" name="findoraId" id="findoraId" value="${findoraId}" />
+    #{/if}
+    #{elseif travel }
+    <div class="row">
+        <div class="input-field col s12">
+            <select id="findoraId" name="findoraId">
+                <option value="" disabled selected>Choose your findora</option>
+                #{list items:travel.findoras, as:'travelfindora' }
+                    <option value="${travelfindora.findora.findoraId}">${travelfindora.findora.name}</option>
+                #{/list}
+            </select>
+        </div>
+    </div>
+    #{/elseif}
 <div class="row">
     <div class="input-field col s12">
         <textarea id="description" name="description" class="materialize-textarea">
@@ -30,21 +49,6 @@
     <input type="hidden" name="contentId" id="contentId" value="-1" />
     #{/else}
 <input type="hidden" name="travelId" id="travelId" value="${travel.travelId}" />
-    #{if findoraId}
-    <input type="hidden" name="findoraId" id="findoraId" value="${findoraId}" />
-    #{/if}
-    #{elseif travel }
-    <div class="row">
-        <div class="input-field col s12">
-            <select id="findoraId" name="findoraId" style="display: inline-block;">
-                <option value="" disabled selected>Choose your findora</option>
-                #{list items:travel.findoras, as:'travelfindora' }
-                    <option value="${travelfindora.findora.findoraId}">${travelfindora.findora.name}</option>
-                #{/list}
-            </select>
-        </div>
-    </div>
-    #{/elseif}
 <button class="btn waves-effect waves-light" type="submit" name="action">Submit
 </button>
 

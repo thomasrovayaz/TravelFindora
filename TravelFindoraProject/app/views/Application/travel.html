@@ -7,6 +7,7 @@
 
 #{set 'moreScripts'}
     #{script 'board.js'/}
+    #{script 'jquery-ui.js'/}
 <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/travel.css'}">
 #{/set}
 
@@ -18,8 +19,8 @@
             <div class="input-field col s6">
                 <i class="mdi-action-room prefix"></i>
                 <input type="hidden" name="travelId" value="${travel.travelId}">
-                <input id="icon_prefix" type="text" class="validate" name="findoraName">
-                <label for="icon_prefix">Findora</label>
+                <input id="findoraName" type="text" class="validate" name="findoraName">
+                <label for="findoraName">Findora</label>
             </div>
         </div>
     #{/form}

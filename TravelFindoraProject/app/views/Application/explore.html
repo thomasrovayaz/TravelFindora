@@ -23,7 +23,7 @@
 
         <ul>
             #{list items:findora.travels, as:'travelFindora'}
-                <li>${travelFindora.travel.author}</li>
+                <li id="${travelFindora.travel.travelId}">${travelFindora.travel.author}</li>
             #{/list}
         </ul>
     </li>
