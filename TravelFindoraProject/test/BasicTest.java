@@ -4,6 +4,7 @@ import controllers.ControllerUser;
 import controllers.Secure;
 
 import java.util.*;
+
 import play.test.*;
 import models.*;
 
@@ -32,25 +33,40 @@ public class BasicTest extends UnitTest {
     }
     
     @Test
-    public void travelLikeTest() throws Throwable {
+    public void travelLikeSetTest() throws Throwable {
     	
+    	//on récupère l'user 
         User bob = User.find("byEmail", "bob@gmail.com").first();
-
+        
+        //on crée un travel dont l'auteur est cet utilisateur
     	Travel t = new Travel();
     	t.setAuthor(bob);
-    	Set<User> likers = new HashSet<User>();
-    	likers.add(bob);
+    	t.save();
     	
+    	//lui-même like son travel
+    	TravelLike tl = new TravelLike();
+    	tl.setLikerTravel(bob);
+    	tl.setLikingTravel(t);
+    	tl.save();
+    	
+    	Set<TravelLike> likers = new HashSet<TravelLike>();
+    	likers.add(tl);
     	t.setLikers(likers);
     	t.save();
-    	int i = t.getTravelId();
     	
-        Travel ttev = (Travel) Travel.find("byTravelId", i).fetch().get(0);
-        assertEquals(ttev.getLikers()));
+    	int i = tl.getTravelLikeId();
     	
-        ControllerUser.likeTravel(i);
-    	/*assertEquals(1, t.getLikers().size());*/
-    	
+    	//on récupère le travel par id
+    	TravelLike tll = (TravelLike) TravelLike.find("byTravelLikeId", i).fetch().get(0);
+       
+        
+        //vérifier que like était fait par bob
+        assertEquals(tll.getLikerTravel().getUserId(),bob.getUserId());
+        //vérifier que il s'agit bien de travel liké
+        assertEquals(tll.getLikingTravel().getTravelId(), t.getTravelId());
+
     }
+    
+    //idem pour les autres classes de modèle
     
 }
