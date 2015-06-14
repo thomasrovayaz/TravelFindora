@@ -2,16 +2,24 @@
 #{set title:'Search' /}
 
 #{if f}
-   <h1>${f.name}</h1>
-   <p>Visité par ${nbUsers} Travellers</p>
-   <p>${f.nbHab} millions</p>
-   <p>${f.size} km&sup2;</p>
-   <p>${f.description}</p>
-		<ul>
-    		#{list items:con, as:'contentt' }
+	<div class="container">
+<h1>${f.name}</h1>
+<div class="left">
+	
+      <div>Visité par ${nbUsers} Travellers</div>  	
+	  <div>${f.nbHab} millions</div>
+      <div>${f.size} km&sup2;</div>
+      <div>${f.description}</div>
+</div>
+	
+	
+	<div class="right"> 
+			#{list items:con, as:'contentt' }
      		      #{displayContent content:contentt, as:'findora' /}
    			#{/list}
-		</ul>
+	</div>
+		
+	</div>	
 #{/if}
 #{else}
     <div class="empty">
