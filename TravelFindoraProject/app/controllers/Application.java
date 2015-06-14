@@ -10,6 +10,7 @@ public class Application extends Controller {
         render();
     }
 
+
     public static void test() {
         render();
     }
@@ -47,15 +48,16 @@ public class Application extends Controller {
     }
 
     public static void register(String firstname, String lastname, String email, String password) {
-        User newUser = new User();
-        newUser.setFirstname(firstname);
-        newUser.setLastname(lastname);
-        newUser.setEmail(email);
-        newUser.setPassword(password);
-        newUser.save();
+    User newUser = new User();
+    newUser.setFirstname(firstname);
+    newUser.setLastname(lastname);
+    newUser.setEmail(email);
+    newUser.setPassword(password);
+    newUser.save();
 
-        session.put("email",email);
-        Application.index();
+    session.put("email",email);
+    Secure.login();
+    Application.index();
     }
 
     public static void search(String name){
