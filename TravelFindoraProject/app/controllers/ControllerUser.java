@@ -378,6 +378,9 @@ public class ControllerUser extends Controller {
         commentaireContent.setDateCreation(new Date());
 
         commentaireContent.save();
+
+        content.getCommentaires().add(commentaireContent);
+        content.save();
     }
 
     public static void addCommentTravel(int travelId, String comment) {

@@ -1,32 +1,36 @@
 #{extends 'main.html' /}
 #{set title:'Search' /}
+#{set 'moreStyles'}
+    #{get 'moreStyles'/}
+<link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/search.css'}" />
+#{/set}
 
 #{if f}
-	<div class="container">
-<h1>${f.name}</h1>
-<div class="left">
-	
-      <div>Visité par ${nbUsers} Travellers</div>  	
-	  <div>${f.nbHab} millions</div>
-      <div>${f.size} km&sup2;</div>
-      <div>${f.description}</div>
+<div class="container">
+    <div class="left findoraInfo">
+        <h1>${f.name}</h1>
+
+        <div>Visité par ${nbUsers} Travellers</div>
+        <div>${f.nbHab} millions</div>
+        <div>${f.size} km&sup2;</div>
+        <div>${f.description}</div>
+    </div>
+
+    <div class="right findoraActu">
+        <ul>
+            #{list items:con, as:'contentt' }
+                <li>
+                    #{displayContent content:contentt, as:'findora' /}
+                </li>
+            #{/list}
+        </ul>
+    </div>
+
 </div>
-	
-<div class="right"> 
-	<ul>
-	#{list items:con, as:'contentt' }
-		<li>
-     	#{displayContent content:contentt, as:'findora' /}
-     	</li>
-   	#{/list}
-   	</ul>
-</div>
-		
-	</div>	
 #{/if}
 
 #{else}
-    <div class="empty">
-        There are no Findoras like that.
-    </div>
+<div class="empty">
+    There are no Findoras like that.
+</div>
 #{/else}
