@@ -3,6 +3,10 @@
     height: 100%;
 }
 
+body{
+    overflow: hidden;
+}
+
 #map-canvas {
     overflow-x: visible !important;
     overflow-y: hidden;
