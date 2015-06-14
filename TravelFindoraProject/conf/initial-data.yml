@@ -1,13 +1,20 @@
 # Test data
 
 User(toto74):
-    email:          toto74
+    email:          root@master.web
+    password:       root
+    firstname:      root
+    lastname:       root
+    isAdmin:        true
+
+User(toto74):
+    email:          toto74@g.com
     password:       toto74
     firstname:      toto74
     lastname:       toto74
 
 User(toto742):
-    email:          toto742
+    email:          toto742@g.com
     password:       toto742
     firstname:      toto742
     lastname:       toto742
@@ -15,10 +22,6 @@ User(toto742):
 UserFollowing(uf):
     followed:       toto74
     follower:       toto742
-
-TravelStory(test):
-    story:          bla bla bla blabla blabla
-    user:           toto74
 
 Travel(praguevoyage):
     author:      toto742
@@ -152,6 +155,11 @@ Findora(clusesfindora):
     name:           Cluses
     latitude:       46.0603900
     longitude:      6.5805820
+
+Findora(annecyfindora):
+    name:           Annecy
+    latitude:       45.8992470
+    longitude:      6.1293840
 
 TravelFindora(travelfindoraprague):
     findora:        praguefindora
@@ -364,3 +372,17 @@ TravelFindora(travelfindoracluses4):
 TravelFindora(travelfindoracluses5):
     findora:        clusesfindora
     travel:         clusesvoyage5
+
+TravelStory(travelStory1):
+    story:          "Ceci est le premier chapitre de mon incroyable voyage à Prague.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    user:           toto74
+    travel:         praguevoyage
+    findora:        praguefindora
+
+TravelStory(travelStory2):
+    story:          "Après de longue soirée dans les bars de Prague je peux enfin vous raconter mon séjour.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    user:           toto74
+    travel:         praguevoyage
+    findora:        praguefindora

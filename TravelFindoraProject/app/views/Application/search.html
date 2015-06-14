@@ -3,6 +3,11 @@
 #{set 'moreStyles'}
     #{get 'moreStyles'/}
 <link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/search.css'}" />
+<style>
+    #main {
+        background-image: url("@{'public/images/' + f.name.toLowerCase() + '.jpg'}");
+    }
+</style>
 #{/set}
 
 #{if f}
