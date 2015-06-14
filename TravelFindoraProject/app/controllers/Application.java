@@ -54,7 +54,6 @@ public class Application extends Controller {
                 ts.add(t.getTravel());
             }
             Set<Integer> userIds = new HashSet<Integer>();
-            //   Set<Integer> likersIds = new HashSet<Integer>();
             List<Commentaire> com = new ArrayList<Commentaire>();
 
             for(Travel t: ts){
@@ -62,19 +61,17 @@ public class Application extends Controller {
                     userIds.add(tu.getTraveller().getUserId());
                 com.addAll(t.getCommentaires());
 
-                //   	for(TravelLike tl: t.getLikers())
-                //   		likersIds.add(tl.getLikerTravel().getUserId());
             }
             int nbUsers = userIds.size();
-            //  int likes = likersIds.size();
-
             Collections.sort(com, new Comparator() {
                 public int compare(Object A, Object B) {
                     return ((Commentaire)A).getDateCreation()
                             .compareTo(((Commentaire)B).getDateCreation());
                 }
             });
-            Set<Content> con = f.getContents();
+            
+            
+            List<Content> con = Content.find("findora like ?  order by dateCreation desc", f).fetch();
             render(f, nbUsers, con, user);
         }
         else render(user);

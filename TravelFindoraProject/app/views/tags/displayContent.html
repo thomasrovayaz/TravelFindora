@@ -1,0 +1,61 @@
+*{ Display a  in one of these modes: 'full', 'findora'}*
+#{set 'moreStyles'}
+  <link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/findora.css'}" />
+#{/set}
+    <div >
+        
+        #{if _as == 'full'}
+ 			 #{if _content instanceof models.TravelStory  }					 
+                	<p>${_content.story}</p>
+                #{/if}
+                #{if _content instanceof models.TravelPlace  }					 
+                	<p>${_content.description}</p>
+                #{/if}
+                #{if _content instanceof models.TravelImage }					 
+                	<p>
+   					 <img src="data/attachments/${_content.file.getName()}"
+    				 title="${_content.description}" /></a>
+					</p>
+                #{/if}
+                #{if _content instanceof models.TravelMovie}					 
+                	 <video width="350" height="250" controls>
+ 					 <source src="data/attachments/${_content.file.getName()}" type="video/mp4">
+ 					 Your browser does not support the video tag.
+					 </video> 
+                #{/if}
+           
+           
+          	<span >by ${_content.user?.lastname} ${_content.user?.firstname}</span>,
+       	   	<span >${_content.dateCreation?.since()}</span>
+			<span >${_content.likers.size()} likes</span>	
+              
+        #{/if}
+        
+        #{else}
+                #{if _content instanceof models.TravelStory  }					 
+                	<p class="storyD">${_content.story}</p>
+                #{/if}
+                #{if _content instanceof models.TravelPlace  }					 
+                	<p>${_content.description}</p>
+                #{/if}
+                #{if _content instanceof models.TravelImage }					 
+                	<p> 
+    				<a href="#">
+   					 <img class="miniImg" src="data/attachments/${_content.file.getName()}"
+    				 title="${_content.description}" /></a>
+					</p>
+                #{/if}
+                #{if _content instanceof models.TravelMovie}					 
+                	 <video width="100" height="auto" controls>
+ 					 <source src="data/attachments/${_content.file.getName()}" type="video/mp4">
+ 					 Your browser does not support the video tag.
+					 </video> 
+                #{/if}
+           
+           
+          	<span > ${_content.user?.lastname} ${_content.user?.firstname}</span>,
+       	   	<span >${_content.dateCreation?.since()}</span>
+			<span >${_content.likers.size()} likes</span>	
+              
+        #{/else}
+    </div>

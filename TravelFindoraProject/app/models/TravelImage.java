@@ -2,12 +2,18 @@ package models;
 
 import javax.persistence.Entity;
 
+import play.data.validation.Required;
+
 /**
  * Created by thomas on 26/05/15.
  */
 @Entity
 public class TravelImage extends TravelMedia {
+	
+	@Required
     private int width;
+	
+	@Required
     private int heigth;
 
     public int getWidth() {

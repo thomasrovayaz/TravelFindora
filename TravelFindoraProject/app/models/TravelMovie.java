@@ -2,13 +2,21 @@ package models;
 
 import javax.persistence.Entity;
 
+import play.data.validation.Required;
+
 /**
  * Created by thomas on 26/05/15.
  */
 @Entity
 public class TravelMovie extends TravelMedia {
+	
+	@Required
     private int width;
+	
+	@Required
     private int heigth;
+	
+	@Required
     private long duration;
 
     public int getWidth() {

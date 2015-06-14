@@ -15,7 +15,7 @@ import java.io.FileNotFoundException;
  * Created by thomas on 25/05/15.
  */
 @Entity
-public class TravelMedia extends Content {
+public abstract class TravelMedia extends Content {
 
 
     @Lob
@@ -23,8 +23,13 @@ public class TravelMedia extends Content {
     @MaxSize(10000)
     private String description;
     
+    @Required
     public Blob file;
+    
+    @Required
     public String fileName;
+    
+    @Required
     public String contentType;
 
     public String getDescription() {
